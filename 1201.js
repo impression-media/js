@@ -100,7 +100,7 @@ function imHbReplaceScript(){
     var pbjs = {};
     pbjs.que = []; 
     
-    console.log('pbjs.winningBids[]: '+pbjs.winningBids[]);
+    console.log('pbjs.winningBids[]: '+pbjs.winningBids);
     
     adformtag = [];
     pbjs.initAdserverSet = 0;
