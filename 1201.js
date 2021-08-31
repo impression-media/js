@@ -98,7 +98,10 @@ function imHbReplaceScript(){
 //    }
 //    top.document.body.classList.remove('branding');
     var pbjs = {};
-    pbjs.que = [];    
+    pbjs.que = [];  
+    adformtag = [];
+    pbjs.initAdserverSet = 0;
+    pbjs.winningBids = {};    
     var imHbConfig = document.getElementById('imHbConfig');
     imHbConfig.parentNode.removeChild(imHbConfig);
     setTimeout(function() {
