@@ -58,23 +58,23 @@ pbjs.processQueue();
         //pridej obsluhu pro reloading    
         var imHbBodyscript = document.createElement('script');
         imHbBodyscript.type = 'text/javascript';
-        imHbBodyscript.innerHTML = "
+        imHbBodyscript.innerHTML = '
     function imHbReloading() {
-        var imHbConfig = document.getElementById('imHbConfig');
+        var imHbConfig = document.getElementById(\'imHbConfig\');
         var srcImHbConfig = imHbConfig.src;
         imHbConfig.parentNode.removeChild(imHbConfig);
         
-        var imHbMaster = document.getElementById('imHbMaster');
+        var imHbMaster = document.getElementById(\'imHbMaster\');
         var srcImHbMaster = imHbMaster.src;
         imHbMaster.parentNode.removeChild(imHbMaster);
         
-        var imHbMasterScript = document.createElement('script');imHbMasterScript.type = 'text/javascript';imHbMasterScript.id = 'imHbMaster';var imHbReloadingRandomParam = Math.floor(Math.random() * 10000) + 1;imHbMasterScript.src = srcImHbMaster+'&imHbReloading='+imHbReloadingRandomParam;document.getElementsByTagName('head')[0].appendChild(imHbMasterScript);
+        var imHbMasterScript = document.createElement(\'script\');imHbMasterScript.type = \'text/javascript\';imHbMasterScript.id = \'imHbMaster\';var imHbReloadingRandomParam = Math.floor(Math.random() * 10000) + 1;imHbMasterScript.src = srcImHbMaster+\'&imHbReloading=\'+imHbReloadingRandomParam;document.getElementsByTagName(\'head\')[0].appendChild(imHbMasterScript);
 
         setTimeout(function(){
-            var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';imHbReloadingRandomParam = Math.floor(Math.random() * 10000) + 1;imHbScript.src = srcImHbConfig+'&imHbReloading='+imHbReloadingRandomParam;document.getElementsByTagName('head')[0].appendChild(imHbScript);
+            var imHbScript = document.createElement(\'script\');imHbScript.type = \'text/javascript\';imHbScript.id = \'imHbConfig\';imHbReloadingRandomParam = Math.floor(Math.random() * 10000) + 1;imHbScript.src = srcImHbConfig+\'&imHbReloading=\'+imHbReloadingRandomParam;document.getElementsByTagName(\'head\')[0].appendChild(imHbScript);
         }, 2000);
     }
-     ";
+';
         document.body.appendChild(imHbBodyscript);
         
         //vse smaz a pust novy uploud HB ovladacu 
@@ -94,4 +94,4 @@ var imHbWonBids = imHbWonBids || [];
 var imHbAsocPlacementMidEnable = imHbAsocPlacementMidEnable || [];
 var imHbPlacementEnable = imHbPlacementEnable || [];
 
-            function imGetCookie(name) {var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null;}; function imSetCookie(name,value,days){var d=new Date;d.setTime(d.getTime()+24*60*60*1000*days);document.cookie=name+'='+value+';domain=.;path=/;expires='+d.toGMTString();};function imTestingParam(t){var n=null,e=[];return location.search.substr(1).split('&').forEach(function(o){(e=o.split('='))[0]===t&&(n=decodeURIComponent(e[1]))}),n};var imtesting = imTestingParam('imtesting');if(imtesting=='start'){imSetCookie('imtesting','dev',1);}if(imtesting=='stop'){imSetCookie('imtesting', '', -1);}function imRemoveTestInfo(){document.getElementById('imtestingInfo').remove();}function imHbUploadConfig(){if(imGetCookie('imtesting')){document.getElementById('imtestingInfo')&&document.getElementById('imtestingInfo').remove();var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a><span onclick="imRemoveTestInfo();" style="cursor: pointer;border: 1px solid white;border-radius: 20px 2px 2px;padding: 4px 6px 1px 10px;position: absolute; bottom: 2px;right: 2px;">X</span>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:999999;position:fixed;bottom:3px;right:3px;margin-top:-30px;padding:65px 15px 50px 45px;background:#0000003d;color:white;border-radius:3px;border-top-left-radius:200px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1201'; var imConfigName = 'HBsetup_ireferatycz_Ireferaty_OP_Development_2021_09_02_1051'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';var imHbRandomParam = Math.floor(Math.random() * 10000) + 1;imHbScript.src = 'https://cdn.jsdelivr.net/gh/impression-media/js/tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam;document.getElementsByTagName('head')[0].appendChild(imHbScript);}setTimeout(function(){imHbUploadConfig();}, 10);
+            function imGetCookie(name) {var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null;}; function imSetCookie(name,value,days){var d=new Date;d.setTime(d.getTime()+24*60*60*1000*days);document.cookie=name+'='+value+';domain=.;path=/;expires='+d.toGMTString();};function imTestingParam(t){var n=null,e=[];return location.search.substr(1).split('&').forEach(function(o){(e=o.split('='))[0]===t&&(n=decodeURIComponent(e[1]))}),n};var imtesting = imTestingParam('imtesting');if(imtesting=='start'){imSetCookie('imtesting','dev',1);}if(imtesting=='stop'){imSetCookie('imtesting', '', -1);}function imRemoveTestInfo(){document.getElementById('imtestingInfo').remove();}function imHbUploadConfig(){if(imGetCookie('imtesting')){document.getElementById('imtestingInfo')&&document.getElementById('imtestingInfo').remove();var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a><span onclick="imRemoveTestInfo();" style="cursor: pointer;border: 1px solid white;border-radius: 20px 2px 2px;padding: 4px 6px 1px 10px;position: absolute; bottom: 2px;right: 2px;">X</span>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:999999;position:fixed;bottom:3px;right:3px;margin-top:-30px;padding:65px 15px 50px 45px;background:#0000003d;color:white;border-radius:3px;border-top-left-radius:200px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1201'; var imConfigName = 'HBsetup_ireferatycz_Ireferaty_OP_Development_2021_09_02_1055'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';var imHbRandomParam = Math.floor(Math.random() * 10000) + 1;imHbScript.src = 'https://cdn.jsdelivr.net/gh/impression-media/js/tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam;document.getElementsByTagName('head')[0].appendChild(imHbScript);}setTimeout(function(){imHbUploadConfig();}, 10);
