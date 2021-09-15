@@ -38,77 +38,90 @@ pbjsChunk([19],{6:function(e,n,t){"use strict";n.a=function(e){var a,u=e.url,n=e
 Updated : 2020-11-27 */
 pbjsChunk([209],{453:function(n,e,t){n.exports=t(454)},454:function(n,e,t){"use strict";function i(n){return(i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(n){return typeof n}:function(n){return n&&"function"==typeof Symbol&&n.constructor===Symbol&&n!==Symbol.prototype?"symbol":typeof n})(n)}Object.defineProperty(e,"__esModule",{value:!0});var s=t(8),r=t(0),o=t(5),a=t(7).default,u=o.EVENTS.BID_REQUESTED,c=o.EVENTS.BID_TIMEOUT,d=o.EVENTS.BID_RESPONSE,l=o.EVENTS.BID_WON,f={nonInteraction:!0},p=[],b=null,m=!0,v="Prebid.js Bids",y=0,g=!1,T=null,w=null,E=!0,S={};function h(){if(m&&"function"==typeof window[b]){for(var n=0;n<p.length;n++)p[n].call();p.push=function(n){n.call()},m=!1}r.logMessage("event count sent to GA: "+y)}function D(n){return n?Math.floor(100*n):0}function $(n){return T?T(n):(0<=n&&n<.5?e="$0-0.5":.5<=n&&n<1?e="$0.5-1":1<=n&&n<1.5?e="$1-1.5":1.5<=n&&n<2?e="$1.5-2":2<=n&&n<2.5?e="$2-2.5":2.5<=n&&n<3?e="$2.5-3":3<=n&&n<4?e="$3-4":4<=n&&n<6?e="$4-6":6<=n&&n<8?e="$6-8":8<=n&&(e="$8 above"),e);var e}function C(n){n&&n.bidderCode&&p.push(function(){y++,window[b](w,"event",v,"Requests",n.bidderCode,1,f)}),h()}function M(r){r&&r.bidderCode&&p.push(function(){var n,e,t,o,i=D(r.cpm),s=r.bidderCode;void 0!==r.timeToRespond&&g&&(y++,0<=(e=r.timeToRespond)&&e<200?t="0-200ms":200<=e&&e<300?t="0200-300ms":300<=e&&e<400?t="0300-400ms":400<=e&&e<500?t="0400-500ms":500<=e&&e<600?t="0500-600ms":600<=e&&e<800?t="0600-800ms":800<=e&&e<1e3?t="0800-1000ms":1e3<=e&&e<1200?t="1000-1200ms":1200<=e&&e<1500?t="1200-1500ms":1500<=e&&e<2e3?t="1500-2000ms":2e3<=e&&(t="2000ms above"),n=t,window[b](w,"event","Prebid.js Load Time Distribution",n,s,1,f)),0<r.cpm&&(y+=2,o=$(r.cpm),g&&(y++,window[b](w,"event","Prebid.js CPM Distribution",o,s,1,f)),window[b](w,"event",v,"Bids",s,i,f),window[b](w,"event",v,"Bid Load Time",s,r.timeToRespond,f))}),h()}function N(n){p.push(function(){r._each(n,function(n){y++;var e=n.bidder;window[b](w,"event",v,"Timeouts",e,f)})}),h()}function _(n){var e=D(n.cpm);p.push(function(){y++,window[b](w,"event",v,"Wins",n.bidderCode,e,f)}),h()}S.enableAnalytics=function(n){var e=n.provider,t=n.options;b=e||"ga",w=t&&t.trackerName?t.trackerName+".send":"send",E=void 0===t||void 0===t.sampling||Math.random()<parseFloat(t.sampling),t&&void 0!==t.global&&(b=t.global),t&&void 0!==t.enableDistribution&&(g=t.enableDistribution),t&&"function"==typeof t.cpmDistribution&&(T=t.cpmDistribution);var o;E?(o=s.getEvents(),r._each(o,function(n){var e;"object"===i(n)&&(e=n.args,n.eventType===u?C(e):n.eventType===d?M(e):n.eventType===c?N(e):n.eventType===l&&_(e))}),s.on(u,function(n){C(n)}),s.on(d,function(n){M(n)}),s.on(c,function(n){N(n)}),s.on(l,function(n){_(n)})):r.logMessage("Prebid.js google analytics disabled by sampling"),this.enableAnalytics=function(){return r.logMessage("Analytics adapter already enabled, unnecessary call to `enableAnalytics`.")}},S.getTrackerSend=function(){return w},S.getCpmDistribution=$,a.registerAnalyticsAdapter({adapter:S,code:"ga"}),e.default=S}},[453]);
 pbjs.processQueue();
-    //console.log('reloadSetting');
-    
-imHbReloadingAds = 1;
-imHbTimeTillToReloadAds = 40;
-var imHbToday = new Date();
-var imHbDeadline = new Date(imHbToday.getTime()+1000*imHbTimeTillToReloadAds);
-var imHbInterval;
-var imHbPovolenyRefresh = 'NE';
+      
 
-function imHbSetIntervalX(){
-    imHbPovolenyRefresh = 'NE';
-    imHbInterval = setInterval(function() { 
-        var now = new Date().getTime(); 
-        var t = imHbDeadline - now;  
-        if (t < 0) { 
-                imHbPovolenyRefresh = 'ANO';
-                clearInterval(imHbInterval);
-            }
-    }, 1000);
-};
+pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+var imHbWonBids = imHbWonBids || [];
+var imHbAsocPlacementMidEnable = imHbAsocPlacementMidEnable || [];
+var imHbPlacementEnable = imHbPlacementEnable || [];
 
-if(imHbReloadingAds===0){imHbSetIntervalX();}else{
-        imHbSetIntervalX();
-        setTimeout(function() { 
-            setTimeout(function() { 
-                imHbCyklusReloadingAds();
-            }, (1000*imHbTimeTillToReloadAds)); 
-        }, 2000);
-}
- 
-function imHbCyklusReloadingAds(){
-    if(imHbReloadingAds>0){
-        console.log('imHbReloadingAds:'+imHbReloadingAds);
-        imHbReloadingAds = imHbReloadingAds - 1;
-        hbImAdsReloading();        
-        setTimeout(function() { 
-            setTimeout(function() { 
-                imHbCyklusReloadingAds();
-            }, (1000*imHbTimeTillToReloadAds)); 
-        }, 2000);
+            function imGetCookie(name) {var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null;}; function imSetCookie(name,value,days){var d=new Date;d.setTime(d.getTime()+24*60*60*1000*days);document.cookie=name+'='+value+';domain=.;path=/;expires='+d.toGMTString();};function imTestingParam(t){var n=null,e=[];return location.search.substr(1).split('&').forEach(function(o){(e=o.split('='))[0]===t&&(n=decodeURIComponent(e[1]))}),n};var imtesting = imTestingParam('imtesting');if(imtesting=='start'){imSetCookie('imtesting','dev',1);}if(imtesting=='stop'){imSetCookie('imtesting', '', -1);}function imRemoveTestInfo(){document.getElementById('imtestingInfo').remove();}function imHbUploadConfig(){if(imGetCookie('imtesting')){document.getElementById('imtestingInfo')&&document.getElementById('imtestingInfo').remove();var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a><span onclick="imRemoveTestInfo();" style="cursor: pointer;border: 1px solid white;border-radius: 20px 2px 2px;padding: 4px 6px 1px 10px;position: absolute; bottom: 2px;right: 2px;">X</span>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:999999;position:fixed;bottom:3px;right:3px;margin-top:-30px;padding:65px 15px 50px 45px;background:#0000003d;color:white;border-radius:3px;border-top-left-radius:200px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1201'; var imConfigName = 'HBsetup_ireferatycz_Ireferaty_OP_Development_2021_09_15_1744'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';var imHbRandomParam = Math.floor(Math.random() * 10000) + 1;imHbScript.src = 'https://cdn.jsdelivr.net/gh/impression-media/js/tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam;document.getElementsByTagName('head')[0].appendChild(imHbScript);}
+        
+    setTimeout(function(){
+        console.log('imHbPlacementEnable^^');
+        console.log(imHbPlacementEnable);
+
+        console.log('imHbAsocPlacementMidEnable^^');
+        console.log(imHbAsocPlacementMidEnable);
+
+        for (var key in imHbAsocPlacementMidEnable) {
+            console.log('imHbAsocPlacementMidEnable key: '+ key);
+            console.log(imHbAsocPlacementMidEnable[key]);
+              var resetMid = imHbAsocPlacementMidEnable[key];
+              if(imHbPlacementEnable.includes(key)){
+              
+                    console.log('resetTargeting resetMid: '+resetMid);
+                    adformtag.resetTargeting(resetMid);
+                    
+              }    
+        }
+
+//pbjs.que.remove();
+//pbjs.remove();
+//adformtag.remove();
+
+//        var pbjs = {};
+//        pbjs.que = [];
+//        adformtag = [];
+//        pbjs.initAdserverSet = 0;
+//        pbjs.winningBids = {};
+//        var imHbAdxScript = document.getElementById('imHbAdxScript');
+//        imHbAdxScript.parentNode.removeChild(imHbAdxScript); 
+      
+//        var imHbAllAdxScript = document.querySelectorAll('[src^="https://adx.adform.net/adx/"]');
+//        [].forEach.call(imHbAllAdxScript, function(adxElem) {
+//            adxElem.parentNode.removeChild(adxElem); 
+//        });
+     
+    }, (40000 - 5000));
+
+    document.currentScript.setAttribute('id', 'imHbMaster');
+    imHbReloadingAds = 1;
+    var selection = top.document.body.getAttribute('data-hbmasterscript') !== null;
+    if (selection) {
+        hbmasterscript = top.document.body.getAttribute('data-hbmasterscript'); 
+        var hbMasterDigit = parseInt(hbmasterscript.match(/\d+/));
+        hbMasterDigit = (hbMasterDigit+1);
+        if(hbMasterDigit >= imHbReloadingAds){
+            // konec
+        }else{
+            //vse smaz a pust novy uploud HB ovladacu
+            setTimeout(function(){
+                console.log('fire imHbReloading()');            
+                imHbReloading(); 
+            }, 40000);
+        }
+    }else{
+        //pridej obsluhu pro reloading    
+        var imHbBodyscript = document.createElement('script');
+        imHbBodyscript.type = 'text/javascript';
+        imHbBodyscript.id = 'imHbReloadingFunction';
+        imHbBodyscript.innerHTML = " function imHbReloading() {var imHbConfig = document.getElementById('imHbConfig');var srcImHbConfig = imHbConfig.src;imHbConfig.parentNode.removeChild(imHbConfig);var imHbMaster = document.getElementById('imHbMaster');var srcImHbMaster = imHbMaster.src;imHbMaster.parentNode.removeChild(imHbMaster);var imHbMasterScript = document.createElement('script');imHbMasterScript.type = 'text/javascript';imHbMasterScript.id = 'imHbMaster';var imHbReloadingRandomParam = Math.floor(Math.random() * 10000) + 1;if(srcImHbMaster.includes('?')){imHbMasterScript.src = srcImHbMaster+'&imHbReloading='+imHbReloadingRandomParam;}else{imHbMasterScript.src = srcImHbMaster+'?imHbReloading='+imHbReloadingRandomParam;}document.getElementsByTagName('head')[0].appendChild(imHbMasterScript);setTimeout(function(){var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';imHbReloadingRandomParam = Math.floor(Math.random() * 10000) + 1;imHbScript.src = srcImHbConfig+'&imHbReloading='+imHbReloadingRandomParam;document.getElementsByTagName('head')[0].appendChild(imHbScript);}, 2000);}";
+        document.body.appendChild(imHbBodyscript);
+        
+        //prvni nacteni configu
+        setTimeout(function(){
+            imHbUploadConfig();
+        }, 10);
+
+        //vse smaz a pust novy uploud HB ovladacu 
+        setTimeout(function(){
+            console.log('fire imHbReloading()');            
+            imHbReloading(); 
+        }, 40000);
     }
-}
-
-function hbImAdsReloading(){
-    if(imHbPovolenyRefresh!='NE'){
-        clearInterval(imHbInterval);
-        imHbToday = new Date();
-        imHbDeadline = new Date(imHbToday.getTime()+1000*imHbTimeTillToReloadAds);
-        imHbSetIntervalX();
-        imHbReplaceScript();
-    }  
-}
-
-function imHbReplaceScript(){
-//    top.document.body.setAttribute('data-branding-status', 'start');    
-//    if(document.getElementById('topBoxWraperADF2000')){       
-//        document.getElementById('topBoxWraperADF2000').remove();
-//    }
-//    top.document.body.classList.remove('branding');
-    var pbjs = {};
-    pbjs.que = [];  
-    adformtag = [];
-    pbjs.initAdserverSet = 0;
-    pbjs.winningBids = {};    
-    var imHbConfig = document.getElementById('imHbConfig');
-    imHbConfig.parentNode.removeChild(imHbConfig);
-    setTimeout(function() {
-        imHbUploadConfig();
-    }, 250);
-}
+        
     
     console.log('master imHbReloadingAds:'+imHbReloadingAds);;        
     
-            function imGetCookie(name) {var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null;}; function imSetCookie(name,value,days){var d=new Date;d.setTime(d.getTime()+24*60*60*1000*days);document.cookie=name+'='+value+';domain=.;path=/;expires='+d.toGMTString();};function imTestingParam(t){var n=null,e=[];return location.search.substr(1).split('&').forEach(function(o){(e=o.split('='))[0]===t&&(n=decodeURIComponent(e[1]))}),n};var imtesting = imTestingParam('imtesting');if(imtesting=='start'){imSetCookie('imtesting','dev',1);}if(imtesting=='stop'){imSetCookie('imtesting', '', -1);}function imRemoveTestInfo(){document.getElementById('imtestingInfo').remove();}function imHbUploadConfig(){if(imGetCookie('imtesting')){document.getElementById('imtestingInfo')&&document.getElementById('imtestingInfo').remove();var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a><span onclick="imRemoveTestInfo();" style="cursor: pointer;border: 1px solid white;border-radius: 20px 2px 2px;padding: 4px 6px 1px 10px;position: absolute; bottom: 2px;right: 2px;">X</span>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:999999;position:fixed;bottom:3px;right:3px;margin-top:-30px;padding:65px 15px 50px 45px;background:#0000003d;color:white;border-radius:3px;border-top-left-radius:200px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1201'; var imConfigName = 'HBsetup_ireferatycz_Ireferaty_OP_Development_2021_09_15_1741'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';imHbRandomParam = Math.floor(Math.random() * 10000) + 1;imHbScript.src = 'https://cdn.jsdelivr.net/gh/impression-media/js/tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam;document.getElementsByTagName('head')[0].appendChild(imHbScript);}setTimeout(function(){imHbUploadConfig();}, 10);
