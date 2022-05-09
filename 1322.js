@@ -21,21 +21,76 @@ pbjsChunk([12],{15:function(e,t,n){"use strict";t.b=function(e){var t=[];for(var
 /* criteoId - criteoIdSystem - Prebid 6.5.0 - Gulp server : 2022-02-01*/
 pbjsChunk([300],{398:function(e,t,o){e.exports=o(399)},399:function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),o.d(t,"storage",(function(){return u})),o.d(t,"criteoIdSubmodule",(function(){return v}));var n=o(0),c=o(4),r=o(19),i=o(9),a=o(7),d="criteo",u=Object(a.b)(91,d),s="cto_bidid",l="cto_bundle",b=new Date(0).toString(),p=new Date(Object(n.timestamp)()+33696e6).toString();function f(e){var t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],o=Object(n.parseUrl)(e,{noDecodeWholeURL:!0});return t?"".concat(o.hostname):"".concat(o.protocol,"://").concat(o.hostname).concat(o.port?":"+o.port:"","/")}function g(e){return u.getCookie(e)||u.getDataFromLocalStorage(e)}function m(e,t){e&&t&&(u.setCookie(e,t,p),u.setDataInLocalStorage(e,t))}function I(e,t,o){var i=u.cookiesAreEnabled(),a=u.localStorageIsEnabled(),d=f(Object(r.a)().referer),p=f(document.location.href,!0),g="undefined"!=typeof criteo_pubtag,I=function(e,t,o,n,c,r,i){return"https://gum.criteo.com/sid/json?origin=prebid"+"".concat(e?"&topUrl="+encodeURIComponent(e):"")+"".concat(t?"&domain="+encodeURIComponent(t):"")+"".concat(o?"&bundle="+encodeURIComponent(o):"")+"".concat(i?"&gdprString="+encodeURIComponent(i):"")+"".concat(n?"&cw=1":"")+"".concat(r?"&pbt=1":"")+"".concat(c?"&lsw=1":"")}(d,p,e.bundle,i,a,g,t),v={success:function(e){var t,c=JSON.parse(e);c.acwsUrl?("string"==typeof c.acwsUrl?[c.acwsUrl]:c.acwsUrl).forEach((function(e){return Object(n.triggerPixel)(e)})):c.bundle&&m(l,c.bundle);if(c.bidId){m(s,c.bidId);var r={criteoId:c.bidId};o(r)}else t=s,u.setCookie(t,"",b),u.removeDataFromLocalStorage(t),o()},error:function(e){Object(n.logError)("criteoIdSystem: unable to sync user id",e),o()}};Object(c.a)(I,v,void 0,{method:"GET",contentType:"application/json",withCredentials:!0})}var v={name:d,gvlid:91,decode:function(e){return e},getId:function(e,t){var o=t&&"boolean"==typeof t.gdprApplies&&t.gdprApplies?t.consentString:void 0,n={bundle:g(l),bidId:g(s)};return{id:n.bidId?{criteoId:n.bidId}:void 0,callback:function(e){return I(n,o,e)}}}};Object(i.e)("userId",v),window.pbjs.installedModules.push("criteoIdSystem")}},[398]);/* schain - Prebid 6.5.0 - Gulp server : 2022-02-01*/
 pbjsChunk([138],{799:function(n,i,e){n.exports=e(800)},800:function(n,i,e){"use strict";Object.defineProperty(i,"__esModule",{value:!0}),i.isSchainObjectValid=h,i.isValidSchainConfig=u,i.makeBidRequestsHook=l,i.init=O;var t=e(3),c=e(8),o=e(0),s="Invalid schain object found: ",a=" should be a string",r=" should be an Integer",d=" should be an object",f={STRICT:"strict",RELAXED:"relaxed",OFF:"off"},b=[];function h(n,i){var e="Detected something wrong within an schain config:",t="";function c(n){t+="\n"+n}function s(){!0===i?Object(o.logError)(e,n,t):Object(o.logWarn)(e,n,t)}if(!Object(o.isPlainObject)(n)&&(c("schain.config"+d),s(),i))return!1;if(Object(o.isNumber)(n.complete)&&Object(o.isInteger)(n.complete)||c("schain.config.complete"+r),Object(o.isStr)(n.ver)||c("schain.config.ver"+a),Object(o.hasOwn)(n,"ext")&&(Object(o.isPlainObject)(n.ext)||c("schain.config.ext"+d)),Object(o.isArray)(n.nodes))n.nodes.forEach((function(n,i){Object(o.isStr)(n.asi)||c("schain.config.nodes[".concat(i,"].asi")+a),Object(o.isStr)(n.sid)||c("schain.config.nodes[".concat(i,"].sid")+a),Object(o.isNumber)(n.hp)&&Object(o.isInteger)(n.hp)||c("schain.config.nodes[".concat(i,"].hp")+r),Object(o.hasOwn)(n,"rid")&&(Object(o.isStr)(n.rid)||c("schain.config.nodes[".concat(i,"].rid")+a)),Object(o.hasOwn)(n,"name")&&(Object(o.isStr)(n.name)||c("schain.config.nodes[".concat(i,"].name")+a)),Object(o.hasOwn)(n,"domain")&&(Object(o.isStr)(n.domain)||c("schain.config.nodes[".concat(i,"].domain")+a)),Object(o.hasOwn)(n,"ext")&&(Object(o.isPlainObject)(n.ext)||c("schain.config.nodes[".concat(i,"].ext")+d))}));else if(c("schain.config.nodes should be an Array"),s(),i)return!1;return!(t.length>0&&(s(),i))}function u(n){return void 0!==n&&(!!Object(o.isPlainObject)(n)||(Object(o.logError)(s+"the following schain config will not be used as schain is not an object.",n),!1))}function l(n,i){var e=t.b.getConfig("schain"),c=t.b.getBidderConfig();i.forEach((function(n){var i=n.bidderCode,t=function(n){return c[n]&&c[n].schain||e}(i);n.bids.forEach((function(n){var e=function(n,i){var e=f.STRICT;if(u(n)){if(Object(o.isStr)(n.validation)&&-1!=b.indexOf(n.validation)&&(e=n.validation),e===f.OFF)return n.config;if(h(n.config,!(e!==f.STRICT)))return n.config;Object(o.logError)(s+"due to the 'strict' validation setting, this schain config will not be passed to bidder '".concat(i,"'.  See above error for details."))}return null}(t,i);e&&(n.schain=e)}))})),n(i)}function O(){c.default.makeBidRequests.after(l)}Object(o._each)(f,(function(n){return b.push(n)})),O(),window.pbjs.installedModules.push("schain")}},[799]);pbjs.processQueue();
-            
+      
+
 pbjs = pbjs || {};
 pbjs.que = pbjs.que || [];
 var imHbWonBids = imHbWonBids || [];
 var imHbAsocPlacementMidEnable = imHbAsocPlacementMidEnable || [];
 var imHbPlacementEnable = imHbPlacementEnable || [];
 
-            function imGetCookie(name) {var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null;}; function imSetCookie(name,value,days){var d=new Date;d.setTime(d.getTime()+24*60*60*1000*days);document.cookie=name+'='+value+';domain=.;path=/;expires='+d.toGMTString();};function imTestingParam(t){var n=null,e=[];return location.search.substr(1).split('&').forEach(function(o){(e=o.split('='))[0]===t&&(n=decodeURIComponent(e[1]))}),n};var imtesting = imTestingParam('imtesting');if(imtesting=='start'){imSetCookie('imtesting','dev',1);}if(imtesting=='stop'){imSetCookie('imtesting', '', -1);}function imRemoveTestInfo(){document.getElementById('imtestingInfo').remove();}function imHbUploadConfig(){if(imGetCookie('imtesting')){document.getElementById('imtestingInfo')&&document.getElementById('imtestingInfo').remove();var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a><span onclick="imRemoveTestInfo();" style="cursor: pointer;border: 1px solid white;border-radius: 20px 2px 2px;padding: 4px 6px 1px 10px;position: absolute; bottom: 2px;right: 2px;">X</span>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:999999;position:fixed;bottom:3px;right:3px;margin-top:-30px;padding:65px 15px 50px 45px;background:#0000003d;color:white;border-radius:3px;border-top-left-radius:200px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1322'; var imConfigName = 'HBsetup_wwwautacz_auta_cz____Mobilni_branding__od_3_5_2_22__2022_05_06_1825'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';var imHbRandomParam = Math.floor(Math.random() * 10000) + 1;imHbScript.src = 'https://cdn.jsdelivr.net/gh/impression-media/js/tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam;document.getElementsByTagName('head')[0].appendChild(imHbScript);}setTimeout(function(){imHbUploadConfig();}, 2000);
+            function imGetCookie(name) {var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null;}; function imSetCookie(name,value,days){var d=new Date;d.setTime(d.getTime()+24*60*60*1000*days);document.cookie=name+'='+value+';domain=.;path=/;expires='+d.toGMTString();};function imTestingParam(t){var n=null,e=[];return location.search.substr(1).split('&').forEach(function(o){(e=o.split('='))[0]===t&&(n=decodeURIComponent(e[1]))}),n};var imtesting = imTestingParam('imtesting');if(imtesting=='start'){imSetCookie('imtesting','dev',1);}if(imtesting=='stop'){imSetCookie('imtesting', '', -1);}function imRemoveTestInfo(){document.getElementById('imtestingInfo').remove();}function imHbUploadConfig(){if(imGetCookie('imtesting')){document.getElementById('imtestingInfo')&&document.getElementById('imtestingInfo').remove();var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a><span onclick="imRemoveTestInfo();" style="cursor: pointer;border: 1px solid white;border-radius: 20px 2px 2px;padding: 4px 6px 1px 10px;position: absolute; bottom: 2px;right: 2px;">X</span>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:999999;position:fixed;bottom:3px;right:3px;margin-top:-30px;padding:65px 15px 50px 45px;background:#0000003d;color:white;border-radius:3px;border-top-left-radius:200px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1322'; var imConfigName = 'HBsetup_wwwautacz_auta_cz____Mobilni_branding__od_3_5_2_22__2022_05_09_0955'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';var imHbRandomParam = Math.floor(Math.random() * 10000) + 1;imHbScript.src = 'https://cdn.jsdelivr.net/gh/impression-media/js/tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam;document.getElementsByTagName('head')[0].appendChild(imHbScript);}
+
+    setTimeout(function(){
+        console.log('imHbPlacementEnable^^');
+        console.log(imHbPlacementEnable);
+
+        console.log('imHbAsocPlacementMidEnable^^');
+        console.log(imHbAsocPlacementMidEnable);
+
+        for (var key in imHbAsocPlacementMidEnable) {
+            console.log('imHbAsocPlacementMidEnable key: '+ key);
+            console.log(imHbAsocPlacementMidEnable[key]);
+              var resetMid = imHbAsocPlacementMidEnable[key];
+              if(imHbPlacementEnable.includes(key)){
+              
+                    console.log('resetTargeting resetMid: '+resetMid);
+                    adformtag.resetTargeting(resetMid);
+                    
+              }    
+        }
+        pbjs = {};
+        pbjs.que = [];
+        
+    }, (50000 - 10000));
+
+    document.currentScript.setAttribute('id', 'imHbMaster');
+    var selection = document.body.getAttribute('data-hbmasterscript') !== null;
+    if (selection) {
+//        setTimeout(function(){
+//            console.log('fire imHbReloading()');            
+//            imHbReloading(); 
+//        }, 50000);
+    }else{
+        //pridej obsluhu pro reloading    
+        imHbReloadingAds = 15; 
+        var imHbBodyscript = document.createElement('script');
+        imHbBodyscript.type = 'text/javascript';
+        imHbBodyscript.id = 'imHbReloadingFunction';
+        imHbBodyscript.innerHTML = "function onePlusimHbReloading(){ setTimeout(function(){ console.log('onePlusimHbReloading timeout >> fire imHbReloading()');  imHbReloading(); }, 50000); }  function imHbReloading() {  console.log('start >> fire imHbReloading()');  var selection = document.body.getAttribute('data-hbmasterscript') !== null; if (selection) { var hbmasterscript = document.body.getAttribute('data-hbmasterscript'); var hbMasterDigit = parseInt(hbmasterscript.replace('hb-', ''),10); hbMasterDigit = (hbMasterDigit+1); document.body.setAttribute('data-hbmasterscript', 'hb-'+hbMasterDigit); hbmasterscript = document.body.getAttribute('data-hbmasterscript'); console.log('imHbReloading() >> hbmasterscript^^'); console.log(hbmasterscript); hbMasterDigit = parseInt(hbmasterscript.replace('hb-', ''),10); console.log('imHbReloading() >> hbMasterDigit: '+hbMasterDigit+' fetch_reloadingAds: 15'); if(hbMasterDigit >= 15){ console.log('Reloading - end'); }else{ console.log('Reloading - new cycle'); includeImHbReloading(document.body.getAttribute('data-hbmasterscript')); onePlusimHbReloading();} }else{ console.log('imHbReloading() >> first cycle >> fetch_reloadingAds: 15'); document.body.setAttribute('data-hbmasterscript', 'hb-1'); includeImHbReloading('hb-1'); onePlusimHbReloading(); } } function includeImHbReloading(hb){var imHbReloadingRandomParam = Math.floor(Math.random() * 10000) + 1;var imHbConfig = document.getElementById('imHbConfig');var srcImHbConfig = imHbConfig.src;imHbConfig.parentNode.removeChild(imHbConfig);var imHbMaster = document.getElementById('imHbMaster');var srcImHbMaster = imHbMaster.src;imHbMaster.parentNode.removeChild(imHbMaster);setTimeout(function(){var imHbMasterScript = document.createElement('script');imHbMasterScript.type = 'text/javascript';imHbMasterScript.id = 'imHbMaster';if(srcImHbMaster.includes('?')){imHbMasterScript.src = srcImHbMaster+'&imHbReloading-'+hb+'='+imHbReloadingRandomParam;}else{imHbMasterScript.src = srcImHbMaster+'?imHbReloading-'+hb+'='+imHbReloadingRandomParam;}document.getElementsByTagName('head')[0].appendChild(imHbMasterScript);}, 2000);setTimeout(function(){var imHbScript = document.createElement('script'); imHbScript.type = 'text/javascript'; imHbScript.id = 'imHbConfig';imHbScript.src = srcImHbConfig+'&imHbReloading-'+hb+'='+imHbReloadingRandomParam; document.getElementsByTagName('head')[0].appendChild(imHbScript); }, 4000);}";
+        document.body.appendChild(imHbBodyscript);
+        
+        //prvni nacteni configu
+        setTimeout(function(){
+            imHbUploadConfig();
+        }, 2000);
+
+        //vse smaz a pust novy uploud HB ovladacu 
+//        setTimeout(function(){
+            console.log('first timeout >> fire onePlusimHbReloading()');  
+            onePlusimHbReloading();
+//            imHbReloading(); 
+//        }, 50000);
+    }
+        
+    
     var selection = document.body.getAttribute('data-hbmasterscript') !== null;
     if (selection) {       
         hbmasterscript = document.body.getAttribute('data-hbmasterscript'); 
         var hbMasterDigit = parseInt(hbmasterscript.replace('hb-', ''),10);
-        imHbReloadingAds = (-1 - hbMasterDigit); 
+        imHbReloadingAds = (15 - hbMasterDigit); 
     }else{
-        imHbReloadingAds = -1;  
+        imHbReloadingAds = 15;  
     }
     console.log('master imHbReloadingAds:'+imHbReloadingAds);;        
     
