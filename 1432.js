@@ -1,4 +1,4 @@
-/* Version: V_06 - 11.11. 2022 - 17:20:37 */
+/* Version: V_06 - 11.11. 2022 - 17:20:45 */
 /* installedModules: adform,appnexus,criteo,pubmatic,rtbhouse,rubicon,stroeerCore,consentManagementGDPR,pubCommonIdSystem,criteoIdSystem,schain,sharedIdSystem*/
 var selection = document.body.getAttribute('data-hbmasterscript') !== null;if(selection){console.log(' 0 Start:: R2B2 PrebidAdapter refresh');if(typeof AdTrack.PrebidAdapter.refresh === 'function'){AdTrack.PrebidAdapter.refresh(true, 0);console.log(' 0 End:: R2B2 PrebidAdapter refresh');}}else{console.log('start r2b2ScriptCyklus cyklus: 0');var imHbNewR2b2script = document.createElement('script');imHbNewR2b2script.type = 'text/javascript';imHbNewR2b2script.id = 'imHbR2b2script'; imHbNewR2b2script.src = '//trackad.cz/hb/im/im.cesky-jazyk.cz';document.getElementsByTagName('head')[0].appendChild(imHbNewR2b2script);console.log('imHbR2b2script appended');}
 /* prebid.js v6.5.0
