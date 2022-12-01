@@ -1,4 +1,4 @@
-#update 2.12.2022
+#update 1.12.2022
 
 #ImpressionMedia
 impressionmedia.cz, 066, DIRECT
