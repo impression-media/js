@@ -1,4 +1,4 @@
-#source: ads_bibionetesting >> created 2022-12-28 11:34
+#last update 2.1.2023
 
 #Fragile
 adform.com, 2950, RESELLER, 9f5210a2f0999e32
@@ -901,5 +901,5 @@ pubmatic.com, 156700, RESELLER, 5d62403b186f2ace
 rubiconproject.com, 17960, RESELLER, 0bfd66d529a55807
 adform.com, 1794, RESELLER, 9f5210a2f0999e32
 
-##lastControlDateTime: [28.12. 2022 - 11:34:59]
+
 
