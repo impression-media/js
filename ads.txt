@@ -1,4 +1,4 @@
-##last_update_2.1.
+##last_update_2.1. OK
 
 #Fragile
 adform.com, 2950, RESELLER, 9f5210a2f0999e32
@@ -900,5 +900,3 @@ pubmatic.com, 156212, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156700, RESELLER, 5d62403b186f2ace
 rubiconproject.com, 17960, RESELLER, 0bfd66d529a55807
 adform.com, 1794, RESELLER, 9f5210a2f0999e32
-
-##lastControlDateTime: [03.01. 2023 - 22:45:02]
