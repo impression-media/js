@@ -1,4 +1,4 @@
-##last_update_19.12.
+##last_update_2.1.
 
 #Fragile
 adform.com, 2950, RESELLER, 9f5210a2f0999e32
@@ -110,7 +110,7 @@ pubmatic.com, 158732, DIRECT, 5d62403b186f2ace
 cpex.cz, 011, DIRECT
 RTBHOUSE.COM, w6O8SDnYNMT7Cb6AHGZf, DIRECT
 
-#R2B2-ads.txt-v2.13.0
+#R2B2-ads.txt-v2.14.0
 r2b2.cz, 69, DIRECT
 r2b2.cz, 24, DIRECT
 r2b2.cz, 51, DIRECT
@@ -177,7 +177,13 @@ rubiconproject.com, 17960, RESELLER, 0bfd66d529a55807
 onetag.com, 5d4e109247a89f6, RESELLER
 advertising.com, 28246, RESELLER
 teads.tv, 15702, DIRECT, 15a9c44f6d26cbe1
-appnexus.com, 8413, RESELLER, f5ab79cb980f11d1
+appnexus.com, 8413, DIRECT
+etarget.cz, 322, DIRECT
+etarget.cz, 13655, DIRECT
+etarget.cz, 14951, DIRECT
+etarget.cz, 14672, DIRECT
+etarget.cz, 14679, DIRECT
+etarget.cz, 14713, DIRECT
 adform.com, 637, RESELLER
 adform.com, 37, DIRECT
 adform.com, 1665, RESELLER, 9f5210a2f0999e32
@@ -894,3 +900,5 @@ pubmatic.com, 156212, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156700, RESELLER, 5d62403b186f2ace
 rubiconproject.com, 17960, RESELLER, 0bfd66d529a55807
 adform.com, 1794, RESELLER, 9f5210a2f0999e32
+
+##lastControlDateTime: [03.01. 2023 - 22:45:02]
