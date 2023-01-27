@@ -1,4 +1,4 @@
-/* Version: V_06_b - 27.01. 2023 - 10:37:19 */
+/* Version: V_06_b - 27.01. 2023 - 10:37:54 */
 /* installedModules: adform,appnexus,criteo,pubmatic,rubicon,stroeerCore,teads,consentManagementGDPR,pubCommonIdSystem,criteoIdSystem,schain,sharedIdSystem*/
 /* prebid.js v6.5.0
 Updated : 2022-02-01*/
@@ -40,7 +40,7 @@ function imHbSpaReloading() {
     console.log('imHbSpaViewTime'+imHbSpaViewTime);
     var imHbTime = Math.floor(Date.now() / 1000);
     console.log('imHbTime'+imHbTime);
-    var imHbNextFire = (parseInt(imHbSpaViewTime, 10) + 30);
+    var imHbNextFire = (parseInt(imHbSpaViewTime, 10) + 50);
     console.log('imHbNextFire'+imHbNextFire);    
     if(imHbNextFire < imHbTime){
         console.log('fire spaImHb()');
