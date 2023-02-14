@@ -1,4 +1,4 @@
-/* Version: V_06_b - 14.02. 2023 - 20:40:01 */
+/* Version: V_06_b - 14.02. 2023 - 20:40:20 */
 /* installedModules: adform,appnexus,criteo,rubicon,stroeerCore,consentManagementGDPR,pubCommonIdSystem,criteoIdSystem,schain,sharedIdSystem*/
 /* prebid.js v6.5.0
 Updated : 2022-02-01*/
