@@ -91,7 +91,7 @@ adform.com, 1665, DIRECT, 9f5210a2f0999e32
 adform.com, 2700, RESELLER, 9f5210a2f0999e32
 
  # Criteo New
-criteo.com,B-062752, RESELLER,9fac4a4a87c2a44f
+criteo.com, B-062752, DIRECT, 9fac4a4a87c2a44f
 themediagrid.com, WTSAXH, DIRECT, 35d5010d7789b49d
 
  # Index Exchange
