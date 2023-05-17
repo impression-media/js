@@ -110,19 +110,9 @@ pubmatic.com, 158732, DIRECT, 5d62403b186f2ace
 cpex.cz, 011, DIRECT
 RTBHOUSE.COM, w6O8SDnYNMT7Cb6AHGZf, DIRECT
 
-#R2B2-ads.txt-vv2.16.0
-r2b2.cz, 69, DIRECT
-r2b2.cz, 24, DIRECT
-r2b2.cz, 51, DIRECT
-r2b2.cz, 265, DIRECT
-r2b2.cz, 367, DIRECT
-r2b2.cz, 275, DIRECT
-r2b2.io, 69, DIRECT
-r2b2.io, 24, DIRECT
-r2b2.io, 51, DIRECT
-r2b2.io, 265, DIRECT
-r2b2.io, 367, DIRECT
-r2b2.io, 275, DIRECT
+#R2B2-ads.txt-vv2.17.0
+r2b2.cz, 205, DIRECT
+r2b2.io, 205, DIRECT
 adform.com, 811, RESELLER
 adform.com, 1099, RESELLER
 google.com, pub-6070985156043962, RESELLER, f08c47fec0942fa0
@@ -255,6 +245,7 @@ contextweb.com, 561707, RESELLER, 89ff185a4c4e857c
 triplelift.com, 12396, RESELLER, 6c33edb13117fd86
 sharethrough.com, 8bab9627, RESELLER, d53b998a7bd4ecd2
 gumgum.com, 15563, RESELLER, ffdef49475d318a9
+openx.com, 558899373, RESELLER, 6a698e2ec38604c6
 amxrtb.com, 105199603, DIRECT
 appnexus.com, 12290, RESELLER, f5ab79cb980f11d1
 appnexus.com, 11786, RESELLER, f5ab79cb980f11d1
@@ -266,6 +257,7 @@ appnexus.com, 9393, RESELLER
 advertising.com, 28305, RESELLER
 appnexus.com, 11924, RESELLER, f5ab79cb980f11d1
 triplelift.com, 12507, RESELLER, 6c33edb13117fd86
+rubiconproject.com, 23844, RESELLER
 projectagora.com, 108971, RESELLER
 taboola.com, 1483716, DIRECT, c228e6794e811952
 taboola.com, 1483711, DIRECT, c228e6794e811952
@@ -353,6 +345,8 @@ appnexus.com, 11853, RESELLER, f5ab79cb980f11d1
 smartadserver.com, 3920, RESELLER
 pubmatic.com, 161557, RESELLER, 5d62403b186f2ace
 rubiconproject.com, 23306, RESELLER, 0bfd66d529a55807
+strossle.com, 5032, DIRECT
+improvedigital.com, 1983, RESELLER
 smartadserver.com, 2245, RESELLER
 smilewanted.com, 4005, RESELLER
 pubmatic.com, 158810, RESELLER, 5d62403b186f2ace
