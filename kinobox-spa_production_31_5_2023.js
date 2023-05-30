@@ -33,6 +33,10 @@ var imHbSpaObserver = new MutationObserver(function(mutations) {
       previousUrl = location.href;
       //console.log('URL changed to'+ location.href);
 
+      var selection = document.body.getAttribute('interScrollerSource') !== null;
+      if(selection){
+          document.body.setAttribute('interScrollerSource').remove();
+      }
       
       var numHbSpaView = parseInt(window.localStorage.getItem('impression_HbSpaView'), 10);
       document.body.setAttribute('ls-imHbSpaView',(numHbSpaView+1));
