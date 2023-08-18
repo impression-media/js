@@ -105,6 +105,7 @@ appnexus.com, 10560, DIRECT, f5ab79cb980f11d1
 pubmatic.com, 158732, DIRECT, 5d62403b186f2ace
 cpex.cz, 011, DIRECT
 RTBHOUSE.COM, w6O8SDnYNMT7Cb6AHGZf, DIRECT
+cpex.cz, 008, DIRECT
 
 #R2B2-ads.txt-vv2.19.0
 r2b2.cz, 69, DIRECT
