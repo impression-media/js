@@ -4,7 +4,7 @@
 //START masterString    
 /* Header bidding from Impression Media 
  * Generate by script: updateCodeGoogleDevelopment     
- * Last update: 30.08.2023 17:08:20
+ * Last update: 30.08.2023 17:08:54
  * Ticket ID: ... / [1571]
  * Generated for WebSite: [https://beta.drbna.cz]
  * User ID: [1]    
