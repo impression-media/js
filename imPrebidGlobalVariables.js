@@ -1,4 +1,4 @@
-/* Version: G_01 - 04.12. 2023 - 14:35:01 */
+/* Version: G_01 - 04.12. 2023 - 15:35:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -86,5 +86,6 @@ var bidderFloor = {
     "adform-fragile": 3,
     "adform-eom-omd": 3,
     "smilewanted-im": 3,
-    "adform-prima": 10
+    "adform-prima": 10,
+    "adform-sas": 3
 };
