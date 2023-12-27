@@ -1,4 +1,4 @@
-/* Version: G_02 - 27.12. 2023 - 20:44:10 */
+/* Version: G_02 - 27.12. 2023 - 21:37:31 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -91,4 +91,4 @@ var bidderFloor = {
     "adform-sasBranding": 3
 };
 
-    var globalSasCPM = {"meteocentrumczleaderboardadformsasAll": "4.75","autanetczAdTrackGenericInterscrollerMobileadformsasAll": "4","prehrajtoadformleaderboardadformsasAll": "4","ireferatyczadformDesktopStripadformsasAll": "5","ireferatycztopleaderboardvseadformsasAll": "7","ireferatyczadformDesktopStripadformsasAll": "4.25","ireferatycztopleaderboardvseadformsasAll": "4","ireferatycztopleaderboardvseadformsasAll": "4","ireferatycztopleaderboardvseadformsasBranding": "5.6","ireferatycztopleaderboardvseadformsasAll": "4","ireferatycztopleaderboardvseadformsasAll": "4","ireferatycztopleaderboardvseadformsasBranding": "5.6",};
+    var globalSasCPM = {"meteocentrumczleaderboardadformsasAll": "4.85","autanetczAdTrackGenericInterscrollerMobileadformsasAll": "4","prehrajtoadformleaderboardadformsasAll": "4","ireferatyczadformDesktopStripadformsasAll": "5","ireferatycztopleaderboardvseadformsasAll": "7","ireferatyczadformDesktopStripadformsasAll": "4.25","ireferatycztopleaderboardvseadformsasAll": "4","ireferatycztopleaderboardvseadformsasAll": "4","ireferatycztopleaderboardvseadformsasBranding": "5.6","ireferatycztopleaderboardvseadformsasAll": "4","ireferatycztopleaderboardvseadformsasAll": "4","ireferatycztopleaderboardvseadformsasBranding": "5.6",};
