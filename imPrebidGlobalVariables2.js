@@ -1,4 +1,4 @@
-/* Version: G_02 - 16.01. 2024 - 20:57:28 */
+/* Version: G_02 - 16.01. 2024 - 21:13:41 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -91,4 +91,21 @@ var bidderFloor = {
     "adform-sasBranding": 3
 };
 
-    var globalSasCPM = {"meteocentrumczleaderboardadformsasAll": "4.85","autanetczAdTrackGenericInterscrollerMobileadformsasAll": "4","prehrajtoadformleaderboardadformsasAll": "4","ireferatyczadformDesktopStripadformsasAll": "5","ireferatycztopleaderboardvseadformsasAll": "7","ireferatyczadformDesktopStripadformsasAll": "4.25","ireferatycztopleaderboardvseadformsasAll": "0.67","ireferatycztopleaderboardvseadformsasAll": "0.67","ireferatycztopleaderboardvseadformsasBranding": "2.22","ireferatycztopleaderboardvseadformsasAll": "0.67","ireferatycztopleaderboardvseadformsasAll": "0.67","ireferatycztopleaderboardvseadformsasBranding": "2.22","autaczAdTrackGenericInterscrollerDesktopadformsasAll": "1.78","autaczadformMobilniBrandingadformsasAll": "0.67","autaczadformleaderboardadformsasAll": "0.67","autaczadformleaderboardadformsasBranding": "2.22","autaczadformsquareadformsasAll": "0.67",};
+var globalSasCPM = {"meteocentrumczleaderboardadformsasAll": "4.85",
+"autanetczAdTrackGenericInterscrollerMobileadformsasAll": "4",
+"prehrajtoadformleaderboardadformsasAll": "4",
+"ireferatyczadformDesktopStripadformsasAll": "5",
+"ireferatycztopleaderboardvseadformsasAll": "7",
+"ireferatyczadformDesktopStripadformsasAll": "4.25",
+"ireferatycztopleaderboardvseadformsasAll": "0.67",
+"ireferatycztopleaderboardvseadformsasAll": "0.67",
+"ireferatycztopleaderboardvseadformsasBranding": "2.22",
+"ireferatycztopleaderboardvseadformsasAll": "0.67",
+"ireferatycztopleaderboardvseadformsasAll": "0.67",
+"ireferatycztopleaderboardvseadformsasBranding": "2.22",
+"autaczAdTrackGenericInterscrollerDesktopadformsasAll": "1.78",
+"autaczadformMobilniBrandingadformsasAll": "0.67",
+"autaczadformleaderboardadformsasAll": "0.67",
+"autaczadformleaderboardadformsasBranding": "2.22",
+"autaczadformsquareadformsasAll": "0.67",
+};
