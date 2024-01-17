@@ -1,4 +1,4 @@
-/* Version: G_02 - 17.01. 2024 - 23:48:19 */
+/* Version: G_02 - 18.01. 2024 - 00:24:39 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -91,20 +91,20 @@ var bidderFloor = {
     "adform-sasBranding": 3
 };
 
-var globalSasCPM = {    "meteocentrumczleaderboardadformsasAll": "4.85",
-    "autanetczAdTrackGenericInterscrollerMobileadformsasAll": "4",
-    "prehrajtoadformleaderboardadformsasAll": "4",
-    "ireferatyczadformDesktopStripadformsasAll": "5",
-    "ireferatycztopleaderboardvseadformsasAll": "7",
-    "ireferatyczadformDesktopStripadformsasAll": "4.25",
-    "ireferatycztopleaderboardvseadformsasAll": "3.6",
-    "ireferatycztopleaderboardvseadformsasAll": "0.67",
-    "ireferatycztopleaderboardvseadformsasBranding": "2.22",
-    "ireferatycztopleaderboardvseadformsasAll": "3.6",
-    "ireferatycztopleaderboardvseadformsasAll": "0.67",
-    "ireferatycztopleaderboardvseadformsasBranding": "2.22",
-    "autaczAdTrackGenericInterscrollerDesktopadformsasAll": "1.78",
-    "autaczadformMobilniBrandingadformsasAll": "0.67",
-    "autaczadformleaderboardadformsasAll": "0.67",
-    "autaczadformleaderboardadformsasBranding": "2.22",
-    "autaczadformsquareadformsasAll": "0.67"};
+var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4.85",
+    "autanetcz1651AdTrackGenericInterscrollerMobileadformsasAll": "4",
+    "prehrajto1676adformleaderboardadformsasAll": "4",
+    "ireferatycz1712adformDesktopStripadformsasAll": "5",
+    "ireferatycz1712topleaderboardvseadformsasAll": "7",
+    "ireferatycz1714adformDesktopStripadformsasAll": "4.25",
+    "ireferatycz1713topleaderboardvseadformsasAll": "3.6",
+    "ireferatycz1719topleaderboardvseadformsasAll": "0.67",
+    "ireferatycz1719topleaderboardvseadformsasBranding": "2.22",
+    "ireferatycz172topleaderboardvseadformsasAll": "3.6",
+    "ireferatycz1721topleaderboardvseadformsasAll": "0.67",
+    "ireferatycz1721topleaderboardvseadformsasBranding": "2.22",
+    "autacz1726AdTrackGenericInterscrollerDesktopadformsasAll": "1.78",
+    "autacz1726adformMobilniBrandingadformsasAll": "0.67",
+    "autacz1726adformleaderboardadformsasAll": "0.67",
+    "autacz1726adformleaderboardadformsasBranding": "2.22",
+    "autacz1726adformsquareadformsasAll": "0.67"};
