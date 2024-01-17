@@ -1,4 +1,4 @@
-/* Version: G_02 - 17.01. 2024 - 23:42:10 */
+/* Version: G_02 - 17.01. 2024 - 23:48:19 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -97,10 +97,10 @@ var globalSasCPM = {    "meteocentrumczleaderboardadformsasAll": "4.85",
     "ireferatyczadformDesktopStripadformsasAll": "5",
     "ireferatycztopleaderboardvseadformsasAll": "7",
     "ireferatyczadformDesktopStripadformsasAll": "4.25",
-    "ireferatycztopleaderboardvseadformsasAll": "0.67",
+    "ireferatycztopleaderboardvseadformsasAll": "3.6",
     "ireferatycztopleaderboardvseadformsasAll": "0.67",
     "ireferatycztopleaderboardvseadformsasBranding": "2.22",
-    "ireferatycztopleaderboardvseadformsasAll": "0.67",
+    "ireferatycztopleaderboardvseadformsasAll": "3.6",
     "ireferatycztopleaderboardvseadformsasAll": "0.67",
     "ireferatycztopleaderboardvseadformsasBranding": "2.22",
     "autaczAdTrackGenericInterscrollerDesktopadformsasAll": "1.78",
