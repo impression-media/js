@@ -1,4 +1,4 @@
-/* Version: G_02 - 18.01. 2024 - 00:24:39 */
+/* Version: G_02 - 24.01. 2024 - 18:07:22 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -97,14 +97,24 @@ var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4.85",
     "ireferatycz1712adformDesktopStripadformsasAll": "5",
     "ireferatycz1712topleaderboardvseadformsasAll": "7",
     "ireferatycz1714adformDesktopStripadformsasAll": "4.25",
-    "ireferatycz1713topleaderboardvseadformsasAll": "3.6",
+    "ireferatycz1713topleaderboardvseadformsasAll": "0.67",
     "ireferatycz1719topleaderboardvseadformsasAll": "0.67",
     "ireferatycz1719topleaderboardvseadformsasBranding": "2.22",
-    "ireferatycz172topleaderboardvseadformsasAll": "3.6",
+    "ireferatycz172topleaderboardvseadformsasAll": "0.67",
     "ireferatycz1721topleaderboardvseadformsasAll": "0.67",
     "ireferatycz1721topleaderboardvseadformsasBranding": "2.22",
     "autacz1726AdTrackGenericInterscrollerDesktopadformsasAll": "1.78",
-    "autacz1726adformMobilniBrandingadformsasAll": "0.67",
+    "autacz1726adformMobilniBrandingadformsasAll": "2.01",
+    "autacz1729AdTrackGenericInterscrollerDesktopadformsasAll": "1.78",
+    "autacz1729adformMobilniBrandingadformsasAll": "0.67",
+    "autacz1726adformsquareadformsasAll": "0.67",
     "autacz1726adformleaderboardadformsasAll": "0.67",
     "autacz1726adformleaderboardadformsasBranding": "2.22",
-    "autacz1726adformsquareadformsasAll": "0.67"};
+    "autacz1729adformsquareadformsasAll": "0.67",
+    "autacz1728AdTrackGenericInterscrollerDesktopadformsasAll": "1.78",
+    "autacz1728adformMobilniBrandingadformsasAll": "0.67",
+    "autacz1729adformleaderboardadformsasAll": "0.67",
+    "autacz1729adformleaderboardadformsasBranding": "2.22",
+    "autacz1728adformsquareadformsasAll": "0.67",
+    "autacz1728adformleaderboardadformsasAll": "0.67",
+    "autacz1728adformleaderboardadformsasBranding": "2.22"};
