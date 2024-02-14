@@ -16,7 +16,7 @@ window.localStorage.setItem('impression_HbSpaView', 0);
 function imHbSpecialSettingOfRoleadingByDivIds(co){
     //console.log('Fire imHbSpecialSettingOfRoleadingByDivIds');
     //console.log('per imHbSpecialSettingOfRoleadingByDivIds:: Start::: AdTrack.PrebidAdapter.refresh(true, 0)');
-    AdTrack.PrebidAdapter.refresh(true, 0);
+    //AdTrack.PrebidAdapter.refresh(true, 0);
     console.log('per imHbSpecialSettingOfRoleadingByDivIds:: End::: AdTrack.PrebidAdapter.refresh(true, 0)');
 //    var selection = document.body.getAttribute('data-posRel') !== null;
 //    if (selection) {
