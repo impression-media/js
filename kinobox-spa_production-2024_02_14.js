@@ -95,7 +95,7 @@ var imHbSpaObserver = new MutationObserver(function(mutations) {
             var imHbMasterScript = document.createElement('script');
             imHbMasterScript.type = 'text/javascript';
             imHbMasterScript.id = 'imHbMaster';
-            imHbMasterScript.src = 'https://cdn.jsdelivr.net/gh/HB-1-CDN/js/1731.js';
+            imHbMasterScript.src = 'https://cdn.jsdelivr.net/gh/HB-5-CDN/js/1731.js';
             document.getElementsByTagName('head')[0].appendChild(imHbMasterScript);   
 //        }, 3000); 
         } 
