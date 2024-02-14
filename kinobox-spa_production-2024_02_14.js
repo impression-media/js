@@ -133,4 +133,3 @@ var imHbSpaObserver = new MutationObserver(function(mutations) {
 });
 var imspaKinoboxConfig = {subtree: true, childList: true};
 imHbSpaObserver.observe(document, imspaKinoboxConfig);
-
