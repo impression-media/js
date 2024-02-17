@@ -8,9 +8,10 @@ console.log('urlJavascriptServer: '+urlJavascriptServer);
             script.id = 'hb-'+(hbMasterDigit+1);
             script.src = 'https://hb.impressionmedia.cz/tmp/sas/sasAdapter.js';
             document.getElementsByTagName('head')[0].appendChild(script);
+
 /* Header bidding from Impression Media 
  * Generate by script: updateCodeGoogleDevelopment     
- * Last update: 17.02.2024 21:14:07
+ * Last update: 17.02.2024 21:14:40
  * Ticket ID: ... / [1733]
  * Generated for WebSite: [https://pisnicky-akordy.cz]
  * User ID: [1]    
