@@ -101,14 +101,12 @@ adform.com, 2724, DIRECT, 9f5210a2f0999e32
 adform.com, 2724, RESELLER, 9f5210a2f0999e32
 
 #Cpex
-rubiconproject.com, 208454, DIRECT ,0bfd66d529a55807
 rubiconproject.com,10900, DIRECT, 0bfd66d529a55807
-indexexchange.com,184929,DIRECT,50b1c356f2c5c8fc
 appnexus.com, 10560, DIRECT, f5ab79cb980f11d1 
+indexexchange.com, 191029, RESELLER, 50b1c356f2c5c8fc    
+pubmatic.com, 158578, DIRECT, 5d62403b186f2ace
 pubmatic.com, 158732, DIRECT, 5d62403b186f2ace
 cpex.cz, 011, DIRECT
-RTBHOUSE.COM, w6O8SDnYNMT7Cb6AHGZf, DIRECT
-cpex.cz, 008, DIRECT
 
 #R2B2-ads.txt-v2.25.0
 r2b2.cz, 69, DIRECT
