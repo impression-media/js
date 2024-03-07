@@ -1,4 +1,4 @@
-/* Version: G_03 - 07.03. 2024 - 21:45:01 */
+/* Version: G_03 - 07.03. 2024 - 21:52:27 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -141,4 +141,4 @@ var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
     "netflixercz1732adformMobilniBrandingadformsasAll": "1.61",
     "pisnickyakordycz1733adformsquareadformsasAll": "1.09"};
 
-var globalExternSasCPM = {"pisnickyakordyczadformsquare": "1.07","pisnickyakordyczadformsquare": "1.08","pisnickyakordyczadformsquare": "1.09"};
+var globalExternSasCPM = {"pisnickyakordyczadformsquare": "1.06","pisnickyakordyczadformsquare": "1.08","pisnickyakordyczadformsquare": "1.09"};
