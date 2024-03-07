@@ -1,4 +1,4 @@
-/* Version: G_02 - 25.01. 2024 - 18:29:16 */
+/* Version: G_02 - 07.03. 2024 - 20:46:58 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -64,7 +64,14 @@ var dealIdsPercent = {
     "DID-1665-101191": 0.200,
     "DID-1665-116776": 0.200,
     "DID-1665-116779": 0.200,
-    "DID-1665-79439": 0.200
+    "DID-1665-79439": 0.200,
+    "DID-1665-89779": 0.100,
+    "DID-1665-151269": 0.300,
+    "DID-1665-157622": 0.300,
+    "DID-1665-159571": 0.300,
+    "DID-1665-159609": 0.300,
+    "DID-1665-116789": 0.100,
+    "DID-1665-162158": 0.200
 };
 var bidderFloor = { 
     "cpex-tt": 3,
@@ -91,30 +98,45 @@ var bidderFloor = {
     "adform-sasBranding": 3
 };
 
-var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4.85",
+var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
     "autanetcz1651AdTrackGenericInterscrollerMobileadformsasAll": "4",
     "prehrajto1676adformleaderboardadformsasAll": "4",
-    "ireferatycz1712adformDesktopStripadformsasAll": "5",
-    "ireferatycz1712topleaderboardvseadformsasAll": "7",
+    "ireferatycz1712adformDesktopStripadformsasAll": "3.3",
+    "ireferatycz1712topleaderboardvseadformsasAll": "4",
     "ireferatycz1714adformDesktopStripadformsasAll": "4.25",
-    "ireferatycz1713topleaderboardvseadformsasAll": "0.67",
-    "ireferatycz1719topleaderboardvseadformsasAll": "0.67",
-    "ireferatycz1719topleaderboardvseadformsasBranding": "2.22",
-    "ireferatycz172topleaderboardvseadformsasAll": "0.67",
-    "ireferatycz1721topleaderboardvseadformsasAll": "0.67",
-    "ireferatycz1721topleaderboardvseadformsasBranding": "2.22",
-    "autacz1726AdTrackGenericInterscrollerDesktopadformsasAll": "1.78",
+    "ireferatycz1713topleaderboardvseadformsasAll": "1.09",
+    "ireferatycz1719topleaderboardvseadformsasAll": "1.09",
+    "ireferatycz1719topleaderboardvseadformsasBranding": "3.04",
+    "ireferatycz172topleaderboardvseadformsasAll": "1.09",
+    "ireferatycz1721topleaderboardvseadformsasAll": "1.09",
+    "ireferatycz1721topleaderboardvseadformsasBranding": "3.04",
+    "autacz1726AdTrackGenericInterscrollerDesktopadformsasAll": "2.09",
     "autacz1726adformMobilniBrandingadformsasAll": "2.51",
-    "autacz1729AdTrackGenericInterscrollerDesktopadformsasAll": "1.78",
-    "autacz1729adformMobilniBrandingadformsasAll": "0.67",
-    "autacz1726adformsquareadformsasAll": "0.67",
-    "autacz1726adformleaderboardadformsasAll": "0.67",
-    "autacz1726adformleaderboardadformsasBranding": "2.22",
-    "autacz1729adformsquareadformsasAll": "0.67",
-    "autacz1728AdTrackGenericInterscrollerDesktopadformsasAll": "1.78",
-    "autacz1728adformMobilniBrandingadformsasAll": "0.67",
-    "autacz1729adformleaderboardadformsasAll": "0.67",
-    "autacz1729adformleaderboardadformsasBranding": "2.22",
-    "autacz1728adformsquareadformsasAll": "0.67",
-    "autacz1728adformleaderboardadformsasAll": "0.67",
-    "autacz1728adformleaderboardadformsasBranding": "2.22"};
+    "autacz1729AdTrackGenericInterscrollerDesktopadformsasAll": "2.09",
+    "autacz1729adformMobilniBrandingadformsasAll": "1.61",
+    "autacz1726adformsquareadformsasAll": "1.09",
+    "autacz1726adformleaderboardadformsasAll": "1.09",
+    "autacz1726adformleaderboardadformsasBranding": "3.04",
+    "autacz1729adformsquareadformsasAll": "1.09",
+    "autacz1728AdTrackGenericInterscrollerDesktopadformsasAll": "2.09",
+    "autacz1728adformMobilniBrandingadformsasAll": "1.61",
+    "autacz1729adformleaderboardadformsasAll": "1.09",
+    "autacz1729adformleaderboardadformsasBranding": "3.04",
+    "autacz1728adformsquareadformsasAll": "1.09",
+    "autacz1728adformleaderboardadformsasAll": "1.09",
+    "autacz1728adformleaderboardadformsasBranding": "3.04",
+    "netflixercz173adformleaderboardadformsasAll": "1.09",
+    "netflixercz173adformleaderboardadformsasBranding": "3.04",
+    "netflixercz173adformleaderboard2adformsasAll": "1.09",
+    "netflixercz173adformhalfpage2adformsasAll": "1.09",
+    "netflixercz173adformsquaremadformsasAll": "1.09",
+    "netflixercz173AdTrackGenericInterscrollerMobileadformsasAll": "2.09",
+    "netflixercz173adformMobilniBrandingadformsasAll": "1.61",
+    "netflixercz1732adformleaderboardadformsasAll": "1.09",
+    "netflixercz1732adformleaderboardadformsasBranding": "3.04",
+    "netflixercz1732adformleaderboard2adformsasAll": "1.09",
+    "netflixercz1732adformhalfpage2adformsasAll": "1.09",
+    "netflixercz1732adformsquaremadformsasAll": "1.09",
+    "netflixercz1732AdTrackGenericInterscrollerMobileadformsasAll": "2.09",
+    "netflixercz1732adformMobilniBrandingadformsasAll": "1.61",
+    "pisnickyakordycz1733adformsquareadformsasAll": "1.09"};
