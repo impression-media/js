@@ -1,4 +1,4 @@
-/* Version: G_02 - 20.03. 2024 - 01:40:01 */
+/* Version: G_02 - 20.03. 2024 - 02:40:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -144,4 +144,9 @@ var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
     "autacz174adformMobilniBrandingadformsasAll": "1.61",
     "autacz174adformsquareadformsasAll": "1.09",
     "autacz174adformleaderboardadformsasAll": "1.09",
-    "autacz174adformleaderboardadformsasBranding": "3.04"};
+    "autacz174adformleaderboardadformsasBranding": "3.04",
+    "hybridcz1741adformsquareadformsasAll": "1.09",
+    "hybridcz1741adformleaderboardadformsasAll": "1.09",
+    "hybridcz1741adformleaderboardadformsasBranding": "3.04",
+    "hybridcz1741adformMobilniBrandingadformsasAll": "1.61",
+    "hybridcz1741AdTrackGenericInterscrollerMobileadformsasAll": "2.09"};
