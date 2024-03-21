@@ -1,4 +1,4 @@
-/* Version: G_03 - 21.03. 2024 - 01:45:01 */
+/* Version: G_03 - 21.03. 2024 - 02:45:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -149,6 +149,22 @@ var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
     "hybridcz1741adformleaderboardadformsasAll": "1.09",
     "hybridcz1741adformleaderboardadformsasBranding": "3.04",
     "hybridcz1741adformMobilniBrandingadformsasAll": "1.61",
-    "hybridcz1741AdTrackGenericInterscrollerMobileadformsasAll": "2.09"};
+    "hybridcz1741AdTrackGenericInterscrollerMobileadformsasAll": "2.09",
+    "inpocasicz1742AdTrackGenericInterscrollerDesktopadformsasAll": "2.09",
+    "inpocasicz1742adformsquare2adformsasAll": "1.09",
+    "inpocasicz1742adformsquareadformsasAll": "1.09",
+    "inpocasicz1742adformleaderboardadformsasAll": "1.09",
+    "inpocasicz1742adformleaderboardadformsasBranding": "3.04",
+    "inpocasicz1742adformMobilniBrandingadformsasAll": "1.61",
+    "inpocasicz1743AdTrackGenericInterscrollerDesktopadformsasAll": "2.09",
+    "inpocasicz1743adformsquare2adformsasAll": "1.09",
+    "inpocasicz1743adformsquareadformsasAll": "1.09",
+    "inpocasicz1743adformleaderboardadformsasAll": "1.09",
+    "inpocasicz1743adformleaderboardadformsasBranding": "3.04",
+    "inpocasicz1744AdTrackGenericInterscrollerDesktopadformsasAll": "2.09",
+    "inpocasicz1744adformsquare2adformsasAll": "1.09",
+    "inpocasicz1744adformsquareadformsasAll": "1.09",
+    "inpocasicz1744adformleaderboardadformsasAll": "1.09",
+    "inpocasicz1744adformleaderboardadformsasBranding": "3.04"};
 
 var globalExternSasCPM = {"pisnickyakordyczadformsquare": "1.05","pisnickyakordyczadformsquare": "1.08","pisnickyakordyczadformsquare": "1.09","autowebczadformleaderboard": "1.09","autowebczadformsquare": "1.09","autowebczadformsquare2": "1.09","autowebczadformsquare3": "1.09","autowebczadformrectangle": "1.09","ifaunaczdivgptadifatf": "1.09","ifaunaczdivgptadifskyskraper1": "1.09","ifaunaczdivgptadifskyskraper2": "1.09","ifaunaczdivgptadifskyskraper3": "1.09"};
