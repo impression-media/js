@@ -97,22 +97,17 @@ adform.com, 2700, RESELLER, 9f5210a2f0999e32
 criteo.com, B-062752, DIRECT, 9fac4a4a87c2a44f
 themediagrid.com, WTSAXH, DIRECT, 35d5010d7789b49d
 
- # Index Exchange
-indexexchange.com,191029,DIRECT,50b1c356f2c5c8fc
-
  # Caroda
 adform.com, 2724, DIRECT, 9f5210a2f0999e32
 adform.com, 2724, RESELLER, 9f5210a2f0999e32
 
 #Cpex
-rubiconproject.com, 208454, DIRECT ,0bfd66d529a55807
 rubiconproject.com,10900, DIRECT, 0bfd66d529a55807
-indexexchange.com,184929,DIRECT,50b1c356f2c5c8fc
 appnexus.com, 10560, DIRECT, f5ab79cb980f11d1 
+indexexchange.com, 191029, RESELLER, 50b1c356f2c5c8fc    
+pubmatic.com, 158578, DIRECT, 5d62403b186f2ace
 pubmatic.com, 158732, DIRECT, 5d62403b186f2ace
 cpex.cz, 011, DIRECT
-RTBHOUSE.COM, w6O8SDnYNMT7Cb6AHGZf, DIRECT
-cpex.cz, 008, DIRECT
 
 #R2B2-ads.txt-v2.25.0
 r2b2.cz, 69, DIRECT
@@ -666,7 +661,7 @@ mgid.com, 358309, DIRECT, d4c29acad76ce94f
 
 #antiadblock
 google.com, pub-9985346289855124, DIRECT, f08c47fec0942fa0
-criteo.com, (B-066086), DIRECT, 9fac4a4a87c2a44f
+criteo.com, B-066086, DIRECT, 9fac4a4a87c2a44f
 criteo.com, B-066086, DIRECT, 9fac4a4a87c2a44f
 google.com, pub-9985346289855124, DIRECT, f08c47fec0942fa0
 google.com, pub-8539658618929646, DIRECT, f08c47fec0942fa0
