@@ -1,4 +1,4 @@
-/* Version: G_03 - 05.04. 2024 - 01:45:01 */
+/* Version: G_03 - 05.04. 2024 - 02:45:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -189,6 +189,13 @@ var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
     "nasetemacz1746adformsquarem2adformsasAll": "1.09",
     "nasetemacz1746AdTrackGenericInterscrollerMobileadformsasAll": "2.09",
     "nasetemacz1746adformMobilniBrandingadformsasAll": "1.61",
+    "dumfinancicz1748adformleaderboardadformsasAll": "1.09",
+    "dumfinancicz1748adformleaderboardadformsasBranding": "3.04",
+    "dumfinancicz1748adformleaderboard2adformsasAll": "1.09",
+    "dumfinancicz1748adformhalfpage2adformsasAll": "1.09",
+    "dumfinancicz1748adformhalfpageadformsasAll": "1.09",
+    "dumfinancicz1748adformsquaremadformsasAll": "1.09",
+    "dumfinancicz1748adformMobilniBrandingadformsasAll": "1.61",
     "nasetemacz1749adformleaderboardadformsasAll": "1.09",
     "nasetemacz1749adformleaderboardadformsasBranding": "3.04",
     "nasetemacz1749adformleaderboard2adformsasAll": "1.09",
@@ -198,6 +205,16 @@ var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
     "nasetemacz1749adformsquaremadformsasAll": "1.09",
     "nasetemacz1749adformsquarem2adformsasAll": "1.09",
     "nasetemacz1749AdTrackGenericInterscrollerMobileadformsasAll": "2.09",
-    "nasetemacz1749adformMobilniBrandingadformsasAll": "1.61"};
+    "nasetemacz1749adformMobilniBrandingadformsasAll": "1.61",
+    "nasetemacz175adformleaderboardadformsasAll": "1.09",
+    "nasetemacz175adformleaderboardadformsasBranding": "3.04",
+    "nasetemacz175adformleaderboard2adformsasAll": "1.09",
+    "nasetemacz175adformhalfpageadformsasAll": "1.09",
+    "nasetemacz175adformhalfpage2adformsasAll": "1.09",
+    "nasetemacz175adformrectangleadformsasAll": "1.09",
+    "nasetemacz175adformsquaremadformsasAll": "1.09",
+    "nasetemacz175adformsquarem2adformsasAll": "1.09",
+    "nasetemacz175AdTrackGenericInterscrollerMobileadformsasAll": "2.09",
+    "nasetemacz175adformMobilniBrandingadformsasAll": "1.61"};
 
 var globalExternSasCPM = {"pisnickyakordyczadformsquare": "1.05","pisnickyakordyczadformsquare": "1.08","pisnickyakordyczadformsquare": "1.09","autowebczadformleaderboard": "1.09","autowebczadformsquare": "1.09","autowebczadformsquare2": "1.09","autowebczadformsquare3": "1.09","autowebczadformrectangle": "1.09","ifaunaczdivgptadifatf": "1.09","ifaunaczdivgptadifskyskraper1": "1.09","ifaunaczdivgptadifskyskraper2": "1.09","ifaunaczdivgptadifskyskraper3": "1.09"};
