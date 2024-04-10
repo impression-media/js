@@ -1,4 +1,4 @@
-/* Version: G_02 - 10.04. 2024 - 01:40:01 */
+/* Version: G_02 - 10.04. 2024 - 02:40:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -215,4 +215,12 @@ var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
     "nasetemacz175adformsquaremadformsasAll": "1.09",
     "nasetemacz175adformsquarem2adformsasAll": "1.09",
     "nasetemacz175AdTrackGenericInterscrollerMobileadformsasAll": "2.09",
-    "nasetemacz175adformMobilniBrandingadformsasAll": "1.61"};
+    "nasetemacz175adformMobilniBrandingadformsasAll": "1.61",
+    "dumfinancicz1751adformleaderboardadformsasAll": "1.09",
+    "dumfinancicz1751adformleaderboardadformsasBranding": "3.04",
+    "dumfinancicz1751adformleaderboard2adformsasAll": "1.09",
+    "dumfinancicz1751adformhalfpage2adformsasAll": "1.09",
+    "dumfinancicz1751adformhalfpageadformsasAll": "1.09",
+    "dumfinancicz1751adformsquaremadformsasAll": "1.09",
+    "dumfinancicz1751adformMobilniBrandingadformsasAll": "1.61",
+    "dumfinancicz1751AdTrackGenericInterscrollerDesktopadformsasAll": "2.09"};
