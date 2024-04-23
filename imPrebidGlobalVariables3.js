@@ -1,4 +1,4 @@
-/* Version: G_03 - 23.04. 2024 - 01:45:01 */
+/* Version: G_03 - 23.04. 2024 - 02:45:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -245,6 +245,14 @@ var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
     "cbdbcz1754adformleaderboardadformsasAll": "1.09",
     "cbdbcz1754adformrectangle2adformsasAll": "1.09",
     "cbdbcz1754adformhalfpageadformsasAll": "1.09",
-    "cbdbcz1754AdTrackGenericInterscrollerMobileadformsasAll": "2.09"};
+    "cbdbcz1754AdTrackGenericInterscrollerMobileadformsasAll": "2.09",
+    "dumfinancicz1755adformleaderboardadformsasAll": "1.09",
+    "dumfinancicz1755adformleaderboardadformsasBranding": "3.04",
+    "dumfinancicz1755adformleaderboard2adformsasAll": "1.09",
+    "dumfinancicz1755adformhalfpage2adformsasAll": "1.09",
+    "dumfinancicz1755adformhalfpageadformsasAll": "1.09",
+    "dumfinancicz1755adformsquaremadformsasAll": "1.09",
+    "dumfinancicz1755adformMobilniBrandingadformsasAll": "1.61",
+    "dumfinancicz1755AdTrackGenericInterscrollerDesktopadformsasAll": "2.09"};
 
 var globalExternSasCPM = {"pisnickyakordyczadformsquare": "1.05","pisnickyakordyczadformsquare": "1.08","pisnickyakordyczadformsquare": "1.09","autowebczadformleaderboard": "1.09","autowebczadformsquare": "1.09","autowebczadformsquare2": "1.09","autowebczadformsquare3": "1.09","autowebczadformrectangle": "1.09","ifaunaczdivgptadifatf": "1.09","ifaunaczdivgptadifskyskraper1": "1.09","ifaunaczdivgptadifskyskraper2": "1.09","ifaunaczdivgptadifskyskraper3": "1.09"};
