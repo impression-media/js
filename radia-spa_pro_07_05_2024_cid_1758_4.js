@@ -22,7 +22,8 @@ function imHbSpecialSettingOfRoleadingByDivIds(co){
 //    if (selection) {
 //        document.body.setAttribute('data-posRel', 'display only by fc kinoboxReloading: '+co)
 //    }
-
+    
+    console.log('Fire imHbSpecialSettingOfRoleadingByDivIds: co::'+co);
     if(co == 'adform_leaderboard'){    
         document.querySelector('#adform_leaderboard').classList.remove("nor2b2branding");
         document.querySelector('#adform_leaderboard').style.opacity = "0";
