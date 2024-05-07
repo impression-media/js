@@ -1,4 +1,4 @@
-/* Version: G_02 - 07.05. 2024 - 02:40:01 */
+/* Version: G_02 - 07.05. 2024 - 03:40:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -101,9 +101,31 @@ var bidderFloor = {
     "adform-sasBranding": 3
 };
 
-var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
+var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1.09",
+    "serialzonecz1574bottomleaderboarddesktopadformsasAll": "1.09",
+    "serialzonecz1574square2adformsasAll": "1.09",
+    "serialzonecz1574topleaderboardbrandingadformsasAll": "1.09",
+    "serialzonecz1574topleaderboardbrandingadformsasBranding": "3.04",
+    "serialzonecz1574square1adformsasAll": "1.09",
+    "serialzonecz1574bottomleaderboardmobiladformsasAll": "1.09",
+    "meteocentrumcz1649leaderboardadformsasAll": "4",
     "autanetcz1651AdTrackGenericInterscrollerMobileadformsasAll": "4",
     "prehrajto1676adformleaderboardadformsasAll": "4",
+    "kinotip2cz1691adformhalfpageadformsasAll": "1.09",
+    "kinotip2cz1691adformrectangleadformsasAll": "1.09",
+    "kinotip2cz1691adformleaderboardadformsasAll": "1.09",
+    "kinotip2cz1691adformleaderboardadformsasBranding": "3.04",
+    "kinotip2cz1691AdTrackGenericInterscrollerMobileadformsasAll": "2.09",
+    "nespechejcz1696AdTrackGenericInterscrollerMobileadformsasAll": "2.09",
+    "nespechejcz1696adformleaderboardadformsasAll": "1.09",
+    "nespechejcz1696adformleaderboardadformsasBranding": "3.04",
+    "nespechejcz1696adformhalfpageadformsasAll": "1.09",
+    "nespechejcz1696adformrectangleadformsasAll": "1.09",
+    "fajntipcz171adformhalfpageadformsasAll": "1.09",
+    "fajntipcz171adformrectangleadformsasAll": "1.09",
+    "fajntipcz171adformleaderboardadformsasAll": "1.09",
+    "fajntipcz171adformleaderboardadformsasBranding": "3.04",
+    "fajntipcz171AdTrackGenericInterscrollerMobileadformsasAll": "2.09",
     "ireferatycz1712adformDesktopStripadformsasAll": "3.3",
     "ireferatycz1712topleaderboardvseadformsasAll": "4",
     "ireferatycz1714adformDesktopStripadformsasAll": "4.25",
