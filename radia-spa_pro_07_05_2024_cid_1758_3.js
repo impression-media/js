@@ -23,11 +23,13 @@ function imHbSpecialSettingOfRoleadingByDivIds(co){
 //        document.body.setAttribute('data-posRel', 'display only by fc kinoboxReloading: '+co)
 //    }
 
-    document.querySelector('#adform_leaderboard').classList.remove("nor2b2branding");
-    document.querySelector('#adform_leaderboard').style.opacity = "0";
-    setTimeout(function(){
-        document.querySelector('#adform_leaderboard').style.opacity = "1";
-    }, 1500); 
+    if(co == 'adform_leaderboard'){    
+        document.querySelector('#adform_leaderboard').classList.remove("nor2b2branding");
+        document.querySelector('#adform_leaderboard').style.opacity = "0";
+        setTimeout(function(){
+            document.querySelector('#adform_leaderboard').style.opacity = "1";
+        }, 1500); 
+    }    
 }
 
 function roleadingByDivIds(z){
