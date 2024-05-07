@@ -22,7 +22,7 @@ function imHbSpecialSettingOfRoleadingByDivIds(co){
 //    if (selection) {
 //        document.body.setAttribute('data-posRel', 'display only by fc kinoboxReloading: '+co)
 //    }
-
+document.querySelector('#adform_leaderboard').removeClass('nor2b2branding');
 }
 
 function roleadingByDivIds(z){
