@@ -626,73 +626,28 @@ google.com, pub-8804729319494140, RESELLER, f08c47fec0942fa0
 google.com, pub-7349691528422556, RESELLER, f08c47fec0942fa0
 google.com, pub-7349691528422556, DIRECT, f08c47fec0942fa0
 google.com, pub-8804729319494140, DIRECT, f08c47fec0942fa0
-appnexus.com, 6974, RESELLER, f5ab79cb980f11d1
-pubmatic.com, 49307, RESELLER, 5d62403b186f2ace
+pubmatic.com, 159961, RESELLER, 5d62403b186f2ace
 teads.tv, 13698, DIRECT, 15a9c44f6d26cbe1
-ibillboard.com, 27801, DIRECT
-ibillboard.com, 15723, DIRECT
-indexexchange.com, 180179, RESELLER, 50b1c356f2c5c8fc
+teads.tv, 27835, DIRECT, 15a9c44f6d26cbe1
+grapemedia.cz, 2, DIRECT
+grapemedia.cz, 10, DIRECT
 indexexchange.com, 184929, DIRECT, 50b1c356f2c5c8fc
 rubiconproject.com, 10900, DIRECT, 0bfd66d529a55807
 rubiconproject.com, 208454,DIRECT, 0bfd66d529a55807
-stroeer.com, 14214 ,DIRECT
-indexexchange.com, 183592, RESELLER, 50b1c356f2c5c8fc
-Appnexus.com, 1371, RESELLER, f5ab79cb980f11d1
-contextweb.com, 558750, DIRECT, 89ff185a4c4e857c
 adform.com, 918, RESELLER
 adform.com, 1425, RESELLER
 cavixo.com,1366,DIRECT
 google.com, pub-7980196294731979, DIRECT, f08c47fec0942fa0
 smartadserver.com,1343,RESELLER
 smartadserver.com,2875,RESELLER
-indexexchange.com,179394,RESELLER
-contextweb.com,560288,RESELLER,89ff185a4c4e857c
-pubmatic.com,156439,RESELLER
-pubmatic.com,154037,RESELLER
-rubiconproject.com,16114,RESELLER,0bfd66d529a55807
-openx.com,537149888,RESELLER,6a698e2ec38604c6
 sovrn.com, 257611,RESELLER, fafdf38b16bf6b2b
-appnexus.com,3703,RESELLER,f5ab79cb980f11d1
 r2b2.io, 41,DIRECT
 adform.com, 811, RESELLER
 adform.com, 1099, RESELLER
-google.com, pub-6070985156043962, RESELLER
-ibillboard.com, 31078, RESELLER
-ibillboard.com, 29102, RESELLER
-ibillboard.com, 30992, RESELLER
-ibillboard.com, 29718, RESELLER
-ibillboard.com, 29934, RESELLER
-ibillboard.com, 31378, RESELLER
-ibillboard.com, 30778, RESELLER
-ibillboard.com, 31478, RESELLER
-ibillboard.com, 29721, RESELLER
-ibillboard.com, 30601, RESELLER
-ibillboard.com, 29648, RESELLER
-ibillboard.com, 30705, RESELLER
-ibillboard.com, 29482, RESELLER
-ibillboard.com, 29545, RESELLER
-ibillboard.com, 29654, RESELLER
-ibillboard.com, 29604, RESELLER
-ibillboard.com, 29601, RESELLER
-ibillboard.com, 30649, RESELLER
-ibillboard.com, 30652, RESELLER
-ibillboard.com, 29542, RESELLER
-ibillboard.com, 29651, RESELLER
-ibillboard.com, 30604, RESELLER
-ibillboard.com, 31100, RESELLER
-indexexchange.com, 180179, RESELLER, 50b1c356f2c5c8fc
-stroeer.com, 14214, DIRECT
-contextweb.com, 558750, DIRECT, 89ff185a4c4e857c
 smartadserver.com, 2910, DIRECT
 smartadserver.com, 2910, RESELLER
-contextweb.com, 560288, RESELLER, 89ff185a4c4e857c
-pubmatic.com, 156439, RESELLER
-pubmatic.com, 154037, RESELLER
 pubmatic.com, 156030, RESELLER, 5d62403b186f2ace
-rubiconproject.com, 16114, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 13132, RESELLER, 0bfd66d529a55807
-openx.com, 537149888, RESELLER, 6a698e2ec38604c6
-appnexus.com, 3703, RESELLER, f5ab79cb980f11d1
 groundtruth.com, 107, RESELLER, 81cbf0a75a5e0e9a
 districtm.io, 101760, RESELLER, 3fd707be9c4527c3
 loopme.com, s-2411, RESELLER, 6c8d5f95897a5a3b
@@ -700,18 +655,6 @@ loopme.com, 5679, RESELLER, 6c8d5f95897a5a3b
 google.com, pub-7349723238327036, DIRECT, f08c47fec0942fa0
 rubiconproject.com, 11352, RESELLER, 0bfd66d529a55807
 contextweb.com, 557671, RESELLER, 89ff185a4c4e857c
-etarget.cz, 322, RESELLER
-etarget.cz, 14713, RESELLER
-etarget.cz, 14951, RESELLER
-etarget.cz, 13655, RESELLER
-etarget.cz, 14672, RESELLER
-etarget.cz, 14679, RESELLER
-etarget.sk, 14478, RESELLER
-etarget.sk, 13881, RESELLER
-teads.tv, 15702, DIRECT, 15a9c44f6d26cbe1
-appnexus.com, 8413, RESELLER
-appnexus.com, 6974, RESELLER, f5ab79cb980f11d1
-pubmatic.com, 49307, RESELLER, 5d62403b186f2ace
 aps.amazon.com, df986c11-9d15-48a5-b758-b641d6c8e9b6, DIRECT
 pubmatic.com, 157150, RESELLER, 5d62403b186f2ace
 openx.com, 540191398, RESELLER, 6a698e2ec38604c6
@@ -719,14 +662,14 @@ appnexus.com, 1908, RESELLER, f5ab79cb980f11d1
 yldbt.com, 5b522cc167f6b300b89dc6d3, RESELLER, cd184cb30abaabb5
 districtm.io, 100962, RESELLER
 stroeer.com, 17462, DIRECT
-indexexchange.com, 183592, RESELLER, 50b1c356f2c5c8fc
-Appnexus.com, 1371, RESELLER, f5ab79cb980f11d1
+appnexus.com, 1371, RESELLER, f5ab79cb980f11d1
 adform.com, 637, RESELLER
 adform.com, 37, DIRECT
 adform.com, 1665, RESELLER, 9f5210a2f0999e32
 google.com, pub-4569624645600360, DIRECT, f08c47fec0942fa0
 pubmatic.com, 158361, RESELLER, 5d62403b186f2ace
 mgid.com, 358309, DIRECT, d4c29acad76ce94f
+stroeer.com, 17579, DIRECT
 
 #antiadblock
 google.com, pub-9985346289855124, DIRECT, f08c47fec0942fa0
