@@ -1,4 +1,4 @@
-/* Version: G_03 - 04.06. 2024 - 02:45:01 */
+/* Version: G_03 - 04.06. 2024 - 03:45:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -310,6 +310,12 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "rondocz1763adformleaderboardadformsasAll": "1.3",
     "rondocz1763adformleaderboardadformsasBranding": "3.26",
     "rondocz1763adformMobilniBrandingadformsasAll": "1.61",
-    "jidlocz1764adformleaderboardadformsasBranding": "3.26"};
+    "jidlocz1764adformleaderboardadformsasBranding": "3.26",
+    "cbdbcz1766adformMobilniBrandingadformsasAll": "1.61",
+    "cbdbcz1766adformrectangleadformsasAll": "1.09",
+    "cbdbcz1766adformleaderboardadformsasAll": "1.3",
+    "cbdbcz1766adformrectangle2adformsasAll": "1.09",
+    "cbdbcz1766adformhalfpageadformsasAll": "1.3",
+    "cbdbcz1766AdTrackGenericInterscrollerMobileadformsasAll": "2.39"};
 
 var globalExternSasCPM = {"pisnickyakordyczadformsquare": "1.05","pisnickyakordyczadformsquare": "1.08","pisnickyakordyczadformsquare": "1.09","autowebczadformleaderboard": "1.09","autowebczadformsquare": "3.04","autowebczadformsquare2": "1.09","autowebczadformsquare3": "1.09","autowebczadformrectangle": "1.09","ifaunaczdivgptadifatf": "1.09","ifaunaczdivgptadifskyskraper1": "1.09","ifaunaczdivgptadifskyskraper2": "1.09","ifaunaczdivgptadifskyskraper3": "1.09","autowebczadforminterscroller": "2.09","autowebczadformleaderboard": "5.04","autowebczadformsquare": "1.09","autowebczadformleaderboard": "1.09","zakrutaczadformleaderboard": "1.3","zakrutaczadformleaderboard": "3.26","zakrutaczadformsquare": "1.3","zakrutaczadformrectangle": "1.3"};
