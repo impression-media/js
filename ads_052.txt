@@ -101,6 +101,7 @@ teads.tv, 19831, DIRECT, 15a9c44f6d26cbe1
 teads.tv, 19831, RESELLER, 15a9c44f6d26cbe1
 xad.com, 958, RESELLER, 81cbf0a75a5e0e9a
 yahoo.com, 58905, RESELLER, e1a5b5b6e3255540
+voxexchange.io, 6667ea247bc72f0dacc1c675, RESELLER
 
 #Stroeer
 stroeer.com,  17438, DIRECT
