@@ -591,7 +591,7 @@ google.com, pub-1870557775424446, RESELLER, f08c47fec0942fa0
 google.com, pub-1870557775424446, DIRECT, f08c47fec0942fa0
 google.com, pub-4714993162327149, DIRECT, f08c47fec0942fa0
 google.com, pub-4714993162327149, RESELLER, f08c47fec0942fa0
-
+google.com, pub-2127778526614552, DIRECT, f08c47fec0942fa0
 
 
 #wmgroup
