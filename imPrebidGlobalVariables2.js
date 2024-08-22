@@ -1,4 +1,4 @@
-/* Version: G_02 - 22.08. 2024 - 02:40:01 */
+/* Version: G_02 - 22.08. 2024 - 03:40:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -357,5 +357,9 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "cbdbcz1781adformrectangle2adformsasAll": "1.09",
     "cbdbcz1781adformhalfpageadformsasAll": "1.09",
     "cbdbcz1781AdTrackGenericInterscrollerMobileadformsasAll": "2.17",
-    "cbdbcz1781adformhalfpageadformsasAll": "1.09",
-    "cbdbcz1781AdTrackGenericInterscrollerMobileadformsasAll": "2.17"};
+    "inpocasicz1788AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
+    "inpocasicz1788adformsquare2adformsasAll": "1.09",
+    "inpocasicz1788adformsquareadformsasAll": "1.09",
+    "inpocasicz1788adformleaderboardadformsasAll": "1.09",
+    "inpocasicz1788adformleaderboardadformsasBranding": "3.04",
+    "inpocasicz1788adformMobilniBrandingadformsasAll": "1.61"};
