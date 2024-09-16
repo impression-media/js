@@ -1,4 +1,4 @@
-/* Version: G_02 - 16.09. 2024 - 02:40:01 */
+/* Version: G_02 - 16.09. 2024 - 03:40:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -363,7 +363,8 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "inpocasicz1788adformleaderboardadformsasAll": "1.09",
     "inpocasicz1788adformleaderboardadformsasBranding": "3.04",
     "inpocasicz1788adformMobilniBrandingadformsasAll": "1.61",
-    "inpocasicz1799adformMobilniBrandingadformsasAll": "1.61",
+    "inpocasicz1799AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
+    "inpocasicz1799adformsquare2adformsasAll": "1.09",
     "inpocasicz1794AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
     "inpocasicz1794adformsquare2adformsasAll": "1.09",
     "inpocasicz1794adformsquareadformsasAll": "1.09",
@@ -375,8 +376,7 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "inpocasicz1795adformleaderboardadformsasAll": "1.09",
     "inpocasicz1795adformleaderboardadformsasBranding": "3.04",
     "inpocasicz1795adformMobilniBrandingadformsasAll": "1.61",
-    "inpocasicz1799AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
-    "inpocasicz1799adformsquare2adformsasAll": "1.09",
-    "inpocasicz1799adformsquareadformsasAll": "1.09",
+    "inpocasicz1799adformMobilniBrandingadformsasAll": "1.61",
     "inpocasicz1799adformleaderboardadformsasAll": "1.09",
-    "inpocasicz1799adformleaderboardadformsasBranding": "3.04"};
+    "inpocasicz1799adformleaderboardadformsasBranding": "3.04",
+    "inpocasicz1799adformsquareadformsasAll": "1.09"};
