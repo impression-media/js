@@ -1,4 +1,4 @@
-/* Version: G_03 - 18.09. 2024 - 02:45:01 */
+/* Version: G_03 - 18.09. 2024 - 03:45:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -366,7 +366,10 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "inpocasicz1788adformMobilniBrandingadformsasAll": "1.61",
     "inpocasicz18adformsquareadformsasAll": "1.09",
     "inpocasicz18adformsquare2adformsasAll": "1.09",
+    "nasetemacz181adformrectangleadformsasAll": "1.09",
     "inpocasicz18AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
+    "nasetemacz181adformsquarem2adformsasAll": "1.09",
+    "nasetemacz181adformsquaremadformsasAll": "1.09",
     "inpocasicz1794AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
     "inpocasicz1794adformsquare2adformsasAll": "1.09",
     "inpocasicz1794adformsquareadformsasAll": "1.09",
@@ -378,8 +381,15 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "inpocasicz1795adformleaderboardadformsasAll": "1.09",
     "inpocasicz1795adformleaderboardadformsasBranding": "3.04",
     "inpocasicz1795adformMobilniBrandingadformsasAll": "1.61",
+    "nasetemacz181adformleaderboard2adformsasAll": "1.09",
+    "nasetemacz181adformhalfpageadformsasAll": "1.09",
+    "nasetemacz181adformhalfpage2adformsasAll": "1.09",
+    "nasetemacz181adformleaderboardadformsasAll": "1.09",
+    "nasetemacz181adformleaderboardadformsasBranding": "3.04",
     "inpocasicz18adformleaderboardadformsasAll": "1.09",
     "inpocasicz18adformleaderboardadformsasBranding": "3.04",
-    "inpocasicz18adformMobilniBrandingadformsasAll": "1.61"};
+    "inpocasicz18adformMobilniBrandingadformsasAll": "1.61",
+    "nasetemacz181AdTrackGenericInterscrollerMobileadformsasAll": "2.17",
+    "nasetemacz181adformMobilniBrandingadformsasAll": "1.61"};
 
 var globalExternSasCPM = {"pisnickyakordyczadformsquare": "1.05","pisnickyakordyczadformsquare": "1.08","pisnickyakordyczadformsquare": "1.09","autowebczadformleaderboard": "1.09","autowebczadformsquare": "3.04","autowebczadformsquare2": "1.09","autowebczadformsquare3": "1.09","autowebczadformrectangle": "1.09","ifaunaczdivgptadifatf": "1.09","ifaunaczdivgptadifskyskraper1": "1.09","ifaunaczdivgptadifskyskraper2": "1.09","ifaunaczdivgptadifskyskraper3": "1.09","autowebczadforminterscroller": "2.09","autowebczadformleaderboard": "5.04","autowebczadformsquare": "1.09","autowebczadformleaderboard": "1.09","zakrutaczadformleaderboard": "1.09","zakrutaczadformleaderboard": "3.26","zakrutaczadformsquare": "1.09","zakrutaczadformrectangle": "1.09","aahbimpressionmediaczadformsquare": "1.09"};
