@@ -1,4 +1,4 @@
-/* Version: G_03 - 23.10. 2024 - 02:45:01 */
+/* Version: G_03 - 23.10. 2024 - 03:45:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -125,6 +125,8 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "autanetcz1651AdTrackGenericInterscrollerMobileadformsasAll": "4",
     "prehrajto1676adformleaderboardadformsasAll": "4",
     "nespechejcz185AdTrackGenericInterscrollerMobileadformsasAll": "2.17",
+    "inpocasicz187adformleaderboardadformsasAll": "1.09",
+    "inpocasicz187adformleaderboardadformsasBranding": "3.04",
     "kinotip2cz1691adformhalfpageadformsasAll": "1.09",
     "kinotip2cz1691adformrectangleadformsasAll": "1.09",
     "kinotip2cz1691adformleaderboardadformsasAll": "1.09",
@@ -139,6 +141,8 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "rondocz1697adformleaderboardadformsasAll": "1.09",
     "rondocz1697adformleaderboardadformsasBranding": "3.04",
     "rondocz1697adformMobilniBrandingadformsasAll": "1.61",
+    "inpocasicz187adformsquare2adformsasAll": "1.09",
+    "inpocasicz187adformMobilniBrandingadformsasAll": "1.61",
     "fajntipcz171adformhalfpageadformsasAll": "1.09",
     "fajntipcz171adformrectangleadformsasAll": "1.09",
     "fajntipcz171adformleaderboardadformsasAll": "1.09",
@@ -402,8 +406,6 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "inpocasicz182adformsquare2adformsasAll": "1.09",
     "inpocasicz182AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
     "inpocasicz182adformsquareadformsasAll": "1.09",
-    "inrybarcz183adformhalfpageadformsasAll": "1.09",
-    "inrybarcz183AdTrackGenericInterscrollerMobileadformsasAll": "2.17",
     "inpocasicz184adformsquareadformsasAll": "1.09",
     "inpocasicz184AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
     "inpocasicz184adformsquare2adformsasAll": "1.09",
@@ -413,6 +415,8 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "radiacz186adformleaderboardadformsasBranding": "3.04",
     "radiacz186adformsquareadformsasAll": "1.09",
     "radiacz186adformsquare2adformsasAll": "1.09",
-    "radiacz186AdTrackGenericInterscrollerDesktopadformsasAll": "2.17"};
+    "radiacz186AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
+    "inpocasicz187AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
+    "inpocasicz187adformsquareadformsasAll": "1.09"};
 
 var globalExternSasCPM = {"pisnickyakordyczadformsquare": "1.05","pisnickyakordyczadformsquare": "1.08","pisnickyakordyczadformsquare": "1.09","autowebczadformleaderboard": "1.09","autowebczadformsquare": "3.04","autowebczadformsquare2": "1.09","autowebczadformsquare3": "1.09","autowebczadformrectangle": "1.09","ifaunaczdivgptadifatf": "1.09","ifaunaczdivgptadifskyskraper1": "1.09","ifaunaczdivgptadifskyskraper2": "1.09","ifaunaczdivgptadifskyskraper3": "1.09","autowebczadforminterscroller": "2.09","autowebczadformleaderboard": "5.04","autowebczadformsquare": "1.09","autowebczadformleaderboard": "1.09","zakrutaczadformleaderboard": "1.09","zakrutaczadformleaderboard": "3.26","zakrutaczadformsquare": "1.09","zakrutaczadformrectangle": "1.09","aahbimpressionmediaczadformsquare": "1.09"};
