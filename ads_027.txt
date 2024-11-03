@@ -2,6 +2,25 @@
 #ImpressionMedia
 impressionmedia.cz, 027, DIRECT
 
+#SETUPAD
+setupad.com, 2892, DIRECT 
+rubiconproject.com, 21118, RESELLER, 0bfd66d529a55807 
+adform.com, 1484, RESELLER 
+pubmatic.com, 156191, RESELLER, 5d62403b186f2ace 
+smartadserver.com, 3527, RESELLER, 060d053dcf45cbf3 
+lijit.com, 252889, RESELLER, fafdf38b16bf6b2b 
+openx.com, 540890784, RESELLER, 6a698e2ec38604c6 
+indexexchange.com, 191541, RESELLER 
+152media.com, 152, RESELLER 
+adtelligent.com, 534151, RESELLER 
+triplelift.com, 12405, RESELLER, 6c33edb13117fd86 
+nextmillennium.io, 16454, RESELLER, 65bd090fa4a1e3d6 
+connectad.io, 416, RESELLER, 85ac85a30c93b3e5 
+Media.net, 8CU2I176C, RESELLER 
+33across.com, 0010b00002bTS1QAAW, RESELLER, bbea06d9c4d2853c 
+onetag.com,753951255855558,RESELLER 
+amxrtb.com, 105199421, RESELLER 
+
 #VOX
 voxexchange.io, 601013194d506ed6b831a32c, DIRECT
 voxexchange.io, 601013194d506ed6b831a32c, DIRECT
