@@ -1,4 +1,4 @@
-/* Version: G_02 - 05.11. 2024 - 02:40:01 */
+/* Version: G_02 - 05.11. 2024 - 03:40:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -325,6 +325,8 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "dumfinancicz1759adformsquaremadformsasAll": "1.09",
     "dumfinancicz1759adformMobilniBrandingadformsasAll": "1.61",
     "dumfinancicz1759AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
+    "nasetemacz181adformleaderboardadformsasAll": "1.09",
+    "nasetemacz181adformleaderboardadformsasBranding": "3.04",
     "rondocz1763AdTrackGenericInterscrollerMobileadformsasAll": "2.17",
     "rondocz1763adformleaderboardadformsasAll": "1.09",
     "rondocz1763adformleaderboardadformsasBranding": "3.04",
@@ -417,4 +419,12 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1
     "radiacz186adformsquare2adformsasAll": "1.09",
     "radiacz186AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
     "inpocasicz187AdTrackGenericInterscrollerDesktopadformsasAll": "2.17",
-    "inpocasicz187adformsquareadformsasAll": "1.09"};
+    "inpocasicz187adformsquareadformsasAll": "1.09",
+    "nasetemacz181adformhalfpage2adformsasAll": "1.09",
+    "nasetemacz181adformhalfpageadformsasAll": "1.09",
+    "nasetemacz181adformleaderboard2adformsasAll": "1.09",
+    "nasetemacz181adformsquaremadformsasAll": "1.09",
+    "nasetemacz181adformrectangleadformsasAll": "1.09",
+    "nasetemacz181adformsquarem2adformsasAll": "1.09",
+    "nasetemacz181AdTrackGenericInterscrollerMobileadformsasAll": "2.17",
+    "nasetemacz181adformMobilniBrandingadformsasAll": "1.61"};
