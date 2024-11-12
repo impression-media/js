@@ -1,5 +1,5 @@
 /* Version: V_09 (9.8.0)*/
-/* installedModules: adform,appnexus,criteo,mgid,pubmatic,rubicon,teads*/
+/* installedModules: adform,appnexus,criteo,mgid,pubmatic,rubicon,teads,consentManagementGDPR,criteoIdSystem,sharedIdSystem,id5IdSystem,teadsIdSystem*/
 
 //START masterString    
 console.log('imBlackBoxScript: https://hb.impressionmedia.cz/tmp/sas/sasAdapter.js');
@@ -11,7 +11,7 @@ console.log('imBlackBoxScript: https://hb.impressionmedia.cz/tmp/sas/sasAdapter.
 
 /* Header bidding from Impression Media 
  * Generate by script: updateCodeGoogleDevelopment     
- * Last update: 12.11.2024 8:59:02
+ * Last update: 12.11.2024 9:15:03
  * Ticket ID: ... / [1733]
  * Generated for WebSite: [https://pisnicky-akordy.cz]
  * User ID: [1]    
@@ -24,6 +24,71 @@ var imCDN;
 if (imCurrentSc.toLowerCase().indexOf('jsdelivr') >= 0){ var imCDN = 1; }else{ var imCDN = 0; }
 console.log('imCDN: '+imCDN);
 
+//https://github.com/prebid/Prebid.js/issues/5572
+//https://docs.prebid.org/dev-docs/cmp-best-practices.html
+//https://docs.prebid.org/dev-docs/modules/consentManagement.html#build-the-package
+var iabConsentData;  // build the IAB consent string
+var gdprApplies;     // true if gdpr applies to the user, else false
+var hasGlobalScope;  // true if consent data was retrieved globally
+var responseCode;    // false if there was an error, else true
+var cmpLoaded;       // true if iabConsentData was loaded and processed
+(function(window, document) {
+    function addFrame() {
+        if (window.frames['__cmpLocator'])
+            return;
+        if ( document.body ) {
+            var body = document.body,
+                iframe = document.createElement('iframe');
+            iframe.name = '__cmpLocator';
+            iframe.style.display = 'none';
+            body.appendChild(iframe);
+        } else {
+            setTimeout(addFrame, 5);
+        }
+    }
+    addFrame();
+    function cmpMsgHandler(event) {
+        try {
+            var json = event.data;
+            var msgIsString = typeof json === "string";
+            if ( msgIsString ) {
+                json = JSON.parse(json);
+            }
+            var call = json.__cmpCall;
+            if (call) {
+                window.__cmp(call.command, call.parameter, function(retValue, success) {
+                    var returnMsg = {
+                        __cmpReturn: {
+                            returnValue: retValue, success: success, callId: call.callId
+                        }
+                    };
+                    event.source.postMessage(msgIsString ? JSON.stringify(returnMsg) : returnMsg, '*');
+                });
+            }
+        } catch (e) {}  // do nothing
+    }
+    var cmpFunc = function(command, version, callback) {
+        if (command === 'ping') {
+            callback({gdprAppliesGlobally: gdprApplies, cmpLoaded: cmpLoaded}, responseCode);
+        } else if (command === 'getConsentData') {
+            callback({consentData: iabConsentData, gdprApplies: gdprApplies, hasGlobalScope: hasGlobalScope}, responseCode);
+        } else if (command === 'getVendorConsents') {
+            callback({metadata: iabConsentData, gdprApplies: gdprApplies, hasGlobalScope: hasGlobalScope}, responseCode);
+        } else {
+            callback(undefined, false);
+        }
+    };
+    if ( typeof (__cmp) !== 'function' ) {
+        window.__cmp = cmpFunc;
+        window.__cmp.msgHandler = cmpMsgHandler;
+        if ( window.addEventListener ) {
+            window.addEventListener('message', cmpMsgHandler, false);
+        } else {
+            window.attachEvent('onmessage', cmpMsgHandler);
+        }
+    }
+})(window, document);
+    
 var pbjs = pbjs || {};
 pbjs.que = pbjs.que || [];
 
@@ -696,5 +761,5 @@ u.SYNC=1,u.ASYNC=2,u.QUEUE=4;var t="fun-hooks";var e=Object.freeze({useProxy:!0,
 (self.pbjsChunk=self.pbjsChunk||[]).push([[97703],{62791:(e,r,i)=>{var t=i(7873),a=i(91069),n=i(70433),s=i(57377),o=i(71371);const d={NUMBER:"number",STRING:"string",BOOLEAN:"boolean",ARRAY:"array",OBJECT:"object"},p={mimes:d.ARRAY,minduration:d.NUMBER,maxduration:d.NUMBER,startdelay:d.NUMBER,playbackmethod:d.ARRAY,api:d.ARRAY,protocols:d.ARRAY,w:d.NUMBER,h:d.NUMBER,battr:d.ARRAY,linearity:d.NUMBER,placement:d.NUMBER,plcmt:d.NUMBER,minbitrate:d.NUMBER,maxbitrate:d.NUMBER,skip:d.NUMBER},c={code:"zmaticoo",supportedMediaTypes:[o.D4,o.G_],isBidRequestValid:function(e){return r=e,(0,n.A)(r,"mediaTypes.banner")||function(e){return!!(0,n.A)(e,"mediaTypes.video")}(e)?e&&e.params?!!e.params.pubId||((0,a.logWarn)("Invalid bid request - missing required field pubId"),!1):((0,a.logWarn)("Invalid bid request - missing required bid data"),!1):((0,a.logWarn)("Invalid bid request - missing required mediaTypes"),!1);var r},buildRequests:function(e,r){const i=e[0].params,t=e.map((e=>{const t={id:e.bidId,secure:1,ext:{bidder:{pubId:i.pubId}}};if(i.tagid&&(t.tagid=i.tagid),e.mediaTypes)for(const r in e.mediaTypes)switch(r){case o.D4:t.banner=u(e);break;case o.G_:t.video=l(e)}if("function"==typeof r.getFloor){const e=r.getFloor({currency:"USD",mediaType:t.video?"video":"banner",size:[t.video?t.video.w:t.banner.w,t.video?t.video.h:t.banner.h]});e&&e.floor&&(t.bidfloor=e.floor)}return!t.bidfloor&&i.bidfloor&&(t.bidfloor=i.bidfloor),t}));let a={id:r.bidderRequestId,imp:t,site:i.site?i.site:{},app:i.app?i.app:{},device:i.device?i.device:{},user:i.user?i.user:{},at:i.at,tmax:i.tmax,wseat:i.wseat,bseat:i.bseat,allimps:i.allimps,cur:["USD"],wlang:i.wlang,bcat:(0,n.A)(r.ortb2Imp,"bcat")||i.bcat,badv:i.badv,bapp:i.bapp,source:i.source?i.source:{},regs:i.regs?i.regs:{},ext:i.ext?i.ext:{}};a.regs.ext={},a.user.ext={},a.device.ua=navigator.userAgent,a.device.ip=navigator.ip,a.site.page=r?.refererInfo?.page||window.location.href,a.site.domain=function(e){let r=document.createElement("a");return r.href=e,r.hostname}(a.site.page),a.site.mobile=/(ios|ipod|ipad|iphone|android)/i.test(navigator.userAgent)?1:0,i.test&&(a.test=i.test),r.gdprConsent&&(a.regs.ext=Object.assign(a.regs.ext,{gdpr:1==r.gdprConsent.gdprApplies?1:0})),r.gdprConsent&&r.gdprConsent.gdprApplies&&(a.user.ext=Object.assign(a.user.ext,{consent:r.gdprConsent.consentString}));return{method:"POST",url:"https://bid.zmaticoo.com/prebid/bid",data:JSON.stringify(a)}},interpretResponse:function(e,r){let i=[];const t=(e||{}).body;return t&&t.seatbid&&t.seatbid.length&&t.seatbid[0].bid&&t.seatbid[0].bid.length&&t.seatbid.forEach((e=>{e.bid.forEach((e=>{let r={requestId:e.impid,cpm:e.price,currency:t.cur,width:e.w,height:e.h,ad:e.adm,ttl:200,creativeId:e.crid,netRevenue:true,nurl:e.nurl};r.meta={advertiserDomains:e.adomain&&e.adomain.length?e.adomain:[]},e.ext&&e.ext.vast_url&&(r.vastXml=e.ext.vast_url),e.ext&&e.ext.prebid?r.mediaType=e.ext.prebid.type:r.mediaType=o.D4,i.push(r)}))})),i},onBidWon:function(e){if(!e.nurl)return!1;const r=e.hasOwnProperty("originalCpm")?e.originalCpm:e.cpm,i=e.hasOwnProperty("originalCurrency")&&e.hasOwnProperty("originalCpm")?e.originalCurrency:e.currency,t=e.nurl.replace(/\$\{AUCTION_PRICE\}/,r).replace(/\$\{AUCTION_IMP_ID\}/,e.requestId).replace(/\$\{AUCTION_CURRENCY\}/,i).replace(/\$\{AUCTON_BID_ID\}/,e.bidId).replace(/\$\{AUCTION_ID\}/,e.auctionId);return(0,a.triggerPixel)(t),!0}};function u(e){let r=e.sizes;return e.mediaTypes&&e.mediaTypes.banner&&e.mediaTypes.banner.sizes&&(r=e.mediaTypes.banner.sizes),{w:r[0][0],h:r[0][1]}}function l(e){let r={};const i=(0,n.A)(e,"mediaTypes.video",{});for(const e in p)i.hasOwnProperty(e)&&(r[e]=b(e,i[e],p[e]));return i.playerSize&&((0,a.isArray)(i.playerSize[0])?(r.w=parseInt(i.playerSize[0][0],10),r.h=parseInt(i.playerSize[0][1],10)):(0,a.isNumber)(i.playerSize[0])&&(r.w=parseInt(i.playerSize[0],10),r.h=parseInt(i.playerSize[1],10))),r}function b(e,r,i){let t;switch(i){case d.BOOLEAN:t=a.isBoolean;break;case d.NUMBER:t=a.isNumber;break;case d.STRING:t=a.isStr;break;case d.ARRAY:t=a.isArray}if(t(r))return r;(0,a.logWarn)("Ignoring param key: "+e+", expects "+i+", found "+typeof r)}(0,s.a$)(c),(0,t.E)("zmaticooBidAdapter")}},e=>{e.O(0,[60802,51085],(()=>{return r=62791,e(e.s=r);var r}));e.O()}]);
 })(),pbjs.processQueue();
 //END masterPrebidString
-; function imHbUploadConfig(){console.log('imCDN: '+imCDN); var imHbScriptSrc = ''; if (imCDN){ imHbScriptSrc = 'https://cdn.jsdelivr.net/gh/impression-media/js/'; }else{ imHbScriptSrc = 'https://hb.impressionmedia.cz/'; } console.log('imHbUploadConfig imHbScriptSrc: '+imHbScriptSrc); console.log('start imHbUploadConfig');if(imGetCookie('imtesting')){responsiveConditionReady = document.querySelector('#imtestingInfo') !== null; if(responsiveConditionReady) { document.getElementById('imtestingInfo').remove();} var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:2147483646;position:fixed;top:100%;right:3px;margin-top:-30px;padding:3px 8px;background:#0000003d;color:white;border-radius:3px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1733'; var imConfigName = 'HBsetup_pisnicky-akordycz_Pisnicky_akordy_cz___DB_1__od_16__2_2_24__2024_11_12_0859'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';imHbRandomParam = Math.floor(Math.random() * 10000) + 1; imHbScript.src = imHbScriptSrc+'tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam; document.getElementsByTagName('head')[0].appendChild(imHbScript);}; 
+; function imHbUploadConfig(){console.log('imCDN: '+imCDN); var imHbScriptSrc = ''; if (imCDN){ imHbScriptSrc = 'https://cdn.jsdelivr.net/gh/impression-media/js/'; }else{ imHbScriptSrc = 'https://hb.impressionmedia.cz/'; } console.log('imHbUploadConfig imHbScriptSrc: '+imHbScriptSrc); console.log('start imHbUploadConfig');if(imGetCookie('imtesting')){responsiveConditionReady = document.querySelector('#imtestingInfo') !== null; if(responsiveConditionReady) { document.getElementById('imtestingInfo').remove();} var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:2147483646;position:fixed;top:100%;right:3px;margin-top:-30px;padding:3px 8px;background:#0000003d;color:white;border-radius:3px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1733'; var imConfigName = 'HBsetup_pisnicky-akordycz_Pisnicky_akordy_cz___DB_1__od_16__2_2_24__2024_11_12_0915'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';imHbRandomParam = Math.floor(Math.random() * 10000) + 1; imHbScript.src = imHbScriptSrc+'tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam; document.getElementsByTagName('head')[0].appendChild(imHbScript);}; 
             function imGetCookie(name) {var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null;}; function imSetCookie(name,value,days){var d=new Date;d.setTime(d.getTime()+24*60*60*1000*days);document.cookie=name+'='+value+';domain=.;path=/;expires='+d.toGMTString(); document.cookie=name+'='+value+';domain=.'+window.location.hostname+';path=/;expires='+d.toGMTString();};function imTestingParam(t){var n=null,e=[];return location.search.substr(1).split('&').forEach(function(o){(e=o.split('='))[0]===t&&(n=decodeURIComponent(e[1]))}),n};var imtesting = imTestingParam('imtesting');if(imtesting=='start'){imSetCookie('imtesting','dev',1);}if(imtesting=='stop'){imSetCookie('imtesting', '', -1);}document.addEventListener('DOMContentLoaded', function(event) {setTimeout(function(){console.log('NO onreadystatechange 0 :: no check if config ID imHbConfig exist'); console.log('setTimeout imHbUploadConfig');responsiveConditionReady = document.querySelector('#imHbConfig') !== null; if(responsiveConditionReady) {      console.log('OK Config ID imHbConfig exist (0)'); }else{      console.log('Config ID imHbConfig does not exist (0) call imHbUploadConfig()');      imHbUploadConfig(); }}, 1500);});console.log('document.readyState: '+document.readyState); document.onreadystatechange = () => {  console.log('onreadystatechange 1 :: check if config ID imHbConfig exist');  console.log('document.readyState: '+document.readyState);  if (document.readyState == 'complete') {      console.log('DOM event readyState complete (1)');     responsiveConditionReady = document.querySelector('#imHbConfig') !== null;      if(responsiveConditionReady) {          console.log('Config ID imHbConfig exist (1)');      }else{          console.log('Config ID imHbConfig does not exist (1)');          imHbUploadConfig();      } }else{document.onreadystatechange = () => {  console.log('onreadystatechange 2 :: check if config ID imHbConfig exist');  console.log('document.readyState: '+document.readyState);  if (document.readyState == 'complete') {      console.log('DOM event readyState complete (2)');     responsiveConditionReady = document.querySelector('#imHbConfig') !== null;      if(responsiveConditionReady) {          console.log('Config ID imHbConfig exist (2)');      }else{          console.log('Config ID imHbConfig does not exist (2)');          imHbUploadConfig();      } }}; }};
