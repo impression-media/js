@@ -1,4 +1,4 @@
-/* Version: G_01 - 19.11. 2024 - 12:35:01 */
+/* Version: G_01 - 19.11. 2024 - 13:35:02 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -114,5 +114,5 @@ var bidderFloor = {
     "adform-sasAll": 3,
     "adform-sasBranding": 3,
     "iprima": 10,
-    "Setupad": 3
+    "setupad": 3
 };
