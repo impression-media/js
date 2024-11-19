@@ -1,4 +1,4 @@
-/* Version: G_03 - 19.11. 2024 - 11:45:01 */
+/* Version: G_03 - 19.11. 2024 - 12:45:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -113,7 +113,8 @@ var bidderFloor = {
     "adform-prima": 10,
     "adform-sasAll": 3,
     "adform-sasBranding": 3,
-    "iprima": 10
+    "iprima": 10,
+    "Setupad": 3
 };
 
 var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "1.09",
