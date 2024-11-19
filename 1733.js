@@ -39,7 +39,7 @@ console.log('imBlackBoxScript: https://hb.impressionmedia.cz/tmp/sas/sasAdapter.
 
 /* Header bidding from Impression Media 
  * Generate by script: updateCodeGoogleDevelopment     
- * Last update: 19.11.2024 23:13:58
+ * Last update: 20.11.2024 0:00:42
  * Ticket ID: ... / [1733]
  * Generated for WebSite: [https://pisnicky-akordy.cz]
  * User ID: [1]    
@@ -255,5 +255,250 @@ u.SYNC=1,u.ASYNC=2,u.QUEUE=4;var t="fun-hooks";var e=Object.freeze({useProxy:!0,
 /* dist adapter || module: userId */(self.pbjsChunk=self.pbjsChunk||[]).push([[73469],{34836:(e,t,n)=>{var o=n(7873),r=n(15901),s=n(43272),i=n(75023),a=n(16916),c=n(11445),l=n(78969),u=n(16833),d=n(91069);const g=new Map;function f(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:g;const n={};function o(e){const t=JSON.stringify([e.source?.toLowerCase(),e.ext]);n.hasOwnProperty(t)?n[t].uids.push(...e.uids):n[t]=e}return Object.entries(e).forEach((e=>{let[n,r]=e;r=Array.isArray(r)?r:[r];("pubProvidedId"===n?(0,d.deepClone)(r):r.map((e=>function(e,t,n){if(n&&e){let t={};t.source=(0,d.isFn)(n.getSource)?n.getSource(e):n.source;const o=(0,d.isFn)(n.getValue)?n.getValue(e):e;if((0,d.isStr)(o)){const r={id:o,atype:n.atype};if((0,d.isFn)(n.getUidExt)){const t=n.getUidExt(e);t&&(r.ext=t)}if(t.uids=[r],(0,d.isFn)(n.getEidExt)){const o=n.getEidExt(e);o&&(t.ext=o)}return t}}return null}(e,0,t.get(n))))).filter((e=>null!=e)).forEach(o)})),Object.values(n)}function m(e){const t=new Map,n={};return Object.entries(e).forEach((e=>{let[o,r]=e;const s=r.find((e=>null!=e.idObj?.[o]));s&&(n[o]=s.idObj[o],t.set(o,s.submodule.eids?.[o]))})),f(n,t)}var b=n(12938),h=n(63172),p=n(70433),y=n(51692),I=n(25555),w=n(16894),S=n(5973),E=n(45569),v=n(95139),D=n(76811),O=n(83441),k=n(38230),j=n(42627);const $="User ID",A=b.X0,T=b.qk,x="_pbjs_id_optout",C=(0,b.CK)("userId"),N={isAllowed:v.io};let P,U,_,F,L,W,q=!1,M=[],G=[],J={},R=[];const B=(()=>{let e;return()=>(null==e&&(e=(0,w.K7)()),e)})();function z(e){return B().fork().renameWith((t=>[`userId.mod.${t}`,`userId.mods.${e}.${t}`]))}function K(e,t){t=t||e.storageMgr;const n="function"==typeof e.submodule.domainOverride?e.submodule.domainOverride():null,o=e.config.storage.name;return function(e,r,s){t.setCookie(o+(e||""),r,s,"Lax",n)}}function V(e,t){const n=e.config.storage;try{const o=new Date(Date.now()+864e5*n.expires).toUTCString(),r=(0,d.isPlainObject)(t)?JSON.stringify(t):t;e.enabledStorageTypes.forEach((t=>{switch(t){case A:!function(e,t,n){const o=e.config.storage,r=K(e);r(null,t,n),r("_cst",be(),n),"number"==typeof o.refreshInSeconds&&r("_last",(new Date).toUTCString(),n)}(e,r,o);break;case T:!function(e,t,n){const o=e.config.storage,r=e.storageMgr;r.setDataInLocalStorage(`${o.name}_exp`,n),r.setDataInLocalStorage(`${o.name}_cst`,be()),r.setDataInLocalStorage(o.name,encodeURIComponent(t)),"number"==typeof o.refreshInSeconds&&r.setDataInLocalStorage(`${o.name}_last`,(new Date).toUTCString())}(e,r,o)}}))}catch(e){(0,d.logError)(e)}}function Y(e){Ee(e),e.enabledStorageTypes.forEach((t=>{switch(t){case A:!function(e){const t=K(e,C),n=new Date(Date.now()-864e5).toUTCString();["","_last","_cst"].forEach((e=>{try{t(e,"",n)}catch(e){(0,d.logError)(e)}}))}(e);break;case T:!function(e){["","_last","_exp","_cst"].forEach((t=>{try{C.removeDataFromLocalStorage(e.config.storage.name+t)}catch(e){(0,d.logError)(e)}}))}(e)}}))}function H(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:void 0;const n=e.config.storage,o=t?`${n.name}_${t}`:n.name;let r;try{e.enabledStorageTypes.find((t=>{switch(t){case A:r=function(e,t){return e.storageMgr.getCookie(t)}(e,o);break;case T:r=function(e,t){const n=e.storageMgr,o=e.config.storage,r=n.getDataFromLocalStorage(`${o.name}_exp`);return""===r?n.getDataFromLocalStorage(t):r&&new Date(r).getTime()-Date.now()>0?decodeURIComponent(n.getDataFromLocalStorage(t)):void 0}(e,o)}return!!r})),"string"==typeof r&&"{"===r.trim().charAt(0)&&(r=JSON.parse(r))}catch(e){(0,d.logError)(e)}return r}function Q(e,t,n){t=B().fork().startTiming("userId.callbacks.total").stopBefore(t);const o=(0,d.delayExecution)((()=>{clearTimeout(U),t()}),e.length);e.forEach((function(e){const t=z(e.submodule.name).startTiming("callback").stopBefore(o);try{e.callback((function(o){o?(e.config.storage&&V(e,o),e.idObj=e.submodule.decode(o,e.config),n.refresh(),pe(n)):(0,d.logInfo)(`${$}: ${e.submodule.name} - request id responded with an empty value`),t()}),H.bind(null,e))}catch(n){(0,d.logError)(`Error in userID module '${e.submodule.name}':`,n),t()}e.callback=void 0}))}function X(e){return Object.fromEntries(Object.entries(e).map((e=>{let[t,n]=e;return[t,n.find((e=>null!=e.idObj?.[t]))?.idObj?.[t]]})).filter((e=>{let[t,n]=e;return null!=n})))}function Z(e,t,n){const o={};return e.forEach((e=>{const r=n(e),s=function(e){if(e.primaryIds)return e.primaryIds;const t=Object.keys(e.eids??{});if(t.length>1)throw new Error(`ID submodule ${e.name} can provide multiple IDs, but does not specify 'primaryIds'`);return t}(r);t(e).forEach((t=>{const n=o[t]=o[t]??[],i=J[t]?.indexOf(r.name)??(s.includes(t)?0:-1),a=n.findIndex((e=>{let[t]=e;return t<i}));n.splice(-1===a?n.length:a,0,[i,e])}))})),Object.fromEntries(Object.entries(o).map((e=>{let[t,n]=e;return[t,n.map((e=>{let[t,n]=e;return n}))]})))}function ee(){const e={submodules:[],global:{},bidder:{},combined:{},refresh(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:[];const n=new Set(t.map((e=>e.submodule)));e.submodules=e.submodules.filter((e=>!n.has(e.submodule))).concat(t),function(){const t=Z(e.submodules,(e=>Object.keys(e.idObj??{})),(e=>e.submodule)),n={},o={};Object.entries(t).forEach((e=>{let[t,r]=e,s=!0;const i=new Set;r.map((e=>e.config.bidders)).forEach((e=>{Array.isArray(e)&&e.length>0?e.forEach((e=>i.add(e))):s=!1})),i.size>0&&!s?(0,d.logWarn)(`userID modules ${r.map((e=>e.submodule.name)).join(", ")} provide the same ID ('${t}'), but are configured for different bidders. ID will be skipped.`):0===i.size?n[t]=r:i.forEach((e=>{o[e]=o[e]??{},o[e][t]=r}))}));const r=Object.values(o).concat([n]).reduce(((e,t)=>Object.assign(e,t)),{});Object.assign(e,{global:n,bidder:o,combined:r})}()}};return e}function te(e){let{adUnits:t,ortb2Fragments:n}=e;if(n=n??{global:{},bidder:{}},function(e){const{global:t,bidder:n}=e,{global:o,bidder:r}=P,s=m(o);s.length>0&&(0,h.J)(t,"user.ext.eids",(t.user?.ext?.eids??[]).concat(s)),Object.entries(r).forEach((e=>{let[t,o]=e;const r=m(o);r.length>0&&(0,h.J)(n,`${t}.user.ext.eids`,(n[t]?.user?.ext?.eids??[]).concat(r))}))}(n),[t].some((e=>!Array.isArray(e)||!e.length)))return;const o=X(P.global),r=n.global.user?.ext?.eids||[];t.forEach((e=>{e.bids&&(0,d.isArray)(e.bids)&&e.bids.forEach((e=>{const t=Object.assign({},o,X(P.bidder[e.bidder]??{})),s=r.concat(n.bidder[e.bidder]?.user?.ext?.eids||[]);Object.keys(t).length>0&&(e.userId=t),s.length>0&&(e.userIdAsEids=s)}))}))}const ne={};let oe;function re(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:ae()||[];const t=L&&e.find((e=>e.source===L));if(t&&"string"==typeof(0,p.A)(t,"uids.0.id")){const e=t.uids[0].id.replace(/[\W_]/g,"");if(e.length>=32&&e.length<=150)return e;(0,d.logWarn)(`User ID - Googletag Publisher Provided ID for ${L} is not between 32 and 150 characters - ${e}`)}}const se=(0,w.Ak)("userId",(function(e,t){let{delay:n=I.k.timeout,getIds:o=me}=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};I.k.race([o().catch((()=>null)),n(F)]).then((()=>{te(t),B().join((0,w.BO)(t.metrics),{propagate:!1,includeGroups:!0}),e.call(this,t)}))}));function ie(){return X(P.combined)}function ae(){return m(P.combined)}function ce(e){return ae().filter((t=>t.source===e))[0]}function le(e,t,n){return ge().then((()=>{let o={};if((0,d.isFn)(n)){(0,d.logInfo)(`${$} - Getting encrypted signal from custom function : ${n.name} & source : ${e} `);const t=n(e);o[e]=t?ue(t):null}else{const n=ce(e);(0,d.logInfo)(`${$} - Getting encrypted signal for eids :${JSON.stringify(n)}`),(0,d.isEmpty)(n)||(o[n.source]=!0===t?ue(n):n.uids[0].id)}return(0,d.logInfo)(`${$} - Fetching encrypted eids: ${o[e]}`),o[e]}))}function ue(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1,n="";if(1===t)n="object"==typeof e?window.btoa(JSON.stringify(e)):window.btoa(e);return`${t}||${n}`}function de(){if(!(0,d.isGptPubadsDefined)())return;window.googletag.secureSignalProviders=window.googletag.secureSignalProviders||[];const e=s.$W.getConfig("userSync.encryptedSignalSources");if(e){const t=e.registerDelay||0;setTimeout((()=>{e.sources&&e.sources.forEach((e=>{let{source:t,encrypt:n,customFunc:o}=e;t.forEach((e=>{window.googletag.secureSignalProviders.push({id:e,collectorFunction:()=>le(e,n,o)})}))}))}),t)}else(0,d.logWarn)(`${$} - ESP : encryptedSignalSources config not defined under userSync Object`)}function ge(e){return oe(e).then((()=>ie()),(e=>e===ne?Promise.resolve().then(me):((0,d.logError)("Error initializing userId",e),I.k.reject(e))))}function fe(){let{submoduleNames:e}=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=arguments.length>1?arguments[1]:void 0;return ge({refresh:!0,submoduleNames:e}).then((e=>(t&&(0,d.isFn)(t)&&t(),e)))}function me(){return ge()}function be(){let e=Number(a.SL.hash);const t=[];for(;e>0;)t.push(String.fromCharCode(255&e)),e>>>=8;return btoa(t.join())}function he(e,t){const n=a.mW.getConsentData();if(e.config.storage){let o,r=H(e),s=!1;if("number"==typeof e.config.storage.refreshInSeconds){const t=new Date(H(e,"last"));s=t&&Date.now()-t.getTime()>1e3*e.config.storage.refreshInSeconds}if(!r||s||t||function(e){const t=H(e,"cst");return!t||t!==be()}(e)){const t=Object.assign({enabledStorageTypes:e.enabledStorageTypes},e.config);o=e.submodule.getId(t,n,r)}else"function"==typeof e.submodule.extendId&&(o=e.submodule.extendId(e.config,n,r));(0,d.isPlainObject)(o)&&(o.id&&(V(e,o.id),r=o.id),"function"==typeof o.callback&&(e.callback=o.callback)),r&&(e.idObj=e.submodule.decode(r,e.config))}else if(e.config.value)e.idObj=e.config.value;else{const t=e.submodule.getId(e.config,n,void 0);(0,d.isPlainObject)(t)&&("function"==typeof t.callback&&(e.callback=t.callback),t.id&&(e.idObj=e.submodule.decode(t.id,e.config)))}}function pe(e){const t=m(e.combined);if(t.length&&L){const e=re(t);e&&((0,d.isGptPubadsDefined)()?window.googletag.pubads().setPublisherProvidedId(e):(window.googletag=window.googletag||{},window.googletag.cmd=window.googletag.cmd||[],window.googletag.cmd.push((function(){window.googletag.pubads().setPublisherProvidedId(e)}))))}}function ye(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return B().fork().measureTime("userId.init.modules",(function(){if(!t.length)return[];if(t.forEach((e=>Ee(e))),!(t=t.filter((e=>(!e.config.storage||!!e.enabledStorageTypes.length)&&N.isAllowed(D.yl,(0,O.s)(E.fW,e.config.name))))).length)return(0,d.logWarn)(`${$} - no ID module configured`),[];const o=t.reduce(((e,t)=>z(t.submodule.name).measureTime("init",(()=>{try{he(t,n),e.push(t)}catch(e){(0,d.logError)(`Error in userID module '${t.submodule.name}':`,e)}return e}))),[]);return e.refresh(o),pe(e),o}))}function Ie(e){return e?.storage?.type?.trim().split(/\s*&\s*/)||[]}function we(e){function t(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),o=1;o<t;o++)n[o-1]=arguments[o];(0,d.logWarn)(`Invalid userSync.userId config: ${e}`,...n)}return Array.isArray(e)?e.filter((e=>{if(!e?.name)return t('must specify "name"',e);if(e.storage){if(!e.storage.name||!e.storage.type)return t('must specify "storage.name" and "storage.type"',e);if(!function(e){return Ie(e).every((e=>Se.has(e)))}(e))return t('invalid "storage.type"',e);["expires","refreshInSeconds"].forEach((n=>{let o=e.storage[n];null!=o&&"number"!=typeof o&&(o=Number(o),isNaN(o)?(t(`storage.${n} must be a number and will be ignored`,e),delete e.storage[n]):e.storage[n]=o)}))}return!0})):(null!=e&&t("must be an array",e),[])}const Se=new Set([T,A]);function Ee(e){if(e.enabledStorageTypes)return;const t=Ie(e.config);e.enabledStorageTypes=t.filter((t=>{switch(t){case T:return function(e){return!(!e.storageMgr.localStorageIsEnabled()||C.getDataFromLocalStorage(x)&&((0,d.logInfo)(`${$} - opt-out localStorage found, storage disabled`),1))}(e);case A:return function(e){return!(!e.storageMgr.cookiesAreEnabled()||C.getCookie(x)&&((0,d.logInfo)(`${$} - opt-out cookie found, storage disabled`),1))}(e)}return!1}))}function ve(e){g.clear(),Object.entries(Z(e,(e=>Object.keys(e.eids||{})),(e=>e))).forEach((e=>{let[t,n]=e;return g.set(t,n[0].eids[t])}))}function De(){ve(R);const e=we(G);if(!e.length)return;const t=R.filter((e=>!(0,r.I6)(M,(t=>t.name===e.name))));M.splice(0,M.length),t.map((t=>{const n=(0,r.I6)(e,(e=>e.name&&(e.name.toLowerCase()===t.name.toLowerCase()||t.aliasName&&e.name.toLowerCase()===t.aliasName.toLowerCase())));return n&&t.name!==n.name&&(n.name=t.name),n?{submodule:t,config:n,callback:void 0,idObj:void 0,storageMgr:(0,b.vM)({moduleType:E.fW,moduleName:n.name})}:null})).filter((e=>null!==e)).forEach((e=>M.push(e))),M.length&&(q||(j.gH.before(se,100),c.Ay.callDataDeletionRequest.before(Oe),y.Q.after((e=>e(re()))),q=!0),(0,d.logInfo)(`${$} - usersync config updated for ${M.length} submodules: `,M.map((e=>e.submodule.name))))}function Oe(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),o=1;o<t;o++)n[o-1]=arguments[o];(0,d.logInfo)("UserID: received data deletion request; deleting all stored IDs..."),M.forEach((e=>{if("function"==typeof e.submodule.onDataDeletionRequest)try{e.submodule.onDataDeletionRequest(e.config,e.idObj,...n)}catch(t){(0,d.logError)(`Error calling onDataDeletionRequest for ID submodule ${e.submodule.name}`,t)}Y(e)})),e.apply(this,n)}function ke(e){return function(){return Promise.resolve(e.apply(this,arguments))}}!function(e){let{delay:t=I.k.timeout}=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};L=void 0,M=[],G=[],P=ee(),oe=function(){let{delay:e=I.k.timeout}=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};const t=(0,I.v)(),n=(0,I.v)();let o,r,s=!1;function c(e){return r=B().fork(),null!=o&&o.reject(ne),o=(0,I.v)(),I.k.race([e,o.promise]).finally(r.startTiming("userId.total"))}let g=P,f=M;function m(e){return function(){if(g===P&&f===M)return e(...arguments)}}function b(){return a.SL.promise.finally(r.startTiming("userId.init.consent"))}let h=c(I.k.all([u.Gc,t.promise]).then(b).then(m((()=>{ye(g,f)}))).then((()=>n.promise.finally(r.startTiming("userId.callbacks.pending")))).then(m((()=>{const e=g.submodules.filter((e=>(0,d.isFn)(e.callback)));if(e.length)return new I.k((t=>Q(e,t,g)))}))));return function(){let{refresh:o=!1,submoduleNames:r=null,ready:a=!1}=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return a&&!s&&(s=!0,t.resolve(),F>0?n.resolve():i.on(l.qY.AUCTION_END,(function t(){i.off(l.qY.AUCTION_END,t),e(_).then(n.resolve)}))),o&&s&&(h=c(h.catch((()=>null)).then(b).then(m((()=>{const e=ye(g,f.filter((e=>null==r||r.includes(e.submodule.name))),!0).filter((e=>null!=e.callback));if(e.length)return new I.k((t=>Q(e,t,g)))}))))),h}}({delay:t}),null!=W&&W(),R=[],W=e.getConfig("userSync",(e=>{const t=e.userSync;t&&(L=t.ppid,t.userIds&&(G=t.userIds,_=(0,d.isNumber)(t.syncDelay)?t.syncDelay:k.qh.syncDelay,F=(0,d.isNumber)(t.auctionDelay)?t.auctionDelay:k.qh.auctionDelay,De(),function(e,t){if(e){const n={},o=new Map(t.map((e=>e.aliasName?[e.aliasName,e.name]:[])));Object.keys(e).forEach((t=>{const r=(0,d.isArray)(e[t])?[...e[t]].reverse():[];n[t]=r.map((e=>o.has(e)?o.get(e):e))})),J=n}else J={};P.refresh(),ve(t)}(t.idPriority,R),oe({ready:!0})))})),(0,o.m)().getUserIds=ie,(0,o.m)().getUserIdsAsEids=ae,(0,o.m)().getEncryptedEidsForSource=ke(le),(0,o.m)().registerSignalSources=de,(0,o.m)().refreshUserIds=ke(fe),(0,o.m)().getUserIdsAsync=ke(me),(0,o.m)().getUserIdsAsEidBySource=ce}(s.$W),(0,u.xG)("userId",(function(e){e.findRootDomain=S.S,(0,r.I6)(R,(t=>t.name===e.name))||(R.push(e),a.o2.register(E.fW,e.name,e.gvlid),De(),oe({refresh:!0,submoduleNames:[e.name]}))}),{postInstallAllowed:!0}),(0,o.E)("userId")}},e=>{e.O(0,[60802,51085],(()=>{return t=34836,e(e.s=t);var t}));e.O()}]);
 })(),pbjs.processQueue();
 //END masterPrebidString
-; function imHbUploadConfig(){console.log('imCDN: '+imCDN); var imHbScriptSrc = ''; if (imCDN){ imHbScriptSrc = 'https://cdn.jsdelivr.net/gh/impression-media/js/'; }else{ imHbScriptSrc = 'https://hb.impressionmedia.cz/'; } console.log('imHbUploadConfig imHbScriptSrc: '+imHbScriptSrc); console.log('start imHbUploadConfig');if(imGetCookie('imtesting')){responsiveConditionReady = document.querySelector('#imtestingInfo') !== null; if(responsiveConditionReady) { document.getElementById('imtestingInfo').remove();} var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:2147483646;position:fixed;top:100%;right:3px;margin-top:-30px;padding:3px 8px;background:#0000003d;color:white;border-radius:3px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1733'; var imConfigName = 'HBsetup_pisnicky-akordycz_Pisnicky_akordy_cz___DB_1__od_16__2_2_24__2024_11_19_2313'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';imHbRandomParam = Math.floor(Math.random() * 10000) + 1; imHbScript.src = imHbScriptSrc+'tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam; document.getElementsByTagName('head')[0].appendChild(imHbScript);}; 
-            function imGetCookie(name) {var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null;}; function imSetCookie(name,value,days){var d=new Date;d.setTime(d.getTime()+24*60*60*1000*days);document.cookie=name+'='+value+';domain=.;path=/;expires='+d.toGMTString(); document.cookie=name+'='+value+';domain=.'+window.location.hostname+';path=/;expires='+d.toGMTString();};function imTestingParam(t){var n=null,e=[];return location.search.substr(1).split('&').forEach(function(o){(e=o.split('='))[0]===t&&(n=decodeURIComponent(e[1]))}),n};var imtesting = imTestingParam('imtesting');if(imtesting=='start'){imSetCookie('imtesting','dev',1);}if(imtesting=='stop'){imSetCookie('imtesting', '', -1);}document.addEventListener('DOMContentLoaded', function(event) {setTimeout(function(){console.log('NO onreadystatechange 0 :: no check if config ID imHbConfig exist'); console.log('setTimeout imHbUploadConfig');responsiveConditionReady = document.querySelector('#imHbConfig') !== null; if(responsiveConditionReady) {      console.log('OK Config ID imHbConfig exist (0)'); }else{      console.log('Config ID imHbConfig does not exist (0) call imHbUploadConfig()');      imHbUploadConfig(); }}, 1500);});console.log('document.readyState: '+document.readyState); document.onreadystatechange = () => {  console.log('onreadystatechange 1 :: check if config ID imHbConfig exist');  console.log('document.readyState: '+document.readyState);  if (document.readyState == 'complete') {      console.log('DOM event readyState complete (1)');     responsiveConditionReady = document.querySelector('#imHbConfig') !== null;      if(responsiveConditionReady) {          console.log('Config ID imHbConfig exist (1)');      }else{          console.log('Config ID imHbConfig does not exist (1)');          imHbUploadConfig();      } }else{document.onreadystatechange = () => {  console.log('onreadystatechange 2 :: check if config ID imHbConfig exist');  console.log('document.readyState: '+document.readyState);  if (document.readyState == 'complete') {      console.log('DOM event readyState complete (2)');     responsiveConditionReady = document.querySelector('#imHbConfig') !== null;      if(responsiveConditionReady) {          console.log('Config ID imHbConfig exist (2)');      }else{          console.log('Config ID imHbConfig does not exist (2)');          imHbUploadConfig();      } }}; }};
+; function imHbUploadConfig(){console.log('imCDN: '+imCDN); var imHbScriptSrc = ''; if (imCDN){ imHbScriptSrc = 'https://cdn.jsdelivr.net/gh/impression-media/js/'; }else{ imHbScriptSrc = 'https://hb.impressionmedia.cz/'; } console.log('imHbUploadConfig imHbScriptSrc: '+imHbScriptSrc); console.log('start imHbUploadConfig');if(imGetCookie('imtesting')){responsiveConditionReady = document.querySelector('#imtestingInfo') !== null; if(responsiveConditionReady) { document.getElementById('imtestingInfo').remove();} var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:2147483646;position:fixed;top:100%;right:3px;margin-top:-30px;padding:3px 8px;background:#0000003d;color:white;border-radius:3px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1733'; var imConfigName = 'HBsetup_pisnicky-akordycz_Pisnicky_akordy_cz___DB_1__od_16__2_2_24__2024_11_20_0000'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';imHbRandomParam = Math.floor(Math.random() * 10000) + 1; imHbScript.src = imHbScriptSrc+'tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam; document.getElementsByTagName('head')[0].appendChild(imHbScript);}; 
+            function imGetCookie(name) {var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null;}; function imSetCookie(name,value,days){var d=new Date;d.setTime(d.getTime()+24*60*60*1000*days);document.cookie=name+'='+value+';domain=.;path=/;expires='+d.toGMTString(); document.cookie=name+'='+value+';domain=.'+window.location.hostname+';path=/;expires='+d.toGMTString();};function imTestingParam(t){var n=null,e=[];return location.search.substr(1).split('&').forEach(function(o){(e=o.split('='))[0]===t&&(n=decodeURIComponent(e[1]))}),n};var imtesting = imTestingParam('imtesting');if(imtesting=='start'){imSetCookie('imtesting','dev',1);}if(imtesting=='stop'){imSetCookie('imtesting', '', -1);}document.addEventListener('DOMContentLoaded', function(event) {setTimeout(function(){console.log('NO onreadystatechange 0 :: no check if config ID imHbConfig exist'); console.log('setTimeout imHbUploadConfig');responsiveConditionReady = document.querySelector('#imHbConfig') !== null; if(responsiveConditionReady) {      console.log('OK Config ID imHbConfig exist (0)'); }else{      console.log('Config ID imHbConfig does not exist (0) call imHbUploadConfig()');      imHbUploadConfig(); }}, 1500);});
+
+imHbMbIsMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (imHbMbIsMobile.Android() || imHbMbIsMobile.BlackBerry() || imHbMbIsMobile.iOS() || imHbMbIsMobile.Opera() || imHbMbIsMobile.Windows());
+    }
+};
+
+
+var iprimaParam = [];
+iprimaParam['async'] = [];
+iprimaParam['section'] = [];
+
+//(function () {
+    console.log('PRIMA_ADAPTER init');
+    var iprimaAdapter = function iprimaAdapter() {
+        return {
+            callBids: function (bidderRequest, addBidResponse, done) {
+            
+                var hbQueryString = window.location.search;;
+                hbUrlParams = new URLSearchParams(hbQueryString);
+                if(hbUrlParams.has('pbjs_debug')){
+                    console.log('PRIMA_ADAPTEER bidderRequest', bidderRequest);
+                }
+                // add call to sas
+                // https://ast.rocks/create-custom-prebidjs-bidder-adapter/
+                let consent = 'xxx';
+                let showname = 'noconsent';
+                try{
+                    consent = bidderRequest.gdprConsent.consentString;
+                }catch(e){
+                    if(hbUrlParams.has('pbjs_debug')){
+                        console.log('PRIMA_ADAPTER catch if pbjs_debug error', e);
+                    }
+                }
+                if(consent){showname = 'consent';console.log('showname consent:', consent);}else{console.log('showname consent:', consent);}
+                bidderRequest.bids.forEach(async (bidRequest) => {
+                  if(hbUrlParams.has('pbjs_debug')){
+                      console.log('forEach bidRequest:', bidRequest);
+                  }
+                  if(bidRequest.bidder === 'iprima'){
+                    if(hbUrlParams.has('pbjs_debug')){
+                        console.log('sasAdapter >> bidRequest.bidder: if::', bidRequest.bidder);
+                        console.log('sasAdapter >> bidRequest.adUnitCode:', bidRequest.adUnitCode);
+                    }
+                    if(imHbMbIsMobile.any()){
+                        iprimaParam['section'][bidRequest.adUnitCode] = 'web_mobile';
+                    }else{
+                        iprimaParam['section'][bidRequest.adUnitCode] = 'web_desktop';
+                    }
+                    //if((sasExIsMobile.any() && iprimaParam['section'][bidRequest.adUnitCode] == 'web_mobile')
+                    //|| (!sasExIsMobile.any() && iprimaParam['section'][bidRequest.adUnitCode] == 'web_desktop')){
+                    
+                        
+                        if(hbUrlParams.has('pbjs_debug')){
+                            console.log('sasAdapter >> section: if::', iprimaParam['section'][bidRequest.adUnitCode]);
+                        }
+                        try{
+                            if(bidRequest.params.site && bidRequest.params.area && bidRequest.params.size){
+                                const site = bidRequest.params.site;
+                                console.log('if site:', site);
+                                const area = bidRequest.params.area;
+                                console.log('if area:', area);
+                                const size = bidRequest.params.size;
+                                console.log('if size:', size);
+                                const viewid = Math.floor(Math.random() * 1000000000);
+                                const random = Math.floor(Math.random() * 1000000000);
+                                const section = iprimaParam['section'][bidRequest.adUnitCode];
+                                var mixWidthAndHeight = '/dev_display_width='+window.innerWidth+
+                                                        '/dev_display_height='+window.innerHeight+
+                                                        '/devwidth='+screen.width+
+                                                        '/devheight='+screen.height;
+
+                                const url = 'https://a.iprima.cz/iprima/tserver/ball/viewid='+viewid+'/random='+random+'/site='+site+'/section='+section+'/area='+area+'/size='+size+mixWidthAndHeight+'/keyword=prebidadapter/consent='+consent+'/gdpr=1/showname='+showname;
+                                if(hbUrlParams.has('pbjs_debug')){
+                                    console.log('PRIMA_ADAPTER url', url);
+                                }
+    //var sasAsync = iprimaParam['async'][bidRequest.adUnitCode];
+    sasAsync = 0;
+    if(sasAsync){
+                                if(hbUrlParams.has('pbjs_debug')){
+                                    console.log('sasAsync if await fetch');
+                                }
+                                const response = await fetch(url, {
+                                    credentials: 'include'
+                                });
+                                //const json_data = await response.json();
+                                let answer = await response.text();
+    }else{
+                                if(hbUrlParams.has('pbjs_debug')){
+                                    console.log('sasAsync else XMLHttpRequest');
+                                }
+                                var sasXhr = new XMLHttpRequest();
+                                //var sasAsync = false; //nutnost u pozic kde je pouze bidder iprima, jinak prebid uzavirá čekání na odpoved i po 5ms a nedojde k odeslání nabídky na adserver
+                                //var sasAsync = true; 
+                                //var sasAsync = iprimaParam['async'][bidRequest.adUnitCode];
+                                sasXhr.open('GET', url, sasAsync);
+                                sasXhr.send();
+                                var answer = sasXhr.responseText;
+    }
+    
+                                if(hbUrlParams.has('pbjs_debug')){
+                                    console.log('response.text', answer);
+                                }
+                                var testEmptyAds = 'not found string empty-ads';
+                                if (typeof answer === 'string' || answer instanceof String){
+                                    if(!answer.includes('empty-ads')){
+                                        //OK default value - not found string empty-ads 
+                                        console.log('sasAdapter >> OK string >> default testEmptyAds');
+                                    }else{
+                                        testEmptyAds = 'String with substring empty-ads';
+                                    }
+                                }else{
+                                    var testStringFromObject = JSON.stringify(answer);
+                                    if(!testStringFromObject.includes('empty-ads')){
+                                        //OK default value - not found string empty-ads 
+                                        console.log('sasAdapter >> OK object >> default testEmptyAds');
+                                    }else{
+                                        testEmptyAds = 'Object with value empty-ads';
+                                    }
+                                }
+                                console.log('sasAdapter >> testEmptyAds:',testEmptyAds);
+                                if(testEmptyAds == 'not found string empty-ads'){
+                                //if(!answer.includes('empty-ads')){
+                                    var replaceAnswer = answer.replace(/[\n|\r|\t|]/g, '').replace(/["]/g,"'").replace(/[`]/g,'"');
+                                    if(hbUrlParams.has('pbjs_debug')){
+                                        console.log('replaceAnswer: ', replaceAnswer);
+                                    }
+                                    //var checkSasValidJSON = sasTryParseJSONObject(replaceAnswer);
+                                    //console.log('checkSasValidJSON: ', checkSasValidJSON);
+
+                                    var replaceAnswer2 = replaceAnswer.replace(/\\/g, '\\\\');
+                                    if(hbUrlParams.has('pbjs_debug')){
+                                        console.log('replaceAnswer2: ', replaceAnswer2);
+                                    }
+                                    const json_data = JSON.parse(replaceAnswer2);
+
+                                    if(typeof json_data === 'object'){
+                                        if(hbUrlParams.has('pbjs_debug')){
+                                            console.log('typeof json_data is object');
+                                            console.log('JSON.parse replaceAnswer2',json_data);
+                                        }
+                                        const bid = window.pbjs.createBid(1, bidRequest);                                    
+                                        bid.requestId = bidRequest.bidId;
+                                        //bid.adUnitId = bidRequest.adUnitId;
+                                        bid.requestId = bidRequest.bidId
+                                        bid.auctionId = bidRequest.auctionId;
+                                        bid.adUnitCode = bidRequest.adUnitCode;
+                                        bid.bidderCode = bidRequest.bidder;                                    
+                                        bid.cpm = json_data[0].cpm;
+                                        //bid.cpm = 56;
+                                        bid.currency = 'CZK';
+                                        bid.width = json_data[0].width;
+                                        bid.height = json_data[0].height;
+                                        bid.ttl = 360; //deault 60
+                                        bid.netRevenue = false;
+                                        bid.creativeId = '1';
+                                        
+            bid.adUnitId = bidRequest.adUnitId;
+            bid.adapterCode = 'iprima';
+            bid.deferBilling = false;
+            bid.deferRendering = false;
+            bid.latestTargetedAuctionId = bidRequest.auctionId;
+            bid.originalCpm = json_data[0].cpm; 
+            bid.originalCurrency = 'CZK';
+            bid.size = json_data[0].width+'x'+json_data[0].height;
+            bid.renderer = 'unset';   
+            bid.transactionId = bidRequest.transactionId;
+
+                                        bid.ad = json_data[0].ad;
+                                        addBidResponse(bidRequest.adUnitCode, bid);
+                                    }else{
+                                        if(hbUrlParams.has('pbjs_debug')){
+                                            console.log('PRIMA_ADAPTER typeof json_data === object',false);
+                                        }
+                                        //addBidResponse(bidRequest.adUnitCode, null);
+                                    } 
+                                }else{
+                                    if(hbUrlParams.has('pbjs_debug')){
+                                        console.log('PRIMA_ADAPTER answer.includes:: empty-ads');
+                                    }
+                                    //addBidResponse(bidRequest.adUnitCode, null);
+                                } 
+                              }
+                          }catch(e){
+                              if(hbUrlParams.has('pbjs_debug')){
+                                  console.log('PRIMA_ADAPTER error', e);
+                              }
+                          }
+                      //}else{
+                      //   console.log('PRIMA_ADAPTER sasAdapter >> section: else::', iprimaParam['section'][bidRequest.adUnitCode]);   
+                      //}
+                  }else{
+                     if(hbUrlParams.has('pbjs_debug')){
+                         console.log('PRIMA_ADAPTER sasAdapter >> bidRequest.bidder: else:: ', bidRequest.bidder);   
+                     }
+                  }
+                
+                });
+                done();
+            }
+        };
+    };
+    pbjs.registerBidAdapter(iprimaAdapter, 'iprima');
+//})();
+
+//countSasImWaitForPbjs = 0;
+//function imWaitForPbjs(){
+//    if(typeof pbjs === 'object'){
+//        pbjs.registerBidAdapter(iprimaAdapter, 'iprima');
+////        pbjs.setConfig({
+////            s2sConfig: [{
+////                bidders: ['iprima'],
+////                timeout: 300
+////            }]
+////        });
+//    }else{
+//        countSasImWaitForPbjs++;
+//        if(countSasImWaitForPbjs < 180){
+//            setTimeout(imWaitForPbjs, 30);
+//            console.log('pbjs.object >> imWaitForPbjs 30ms');
+//        }else{
+//            console.log('pbjs.object >> imWaitForPbjs END');
+//        }
+//
+//    }
+//}imWaitForPbjs();
+
+
+
+console.log('document.readyState: '+document.readyState); document.onreadystatechange = () => {  console.log('onreadystatechange 1 :: check if config ID imHbConfig exist');  console.log('document.readyState: '+document.readyState);  if (document.readyState == 'complete') {      console.log('DOM event readyState complete (1)');     responsiveConditionReady = document.querySelector('#imHbConfig') !== null;      if(responsiveConditionReady) {          console.log('Config ID imHbConfig exist (1)');      }else{          console.log('Config ID imHbConfig does not exist (1)');          imHbUploadConfig();      } }else{document.onreadystatechange = () => {  console.log('onreadystatechange 2 :: check if config ID imHbConfig exist');  console.log('document.readyState: '+document.readyState);  if (document.readyState == 'complete') {      console.log('DOM event readyState complete (2)');     responsiveConditionReady = document.querySelector('#imHbConfig') !== null;      if(responsiveConditionReady) {          console.log('Config ID imHbConfig exist (2)');      }else{          console.log('Config ID imHbConfig does not exist (2)');          imHbUploadConfig();      } }}; }};
