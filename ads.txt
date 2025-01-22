@@ -64,6 +64,7 @@ advertising.com, 28246, RESELLER
 adyoulike.com, b4bf4fdd9b0b915f746f6747ff432bde, RESELLER
 adyoulike.com, b4bf4fdd9b0b915f746f6747ff432bde, RESELLER, 4ad745ead2958bf7
 aol.com, 58905, RESELLER, e1a5b5b6e3255540
+appnexus.com, 1019, RESELLER, f5ab79cb980f11d1
 appnexus.com, 11284, RESELLER, f5ab79cb980f11d1
 appnexus.com, 13099, RESELLER
 Appnexus.com, 1356, RESELLER, f5ab79cb980f11d1
@@ -74,6 +75,7 @@ axonix.com, 57264, RESELLER,
 axonix.com, 57264, RESELLER, bc385f2b4a87b721
 connectad.io, 440, RESELLER, 85ac85a30c93b3e5
 contextweb.com, 560288, RESELLER, 89ff185a4c4e857c
+contextweb.com, 563115, RESELLER, 89ff185a4c4e857c
 criteo.com, B-061573, DIRECT, 9fac4a4a87c2a44f
 criteo.com, B-061573, RESELLER, 9fac4a4a87c2a44f
 criteo.com, B-066086, DIRECT, 9fac4a4a87c2a44f
@@ -84,6 +86,8 @@ freewheel.tv, 20393, RESELLER
 freewheel.tv, 24377, RESELLER
 google.com, pub-3375315304218610, DIRECT, f08c47fec0942fa0
 google.com, pub-3375315304218610, RESELLER, f08c47fec0942fa0
+google.com, pub-3405003263881884, DIRECT, f08c47fec0942fa0
+google.com, pub-4008388001417152, DIRECT, f08c47fec0942fa0
 google.com, pub-3405003263881884, RESELLER, f08c47fec0942fa0
 google.com, pub-3769010358500643, RESELLER, f08c47fec0942fa0
 google.com, pub-5074983905023987, DIRECT, f08c47fec0942fa0
@@ -100,6 +104,7 @@ indexexchange.com, 198741, DIRECT, 50b1c356f2c5c8fc
 indexexchange.com, 198741, RESELLER, 50b1c356f2c5c8fc
 lemmatechnologies.com, 399, RESELLER, 7829010c5bebd1fb
 lemmatechnologies.com, 399, RESELLER, 7829010c5bebd1fb #LEMMA
+lijit.com, 244287, RESELLER, fafdf38b16bf6b2b
 loopme.com, 5679, RESELLER, 6c8d5f95897a5a3b
 Media.net, 8CU1T6N33, DIRECT
 Media.net, 8CU1T6N33, RESELLER
@@ -112,6 +117,8 @@ onetag.com, 756f59c90a44ec3-OB, RESELLER
 onetag.com, 756f59c90a44ec3-OB, DIRECT
 openx.com, 537100188, RESELLER, 6a698e2ec38604c6
 openx.com, 537149888, RESELLER, 6a698e2ec38604c6
+openx.com, 537145117, RESELLER, 6a698e2ec38604c6
+openx.com, 538959099, RESELLER, 6a698e2ec38604c6
 openx.com, 541194812, RESELLER, 6a698e2ec38604c6
 openx.com, 541194812, DIRECT, 6a698e2ec38604c6
 openx.com, 542510992, DIRECT, 6a698e2ec38604c6
@@ -119,7 +126,10 @@ openx.com, 542510992, RESELLER, 6a698e2ec38604c6
 openx.com, 544023160, DIRECT, 6a698e2ec38604c6
 openx.com, 544023160, RESELLER, 6a698e2ec38604c6
 performax.cz, 266, DIRECT
+pubmatic.com, 137711, RESELLER, 5d62403b186f2ace
 pubmatic.com, 154037, RESELLER, 5d62403b186f2ace
+pubmatic.com, 156077, RESELLER, 5d62403b186f2ace
+pubmatic.com, 156212, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156439, RESELLER, 5d62403b186f2ace
 pubmatic.com, 159463, RESELLER, 5d62403b186f2ace
 pubmatic.com, 159945, RESELLER, 5d62403b186f2ace
@@ -130,6 +140,7 @@ pubmatic.com, 160642, DIRECT, 5d62403b186f2ace
 pubmatic.com, 160642, RESELLER, 5d62403b186f2ace
 pubmatic.com, 49307, RESELLER, 5d62403b186f2ace
 pubnative.net, 1006576, RESELLER, d641df8625486a7b
+rhebus.works, 5252004478, RESELLER
 rhythmone.com, 2564526802, RESELLER, a670c89d4a324e47
 rhythmone.com, 3611299104, RESELLER
 rubiconproject.com, 11006, RESELLER, 0bfd66d529a55807
@@ -140,6 +151,7 @@ rubiconproject.com, 24376, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 24378, DIRECT, 0bfd66d529a55807
 rubiconproject.com, 24378, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 26800, RESELLER, 0bfd66d529a55807
+sharethrough.com, OAW69Fon, RESELLER, d53b998a7bd4ecd2
 smaato.com, 1100044045, RESELLER, 07bcf65f187117b4
 smartadserver.com, 3691, RESELLER
 smartadserver.com, 3691-OB, RESELLER, 060d053dcf45cbf3
@@ -150,8 +162,10 @@ teads.tv, 19831, RESELLER, 15a9c44f6d26cbe1
 teads.tv, 27843, RESELLER, 15a9c44f6d26cbe1 
 teads.tv, 27843, DIRECT, 15a9c44f6d26cbe1
 themediagrid.com, OV47CW, DIRECT, 35d5010d7789b49d          
+ubmatic.com, 161593, RESELLER, 5d62403b186f2ace
 xad.com, 958, RESELLER, 81cbf0a75a5e0e9a
 yahoo.com, 58905, RESELLER, e1a5b5b6e3255540
+verve.com, 15503, RESELLER, 0c8f5958fc2d6270
 video.unrulymedia.com, 2564526802, RESELLER, 6f752381ad5ec0e5  
 voxexchange.io, 6667ea247bc72f0dacc1c675, RESELLER
 
