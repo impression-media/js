@@ -92,6 +92,11 @@ connectad.io, 440, RESELLER, 85ac85a30c93b3e5
 pubmatic.com, 159945, DIRECT, 5d62403b186f2ace
 openx.com, 541194812, DIRECT, 6a698e2ec38604c6
 adform.com, 1794, DIRECT
+adform.com, 3080, DIRECT, 9f5210a2f0999e32
+themediagrid.com, OV47CW, RESELLER, 35d5010d7789b49d
+pubmatic.com, 162747, RESELLER, 5d62403b186f2ace
+wpartner.pl, 518, DIRECT
+
 
 #Stroeer
 stroeer.com,  17438, DIRECT
