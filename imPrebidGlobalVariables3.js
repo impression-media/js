@@ -1,4 +1,4 @@
-/* Version: G_03 - 18.06. 2025 - 02:45:02 */
+/* Version: G_03 - 18.06. 2025 - 03:45:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -138,6 +138,7 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "0
     "serialzonecz1574topleaderboardbrandingadformsasBranding": "2.61",
     "serialzonecz1574square1adformsasAll": "1.09",
     "serialzonecz1574bottomleaderboardmobiladformsasAll": "0.74",
+    "nespechejcz1853adformrectangleadformsasAll": "1.09",
     "meteocentrumcz1649leaderboardadformsasAll": "4",
     "autanetcz1651AdTrackGenericInterscrollerMobileadformsasAll": "4",
     "prehrajto1676adformleaderboardadformsasAll": "4",
@@ -508,6 +509,10 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "0
     "nespechejcz1852adformleaderboardadformsasAll": "0.74",
     "nespechejcz1852adformleaderboardadformsasBranding": "2.61",
     "nespechejcz1852adformhalfpageadformsasAll": "0.74",
-    "nespechejcz1852adformrectangleadformsasAll": "1.09"};
+    "nespechejcz1852adformrectangleadformsasAll": "1.09",
+    "nespechejcz1853AdTrackGenericInterscrollerMobileadformsasAll": "1.96",
+    "nespechejcz1853adformhalfpageadformsasAll": "0.74",
+    "nespechejcz1853adformleaderboardadformsasAll": "0.74",
+    "nespechejcz1853adformleaderboardadformsasBranding": "2.61"};
 
 var globalExternSasCPM = {"pisnickyakordyczadformsquare": "1.05","pisnickyakordyczadformsquare": "1.08","pisnickyakordyczadformsquare": "1.09","autowebczadformleaderboard": "1.09","autowebczadformsquare": "3.04","autowebczadformsquare2": "1.09","autowebczadformsquare3": "1.09","autowebczadformrectangle": "1.09","ifaunaczdivgptadifatf": "1.09","ifaunaczdivgptadifskyskraper1": "1.09","ifaunaczdivgptadifskyskraper2": "1.09","ifaunaczdivgptadifskyskraper3": "1.09","autowebczadforminterscroller": "2.09","autowebczadformleaderboard": "5.04","autowebczadformsquare": "1.09","autowebczadformleaderboard": "1.09","zakrutaczadformleaderboard": "1.09","zakrutaczadformleaderboard": "3.26","zakrutaczadformsquare": "1.09","zakrutaczadformrectangle": "1.09","aahbimpressionmediaczadformsquare": "1.09"};
