@@ -1,4 +1,4 @@
-/* Version: G_03 - 29.08. 2025 - 01:45:01 */
+/* Version: G_03 - 29.08. 2025 - 02:45:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -472,6 +472,7 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "0
     "nasetemacz1815adformsquarem2adformsasAll": "1.09",
     "nasetemacz1815AdTrackGenericInterscrollerMobileadformsasAll": "1.96",
     "nasetemacz1815adformMobilniBrandingadformsasAll": "1.52",
+    "hybridcz1866adformsquareadformsasAll": "0.74",
     "nasetemacz1817adformMobilniBrandingadformsasAll": "1.52",
     "nasetemacz1817AdTrackGenericInterscrollerMobileadformsasAll": "1.96",
     "nasetemacz1817adformsquarem2adformsasAll": "1.09",
@@ -524,6 +525,9 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "0
     "nespechejcz1853adformhalfpageadformsasAll": "0.74",
     "nespechejcz1853adformleaderboardadformsasAll": "0.74",
     "nespechejcz1853adformleaderboardadformsasBranding": "2.61",
-    "autacz1855adformMobilniBrandingadformsasAll": "1.52"};
+    "autacz1855adformMobilniBrandingadformsasAll": "1.52",
+    "hybridcz1866AdTrackGenericInterscrollerMobileadformsasAll": "1.96",
+    "hybridcz1866adformleaderboardadformsasAll": "0.74",
+    "hybridcz1866adformleaderboardadformsasBranding": "2.61"};
 
 var globalExternSasCPM = {"pisnickyakordyczadformsquare": "1.05","pisnickyakordyczadformsquare": "1.08","pisnickyakordyczadformsquare": "1.09","autowebczadformleaderboard": "1.09","autowebczadformsquare": "3.04","autowebczadformsquare2": "1.09","autowebczadformsquare3": "1.09","autowebczadformrectangle": "1.09","ifaunaczdivgptadifatf": "1.09","ifaunaczdivgptadifskyskraper1": "1.09","ifaunaczdivgptadifskyskraper2": "1.09","ifaunaczdivgptadifskyskraper3": "1.09","autowebczadforminterscroller": "2.09","autowebczadformleaderboard": "5.04","autowebczadformsquare": "1.09","autowebczadformleaderboard": "1.09","zakrutaczadformleaderboard": "1.09","zakrutaczadformleaderboard": "3.26","zakrutaczadformsquare": "1.09","zakrutaczadformrectangle": "1.09","aahbimpressionmediaczadformsquare": "1.09"};
