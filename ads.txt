@@ -274,7 +274,7 @@ cpex.cz, 011, DIRECT
 
 RTBHOUSE.COM, w6O8SDnYNMT7Cb6AHGZf, DIRECT
 
-#R2B2-ads.txt-v2.34.0
+#R2B2-ads.txt-v2.35.0
 r2b2.cz, 69, DIRECT
 r2b2.cz, 6735, DIRECT
 r2b2.cz, 3, DIRECT
@@ -288,6 +288,7 @@ r2b2.cz, 367, DIRECT
 r2b2.cz, 7591, DIRECT
 r2b2.cz, 8, DIRECT
 r2b2.cz, 691, DIRECT
+r2b2.cz, 7691, DIRECT
 r2b2.io, 69, DIRECT
 r2b2.io, 6735, DIRECT
 r2b2.io, 3, DIRECT
@@ -301,6 +302,7 @@ r2b2.io, 367, DIRECT
 r2b2.io, 7591, DIRECT
 r2b2.io, 8, DIRECT
 r2b2.io, 691, DIRECT
+r2b2.io, 7691, DIRECT
 indexexchange.com, 195767, DIRECT
 rubiconproject.com, 11352, DIRECT, 0bfd66d529a55807
 sovrn.com, 349312, DIRECT, fafdf38b16bf6b2b
@@ -451,6 +453,36 @@ smartadserver.com, 4111, RESELLER
 triplelift.com, 8495, RESELLER, 6c33edb13117fd86
 vidoomy.com, 2727113, RESELLER
 rtbhouse.com, nWY6riPYQCf6ptFNZQEI, RESELLER
+kueez.com, 0ace8d514944e47836266189b1dbd53f, RESELLER
+appnexus.com, 8826, RESELLER, f5ab79cb980f11d1
+rubiconproject.com, 16920, RESELLER, 0bfd66d529a55807
+openx.com, 557564833, RESELLER, 6a698e2ec38604c6
+lijit.com, 407406, RESELLER, fafdf38b16bf6b2b
+media.net, 8cu4jtrf9, RESELLER
+pubmatic.com, 162110, RESELLER, 5d62403b186f2ace
+sharethrough.com, n98xdzel, RESELLER, d53b998a7bd4ecd2
+33across.com, 0010b00002ODU4HAAX, RESELLER, bbea06d9c4d2853c
+yieldmo.com, 3133660606033240149, RESELLER
+onetag.com, 6e053d779444c00, RESELLER
+video.unrulymedia.com, 3486482593, RESELLER
+sonobi.com, 4c4fba1717, RESELLER, d1a215d9eb5aee9e
+smartadserver.com, 4288, RESELLER, 060d053dcf45cbf3
+zetaglobal.com, 108, RESELLER
+improvedigital.com, 2106, RESELLER
+adform.com, 2926, RESELLER, 9f5210a2f0999e32
+start.io, 185522363, RESELLER
+loopme.com, 11576, RESELLER, 6c8d5f95897a5a3b
+themediagrid.com, uot45z, RESELLER, 35d5010d7789b49d
+trustedstack.com, TSIO6G4I5, RESELLER
+ogury.com, 0077f552-4948-4d61-928b-a9b92f063a60, RESELLER
+appnexus.com, 11470, RESELLER
+pubmatic.com, 163238, RESELLER, 5d62403b186f2ace
+smartadserver.com, 4537, RESELLER, 060d053dcf45cbf3
+rubiconproject.com, 25198, RESELLER, 0bfd66d529a55807
+video.unrulymedia.com, 533898005, RESELLER
+dauup.com, 34141, RESELLER
+thebrave.io, 1234746, RESELLER, c25b2154543746ac
+toponad.com, 16719c20554a4f, RESELLER, 1d49fe424a1a456d
 wpartner.pl, 441, DIRECT
 connectad.io, 20, DIRECT
 connectad.io, 355, RESELLER, 85ac85a30c93b3e5
@@ -524,6 +556,13 @@ rubiconproject.com, 13510, RESELLER
 smartadserver.com, 2640, RESELLER
 appnexus.com, 8233, RESELLER
 themediagrid.com, 1A2OKI, DIRECT, 35d5010d7789b49d
+admixer.net, b85a1194-a88c-41bc-a97e-4612e421ff58, DIRECT
+adsinteractive.com, 39993, RESELLER
+pubmatic.com, 160846, RESELLER, 5d62403b186f2ace
+video.unrulymedia.com, 827123801, RESELLER
+richaudience.com, 9komJKwMhZ, RESELLER
+adform.com, 1762, RESELLER
+smartadserver.com, 3627, RESELLER, 060d053dcf45cbf3
 improvedigital.com, 1944, DIRECT
 rubiconproject.com, 9655, RESELLER, 0bfd66d529a55807
 appnexus.com, 15825, RESELLER, f5ab79cb980f11d1
@@ -565,7 +604,6 @@ video.unrulymedia.com, 1767448067723954599, RESELLER
 google.com, pub-6346866704322274, RESELLER, f08c47fec0942fa0
 smilewanted.com, 4005, RESELLER
 improvedigital.com, 2218, RESELLER
-ssp.bidscube.com, 908, DIRECT
 admanmedia.com, 1074, RESELLER
 admanmedia.com, 7adaec45, DIRECT
 contextweb.com, 562965, RESELLER, 89ff185a4c4e857c
@@ -590,9 +628,6 @@ zeta.com, 891, DIRECT
 zetaglobal.net, 891, DIRECT
 vidoomy.com, 6585542, DIRECT
 adform.com, 2742, RESELLER
-google.com, pub-3990748024667386, DIRECT, f08c47fec0942fa0
-xapads.com, 201392, RESELLER
-pubmatic.com, 163319, RESELLER, 5d62403b186f2ace
 richaudience.com, FtHKdmncf9, RESELLER
 pubmatic.com, 156538, RESELLER, 5d62403b186f2ace
 adform.com, 1942, RESELLER
@@ -607,14 +642,6 @@ indexexchange.com, 201092, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 192450, RESELLER, 50b1c356f2c5c8fc
 152media.info, 152M1062, RESELLER
 ogury.com, 36395ea6-e0d9-4b6e-828e-b76af6fe4b60, RESELLER
-appnexus.com, 11470, RESELLER
-pubmatic.com, 163238, RESELLER, 5d62403b186f2ace
-smartadserver.com, 4537, RESELLER, 060d053dcf45cbf3
-rubiconproject.com, 25198, RESELLER, 0bfd66d529a55807
-video.unrulymedia.com, 533898005, RESELLER
-dauup.com, 34141, RESELLER
-thebrave.io, 1234746, RESELLER, c25b2154543746ac
-toponad.com, 16719c20554a4f, RESELLER, 1d49fe424a1a456d
 
 #IM Google
 openx.com, 559901407, RESELLER, 6a698e2ec38604c6
@@ -623,6 +650,7 @@ google.com, pub-1870557775424446, DIRECT, f08c47fec0942fa0
 google.com, pub-4714993162327149, DIRECT, f08c47fec0942fa0
 google.com, pub-4714993162327149, RESELLER, f08c47fec0942fa0
 google.com, pub-2127778526614552, DIRECT, f08c47fec0942fa0
+google.com, pub-8255921513402755, DIRECT, f08c47fec0942fa0
 
 #Seznam
 appnexus.com, 6974, RESELLER, f5ab79cb980f11d1
