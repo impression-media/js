@@ -1,4 +1,4 @@
-/* Version: G_02 - 17.09. 2025 - 21:40:01 */
+/* Version: G_02 - 21.10. 2025 - 22:40:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -107,7 +107,8 @@ var dealIdsPercent = {
     "DID-1665-225127": 0.100,
     "DID-1665-224389": 0.100,
     "DID-1665-225150": 0.100,
-    "DID-1665-225251": 0.200
+    "DID-1665-225251": 0.200,
+    "DID-1665-225155": 0.100
 };
 var bidderFloor = { 
     "cpex-tt": 3,
@@ -212,7 +213,6 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "0
     "netflixercz1732adformsquaremadformsasAll": "0.74",
     "netflixercz1732AdTrackGenericInterscrollerMobileadformsasAll": "1.96",
     "netflixercz1732adformMobilniBrandingadformsasAll": "1.52",
-    "pisnickyakordycz1733adformsquareadformsasAll": "0.74",
     "radiacz1734adformleaderboardadformsasBranding": "2.61",
     "radiacz1734adformsquareadformsasAll": "0.74",
     "radiacz1734adformsquare2adformsasAll": "1.09",
@@ -528,4 +528,8 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "0
     "autacz1855adformMobilniBrandingadformsasAll": "1.52",
     "hybridcz1866AdTrackGenericInterscrollerMobileadformsasAll": "1.96",
     "hybridcz1866adformleaderboardadformsasAll": "0.74",
-    "hybridcz1866adformleaderboardadformsasBranding": "2.61"};
+    "hybridcz1866adformleaderboardadformsasBranding": "2.61",
+    "rondocz1873AdTrackGenericInterscrollerMobileadformsasAll": "1.96",
+    "rondocz1873adformleaderboardadformsasAll": "0.74",
+    "rondocz1873adformleaderboardadformsasBranding": "2.61",
+    "rondocz1873adformMobilniBrandingadformsasAll": "1.52"};
