@@ -1,4 +1,4 @@
-/* Version: G_03 - 03.11. 2025 - 09:45:01 */
+/* Version: G_03 - 03.11. 2025 - 10:43:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -113,22 +113,22 @@ var dealIdsPercent = {
 var bidderFloor = { 
     "cpex-tt": 3,
     "criteo-im": 3,
-    "adform-im-tt": 3,
-    "cpex-nt": 3,
-    "adform-im-nt": 3,
-    "r2b2": 3,
-    "mgid": 3,
-    "appnexus-cpex": 3,
-    "stroeerCore": 3,
-    "pubmatic-cpex": 3,
-    "Teads": 3,
     "ix": 3,
-    "adform-omd": 3,
-    "rtbhouse": 3,
-    "pubmatic-im": 3,
-    "appnexus-im": 3,
-    "adform-fragile": 3,
     "adform-eom-omd": 3,
+    "adform-fragile": 3,
+    "appnexus-im": 3,
+    "pubmatic-im": 3,
+    "rtbhouse": 3,
+    "adform-omd": 3,
+    "Teads": 3,
+    "pubmatic-cpex": 3,
+    "mgid": 3,
+    "stroeerCore": 3,
+    "appnexus-cpex": 3,
+    "r2b2": 3,
+    "adform-im-nt": 3,
+    "cpex-nt": 3,
+    "adform-im-tt": 3,
     "smilewanted-im": 3,
     "adform-prima": 10,
     "adform-sasAll": 3,
@@ -529,9 +529,6 @@ var globalSasCPM = {    "serialzonecz1574topleaderboarddesktopadformsasAll": "0
     "hybridcz1866AdTrackGenericInterscrollerMobileadformsasAll": "1.96",
     "hybridcz1866adformleaderboardadformsasAll": "0.74",
     "hybridcz1866adformleaderboardadformsasBranding": "2.61",
-    "rondocz1873AdTrackGenericInterscrollerMobileadformsasAll": "1.96",
-    "rondocz1873adformleaderboardadformsasAll": "0.74",
-    "rondocz1873adformleaderboardadformsasBranding": "2.61",
-    "rondocz1873adformMobilniBrandingadformsasAll": "1.52"};
+    "hybridcz1866adformleaderboardadformsasBranding": "2.61"};
 
 var globalExternSasCPM = {"pisnickyakordyczadformsquare": "1.05","pisnickyakordyczadformsquare": "1.08","pisnickyakordyczadformsquare": "1.09","autowebczadformleaderboard": "1.09","autowebczadformsquare": "3.04","autowebczadformsquare2": "1.09","autowebczadformsquare3": "1.09","autowebczadformrectangle": "1.09","ifaunaczdivgptadifatf": "1.09","ifaunaczdivgptadifskyskraper1": "1.09","ifaunaczdivgptadifskyskraper2": "1.09","ifaunaczdivgptadifskyskraper3": "1.09","autowebczadforminterscroller": "2.09","autowebczadformleaderboard": "5.04","autowebczadformsquare": "1.09","autowebczadformleaderboard": "1.09","zakrutaczadformleaderboard": "1.09","zakrutaczadformleaderboard": "3.26","zakrutaczadformsquare": "1.09","zakrutaczadformrectangle": "1.09","aahbimpressionmediaczadformsquare": "1.09"};
