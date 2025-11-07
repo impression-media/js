@@ -1,4 +1,4 @@
-/* Version: V_06_d - 23.04. 2024 - 16:18:49 */ var checkImGlobalScript = document.querySelector('#imGlobalScript') !== null; if(checkImGlobalScript){}else{ var imGlobalScript = document.createElement('script'); imGlobalScript.type = 'text/javascript'; imGlobalScript.id = 'imGlobalScript'; var imHbRandomParam = Math.floor(Math.random() * 10000) + 1; imGlobalScript.src = 'https://cdn.jsdelivr.net/gh/impression-media/js/imPrebidGlobalVariables.min.js?imHbRandomParam='+imHbRandomParam; document.getElementsByTagName('head')[0].appendChild(imGlobalScript);}  var imIpCloudflare = ''; setTimeout(function(){(function() { async function imUrlText(url) { var imCloudflareX = await fetch(url); var imCloudflareY = await imCloudflareX.text(); return imCloudflareY;} imUrlText('https://www.cloudflare.com/cdn-cgi/trace').then(data => {var ipCloudflareRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/;imIpCloudflare = data.match(ipCloudflareRegex)[0];}); })();}, 10);
+/* Version: V_06_f - 08.11. 2025 - 00:45:55 */ var checkImGlobalScript = document.querySelector('#imGlobalScript') !== null; if(checkImGlobalScript){}else{ var imGlobalScript = document.createElement('script'); imGlobalScript.type = 'text/javascript'; imGlobalScript.id = 'imGlobalScript'; var imHbRandomParam = Math.floor(Math.random() * 10000) + 1; imGlobalScript.src = 'https://cdn.jsdelivr.net/gh/impression-media/js/imPrebidGlobalVariables2.min.js?imHbRandomParam='+imHbRandomParam; document.getElementsByTagName('head')[0].appendChild(imGlobalScript);}  var imIpCloudflare = ''; setTimeout(function(){(function() { async function imUrlText(url) { var imCloudflareX = await fetch(url); var imCloudflareY = await imCloudflareX.text(); return imCloudflareY;} imUrlText('https://www.cloudflare.com/cdn-cgi/trace').then(data => {var ipCloudflareRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/;imIpCloudflare = data.match(ipCloudflareRegex)[0];}); })();}, 10);
 /* installedModules: adform,appnexus,criteo,rubicon,consentManagementGDPR,pubCommonIdSystem,criteoIdSystem,schain,sharedIdSystem,id5IdSystem*/
 /* prebid.js v6.5.0
 Updated : 2022-02-01*/
@@ -22,15 +22,366 @@ pbjsChunk([300],{398:function(e,t,o){e.exports=o(399)},399:function(e,t,o){"use 
 pbjsChunk([138],{799:function(n,i,e){n.exports=e(800)},800:function(n,i,e){"use strict";Object.defineProperty(i,"__esModule",{value:!0}),i.isSchainObjectValid=h,i.isValidSchainConfig=u,i.makeBidRequestsHook=l,i.init=O;var t=e(3),c=e(8),o=e(0),s="Invalid schain object found: ",a=" should be a string",r=" should be an Integer",d=" should be an object",f={STRICT:"strict",RELAXED:"relaxed",OFF:"off"},b=[];function h(n,i){var e="Detected something wrong within an schain config:",t="";function c(n){t+="\n"+n}function s(){!0===i?Object(o.logError)(e,n,t):Object(o.logWarn)(e,n,t)}if(!Object(o.isPlainObject)(n)&&(c("schain.config"+d),s(),i))return!1;if(Object(o.isNumber)(n.complete)&&Object(o.isInteger)(n.complete)||c("schain.config.complete"+r),Object(o.isStr)(n.ver)||c("schain.config.ver"+a),Object(o.hasOwn)(n,"ext")&&(Object(o.isPlainObject)(n.ext)||c("schain.config.ext"+d)),Object(o.isArray)(n.nodes))n.nodes.forEach((function(n,i){Object(o.isStr)(n.asi)||c("schain.config.nodes[".concat(i,"].asi")+a),Object(o.isStr)(n.sid)||c("schain.config.nodes[".concat(i,"].sid")+a),Object(o.isNumber)(n.hp)&&Object(o.isInteger)(n.hp)||c("schain.config.nodes[".concat(i,"].hp")+r),Object(o.hasOwn)(n,"rid")&&(Object(o.isStr)(n.rid)||c("schain.config.nodes[".concat(i,"].rid")+a)),Object(o.hasOwn)(n,"name")&&(Object(o.isStr)(n.name)||c("schain.config.nodes[".concat(i,"].name")+a)),Object(o.hasOwn)(n,"domain")&&(Object(o.isStr)(n.domain)||c("schain.config.nodes[".concat(i,"].domain")+a)),Object(o.hasOwn)(n,"ext")&&(Object(o.isPlainObject)(n.ext)||c("schain.config.nodes[".concat(i,"].ext")+d))}));else if(c("schain.config.nodes should be an Array"),s(),i)return!1;return!(t.length>0&&(s(),i))}function u(n){return void 0!==n&&(!!Object(o.isPlainObject)(n)||(Object(o.logError)(s+"the following schain config will not be used as schain is not an object.",n),!1))}function l(n,i){var e=t.b.getConfig("schain"),c=t.b.getBidderConfig();i.forEach((function(n){var i=n.bidderCode,t=function(n){return c[n]&&c[n].schain||e}(i);n.bids.forEach((function(n){var e=function(n,i){var e=f.STRICT;if(u(n)){if(Object(o.isStr)(n.validation)&&-1!=b.indexOf(n.validation)&&(e=n.validation),e===f.OFF)return n.config;if(h(n.config,!(e!==f.STRICT)))return n.config;Object(o.logError)(s+"due to the 'strict' validation setting, this schain config will not be passed to bidder '".concat(i,"'.  See above error for details."))}return null}(t,i);e&&(n.schain=e)}))})),n(i)}function O(){c.default.makeBidRequests.after(l)}Object(o._each)(f,(function(n){return b.push(n)})),O(),window.pbjs.installedModules.push("schain")}},[799]);/* sharedIdSystem - Prebid 6.5.0 - Gulp server : 2022-05-19*/
 pbjsChunk([135],{805:function(o,e,t){o.exports=t(806)},806:function(o,e,t){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),t.d(e,"storage",(function(){return c})),t.d(e,"sharedIdSystemSubmodule",(function(){return g}));var n=t(0),r=t(9),i=t(8),a=t(7);function d(o){return(d="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(o){return typeof o}:function(o){return o&&"function"==typeof Symbol&&o.constructor===Symbol&&o!==Symbol.prototype?"symbol":typeof o})(o)}var c=Object(a.b)(887,"pubCommonId"),u="cookie",l="html5",f="_pubcid_optout",s="PublisherCommonId";function m(o,e){if(e===u)return c.getCookie(o);if(e===l&&c.hasLocalStorage()){var t=c.getDataFromLocalStorage("".concat(o,"_exp"));if(!t)return c.getDataFromLocalStorage(o);if(new Date(t).getTime()-Date.now()>0)return c.getDataFromLocalStorage(o)}}function b(o,e){return function(t){"function"==typeof e&&e(),t(o)}}function p(o){var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"";if(o){var t=Object(n.parseUrl)(o);t.search.id=encodeURIComponent("pubcid:"+e);var r=Object(n.buildUrl)(t);return function(){Object(n.triggerPixel)(r)}}}function v(){return!!(c.cookiesAreEnabled()&&m(f,u)||c.hasLocalStorage()&&m(f,l))}var g={name:"sharedId",aliasName:"pubCommonId",gvlid:887,decode:function(o,e){if(!v())return Object(n.logInfo)(" Decoded value PubCommonId "+o),{pubcid:o};Object(n.logInfo)("PubCommonId decode: Has opted-out")},getId:function(){var o=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},e=arguments.length>2?arguments[2]:void 0;if(v())Object(n.logInfo)("PubCommonId: Has opted-out");else{var t=i.coppaDataHandler.getCoppa();if(!t){var r=o.params,a=(r=void 0===r?{}:r).create,c=void 0===a||a,u=r.pixelUrl,l=e;if(!l){try{"object"===d(window[s])&&(l=window[s].getId())}catch(o){}l||(l=c&&Object(n.hasDeviceAccess)()?Object(n.generateUUID)():void 0)}var f=p(u,l);return{id:l,callback:b(l,f)}}Object(n.logInfo)("PubCommonId: IDs not provided for coppa requests, exiting PubCommonId")}},extendId:function(){var o=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},e=arguments.length>2?arguments[2]:void 0;if(v())return Object(n.logInfo)("PubCommonId: Has opted-out"),{id:void 0};var t=i.coppaDataHandler.getCoppa();if(t)Object(n.logInfo)("PubCommonId: IDs not provided for coppa requests, exiting PubCommonId");else{var r=o.params,a=(r=void 0===r?{}:r).extend,d=void 0!==a&&a,c=r.pixelUrl;if(d){if(c){var u=p(c,e);return{callback:u}}return{id:e}}}},domainOverride:function(){for(var o,e,t=document.domain.split("."),n="_gd".concat(Date.now()),r=0;r<t.length;r++){var i=t.slice(r).join(".");if(c.setCookie(n,"1",void 0,void 0,i),e=c.getCookie(n),c.setCookie(n,"","Thu, 01 Jan 1970 00:00:01 GMT",void 0,i),"1"!==e)return o;o=i}}};Object(r.e)("userId",g),window.pbjs.installedModules.push("sharedIdSystem")}},[805]);/* id5IdSystem - ID5 Universal ID - Prebid 6.5.0 - Gulp server : 2023-07-19*/
 pbjsChunk([248],{513:function(e,t,r){e.exports=r(514)},514:function(e,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),r.d(t,"ID5_STORAGE_NAME",(function(){return p})),r.d(t,"ID5_PRIVACY_STORAGE_NAME",(function(){return d})),r.d(t,"id5IdSubmodule",(function(){return m})),t.expDaysStr=O,t.nbCacheName=j,t.storeNbInCache=v,t.getNbFromCache=I,t.getFromLocalStorage=S,t.storeInLocalStorage=_;var o=r(0),n=r(4),a=r(9),c=r(19),i=r(7),s=r(8),p="id5id",d="".concat(p,"_privacy"),u="html5",g="User ID - ID5 submodule: ",b=["pbjs-id5id","id5id.1st","id5id"],l=Object(i.b)(131,"id5Id"),m={name:"id5Id",gvlid:131,decode:function(e,t){var r=0;if(e&&"string"==typeof e.universal_uid){var n={id5id:{uid:e.universal_uid,ext:{linkType:r=e.link_type||r}}};switch(Object(o.deepAccess)(e,"ab_testing.result")){case"control":Object(o.logInfo)(g+"A/B Testing - user is in the Control Group: ID5 ID is NOT exposed"),Object(o.deepSetValue)(n,"id5id.ext.abTestingControlGroup",!0);break;case"error":Object(o.logError)(g+"A/B Testing ERROR! controlGroupPct must be a number >= 0 and <= 1");break;case"normal":Object(o.logInfo)(g+"A/B Testing - user is NOT in the Control Group"),Object(o.deepSetValue)(n,"id5id.ext.abTestingControlGroup",!1)}return Object(o.logInfo)(g+"Decoded ID",n),n}},getId:function(e,t,r){if(f(e)){var a,i="https://id5-sync.com/g/v2/".concat(e.params.partner,".json"),p=t&&"boolean"==typeof t.gdprApplies&&t.gdprApplies?1:0,m=s.uspDataHandler.getConsentData(),j=Object(c.a)(),I=r&&r.signature?r.signature:(b.forEach((function(e){l.getCookie(e)&&(a=JSON.parse(l.getCookie(e))||a)})),a&&a.signature||""),S={partner:e.params.partner,gdpr:p,nbPage:y(e.params.partner),o:"pbjs",rf:j.referer,top:j.reachedTop?1:0,u:j.stack[0]||window.location.href,v:"6.5.0"};!p||void 0===t.consentString||Object(o.isEmpty)(t.consentString)||Object(o.isEmptyStr)(t.consentString)||(S.gdpr_consent=t.consentString),void 0===m||Object(o.isEmpty)(m)||Object(o.isEmptyStr)(m)||(S.us_privacy=m),void 0===I||Object(o.isEmptyStr)(I)||(S.s=I),void 0===e.params.pd||Object(o.isEmptyStr)(e.params.pd)||(S.pd=e.params.pd),void 0===e.params.provider||Object(o.isEmptyStr)(e.params.provider)||(S.provider=e.params.provider);var h=function(e){return Object(o.deepAccess)(e,"params.abTesting",{enabled:!1})}(e);!0===h.enabled&&(S.ab_testing={enabled:!0,control_group_pct:h.controlGroupPct});return{callback:function(t){var r={success:function(r){var n;if(r)try{n=JSON.parse(r),Object(o.logInfo)(g+"response received from the server",n),v(e.params.partner,0),n.privacy&&_(d,JSON.stringify(n.privacy),30),e.storage.type===u&&function(e){Object(o.logInfo)(g+"removing legacy cookies"),b.forEach((function(t){l.setCookie("".concat(t)," ",O(-1)),l.setCookie("".concat(t,"_nb")," ",O(-1)),l.setCookie("".concat(t,"_").concat(e,"_nb")," ",O(-1)),l.setCookie("".concat(t,"_last")," ",O(-1))}))}(e.params.partner)}catch(e){Object(o.logError)(g+e)}t(n)},error:function(e){Object(o.logError)(g+"getId fetch encountered an error",e),t()}};Object(o.logInfo)(g+"requesting an ID from the server",S),Object(n.a)(i,r,JSON.stringify(S),{method:"POST",withCredentials:!0})}}}},extendId:function(e,t,r){return f(e),y(e&&e.params&&e.params.partner||0),Object(o.logInfo)(g+"using cached ID",r),r}};function f(e){return e&&e.params&&e.params.partner&&"number"==typeof e.params.partner?e.storage&&e.storage.type&&e.storage.name?(e.storage.type!==u&&Object(o.logWarn)(g+"storage type recommended to be '".concat(u,"'. In a future release this may become a strict requirement")),e.storage.name!==p&&Object(o.logWarn)(g+"storage name recommended to be '".concat(p,"'. In a future release this may become a strict requirement")),!0):(Object(o.logError)(g+"storage required to be set"),!1):(Object(o.logError)(g+"partner required to be defined as a number"),!1)}function O(e){return new Date(Date.now()+864e5*e).toUTCString()}function j(e){return"".concat(p,"_").concat(e,"_nb")}function v(e,t){_(j(e),t,30)}function I(e){var t=S(j(e));return t?parseInt(t):0}function y(e){var t=I(e)+1;return v(e,t),t}function S(e){var t=l.getDataFromLocalStorage("".concat(e,"_exp"));return""===t||t&&new Date(t).getTime()-Date.now()>0?l.getDataFromLocalStorage(e):(l.removeDataFromLocalStorage(e),null)}function _(e,t,r){l.setDataInLocalStorage("".concat(e,"_exp"),O(r)),l.setDataInLocalStorage("".concat(e),t)}Object(a.e)("userId",m),window.pbjs.installedModules.push("id5IdSystem")}},[513]);pbjs.processQueue();
-      
+//sas
+
+sasImHbMbIsMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (sasImHbMbIsMobile.Android() || sasImHbMbIsMobile.BlackBerry() || sasImHbMbIsMobile.iOS() || sasImHbMbIsMobile.Opera() || sasImHbMbIsMobile.Windows());
+    }
+};
+
+
+
+function sasRequest(aliasDivID, s0, s1, s3, s4){
+    //console.log('start fc sasRequest for sasXhr.responseText: '+aliasDivID);
+    var sasDevice = 'web_desktop';
+    if(sasImHbMbIsMobile.any()){
+        sasDevice = 'web_mobile';
+    }
+    var s2 = sasDevice;
+    var s5 = Math.floor(Math.random() * 1000000);
+    var s6 = Math.floor(Math.random() * 1000000);
+    var s7 =  window.innerWidth;
+    var s8 = window.innerHeight;
+    var s9 =  screen.width;
+    var s10 = screen.height;
+    var s11 = 'prebid';
+    //var s12 = 'CPzHq4APzHq4AAHABBENDbCgAP_AAEPAAAAAI2IBJC5kBSFCAGJgYtkQIAAGxxAAICACABAAAAAAABoAIAgAAAAwAAQABAAAABAAIEIAAABACEBAAAAAQAAAAQAAAAAQAAAAAQIAAAAAAiBACAAAAABAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAAABAAAQgAAAAAAAAAAAAAAAAAAAAAAAAAABBA1OBGABUAC4AHAAQAAyABoAEQAJgAVQAuABiADMAH4AQkAiACJAEcAKUAWIAy4B3AHeAP0Ag4BFgCSgF1ANYAbQA6gCQQE2gKkAWoAtwBkgDUwCQkAG';
+//    var s12 = 'CP_r3oAP_r3oAAHABBENA3EgAAAAAAAAAAAAAAAAAADBIAMAAQUcHQAYAAgo4QgAwABBRwlABgACCjhSADAAEFHCwAGAAIKOAAAA.YAAAAAAAAAAA';
+//    var s14 = 'noconsent';
+//    if (typeof __tcfapi === 'function') { 
+//        __tcfapi('getTCData', 2, function(tcdata,success) {
+//            console.log('retrieving TCDATA:', tcdata);
+//            console.log('tcdata.tcString: '+tcdata.tcString);
+//            s12 = tcdata.tcString; 
+//            s14 = 'consent';
+//        });
+//    } 
+    var s13 = 1;
+    
+    var url = 
+    s0+
+    s1+
+    '/section='+s2+
+    s3+
+    s4+
+    '/random='+s5+
+    '/viewid='+s6+
+    '/dev_display_width='+s7+
+    '/dev_display_height='+s8+
+    '/devwidth='+s9+
+    '/devheight='+s10+
+    '/keyword='+s11+
+    '/consent='+s12+
+    '/gdpr='+s13+
+    '/showname='+s14;
+    
+    //console.log('sasRequest:'+url);
+    //1. OK
+    // https://a.iprima.cz/iprima/lserver/bserverj/ball/
+    // site=IMM_Femina/
+    // section=web_desktop/
+    // area=leaderboard-1/
+    // size=970x90,728x90/
+    // random=675378/
+    // viewid=872461/
+    // dev_display_width=1366/
+    // dev_display_height=305/
+    // devwidth=1366/
+    // devheight=768/
+    // keyword=prebid/
+    // consent=CP2QlRgP2QlRgAcABBENAdEsAP_gAEPgAChQg1NX_D5ebWtj8XJVIftkaYwP55izomQxBhaIEe4FwAOG7BgGB2EwNAW4JiACGBAEkiIBAQFlHBBUARAAAIgRiSCMYkGMhTNKJKBAgFMRI0NYCBxmmIFDWQCY50ouM3fxmDeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACADB-uft87_XU-9_cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQaoOYACIAFAAXAA4ADwAKgAXAA4AB4AEAAJAAXwAxADKAGgAagA8AB-AEQAJgAUIApACmAFWALgAugBiADQAG8APwAhIBEAESAI4ASwAmgBSgDAAGGAMsAZoA2QByAD4gH2AfsA_wEAAIOARGAiwCMAEagI4AjoBIgCSgE7AJ-AVAAuYBeQC-gGKAM-AaIA14BtADcAHSAO2AfYA_4CJgEXgI9ASIAlQBKwCYoEyATKAmcBOwCh4FIAUiApMBTYCpAFVAKsAV3AsQCxQFlALRAWwAt0BcgC6AF2gLvgXkBeYC-gGCQSQBJSCTAJMgSjglQCVIEsIJZglpBLcEuIJdAl2BL6CYAJggTDAmKBMcCZMEzATOAmkBNQCbEE2wTcgm8Cb4E4QgoBBqABCQAQF5gAAA.f_wACHwAAAAA/
+    // gdpr=1
+    
+    sasUnitCustomIDsAds[aliasDivID] = 'Default for: '+aliasDivID+' :: empty-ads ';
+    //onsole.log('Default for: sasUnitCustomIDsAds^');
+    //console.log(sasUnitCustomIDsAds);
+
+    var sasXhr = new XMLHttpRequest();
+    var sasAsync = false;
+    sasXhr.open('GET', url, sasAsync);
+    //sasXhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    
+
+
+    sasXhr.send();
+    //console.log('no async sasXhr.responseText^');          
+    //console.log(sasXhr.responseText);
+    //console.log('aliasDivID: '+aliasDivID);
+    if(aliasDivID == 'returnAd'){
+        //console.log(sasUnitCustomIDsAds);
+        return sasXhr.responseText;
+    }else{
+        sasUnitCustomIDsAds[aliasDivID] = sasXhr.responseText;
+        //console.log(sasUnitCustomIDsAds)
+    }
+        
+
+
+//    sasXhr.onload = function () {
+//        if(sasXhr.status === 201) {
+//            console.log('sasXhr.status: 201 - Post successfully created!'); 
+//        }else{
+//            console.log('sasXhr.status: '+sasXhr.status); 
+//        }
+//    }
+
+}
+
+
+    var sasSite = { 
+};
+    var sasArea = { 
+};
+    var sasSize = { 
+};
+    var sasCPM = { 
+};
+    var sasUnitCustomIDsAds = [];
+
+    var sasUnitCustomIDs = []; 
+
+var iprimaParam = [];
+iprimaParam['async'] = [];
+iprimaParam['section'] = [];
 
 pbjs = pbjs || {};
 pbjs.que = pbjs.que || [];
+var s12 = 'CP_r3oAP_r3oAAHABBENA3EgAAAAAAAAAAAAAAAAAADBIAMAAQUcHQAYAAgo4QgAwABBRwlABgACCjhSADAAEFHCwAGAAIKOAAAA.YAAAAAAAAAAA';
+var s14 = 'noconsent';
+var sOne = 0;
+pbjs.onEvent('bidRequested', function(data){
+    sOne++;
+    if(sOne == 1){
+        //console.log('sOne bidRequested^^');
+        //console.log(data);
+        try {
+            if (typeof data.gdprConsent.vendorData.tcString != 'undefined'){
+                s12 = data.gdprConsent.vendorData.tcString;
+                s14 = 'consent';
+                //console.log('OK data.gdprConsent.vendorData.tcString', data.gdprConsent.vendorData.tcString);
+            }
+        }
+        catch {
+            // data.gdprConsent.vendorData.tcString does not exist
+            //console.log('no gdprConsent resp. tcString');
+        }
+    }
+    //console.log('s12^^');
+    //console.log(data);
+    //console.log('s12: '+s12);
+});
+
+
+
+
+//(function () {
+    console.log('PRIMA_ADAPTER init');
+    var iprimaAdapter = function iprimaAdapter() {
+        return {
+            callBids: function (bidderRequest, addBidResponse, done) {
+            
+                var hbQueryString = window.location.search;;
+                hbUrlParams = new URLSearchParams(hbQueryString);
+                if(hbUrlParams.has('pbjs_debug')){
+                    console.log('PRIMA_ADAPTEER', bidderRequest);
+                }
+                // add call to sas
+                // https://ast.rocks/create-custom-prebidjs-bidder-adapter/
+                let consent = 'xxx';
+                let showname = 'noconsent';
+                try{
+                    consent = bidderRequest.gdprConsent.consentString;
+                }catch(e){
+                    if(hbUrlParams.has('pbjs_debug')){
+                        console.log('PRIMA_ADAPTER error', e);
+                    }
+                }
+                if(consent){showname = 'consent';console.log('showname consent:', consent);}else{console.log('showname consent:', consent);}
+                bidderRequest.bids.forEach(async (bidRequest) => {
+                  if(hbUrlParams.has('pbjs_debug')){
+                      console.log('forEach bidRequest:', bidRequest);
+                  }
+                  if(bidRequest.bidder === 'iprima'){
+                    if(hbUrlParams.has('pbjs_debug')){
+                        console.log('sasAdapter >> bidRequest.bidder: if::', bidRequest.bidder);
+                        console.log('sasAdapter >> bidRequest.adUnitCode:', bidRequest.adUnitCode);
+                    }
+                    if(imHbMbIsMobile.any()){
+                        iprimaParam['section'][bidRequest.adUnitCode] = 'web_mobile';
+                    }else{
+                        iprimaParam['section'][bidRequest.adUnitCode] = 'web_desktop';
+                    }
+                    //if((sasExIsMobile.any() && iprimaParam['section'][bidRequest.adUnitCode] == 'web_mobile')
+                    //|| (!sasExIsMobile.any() && iprimaParam['section'][bidRequest.adUnitCode] == 'web_desktop')){
+                    
+                        
+                        if(hbUrlParams.has('pbjs_debug')){
+                            console.log('sasAdapter >> section: if::', iprimaParam['section'][bidRequest.adUnitCode]);
+                        }
+                        try{
+                            if(bidRequest.params.site && bidRequest.params.area && bidRequest.params.size){
+                                const site = bidRequest.params.site;
+                                console.log('if site:', site);
+                                const area = bidRequest.params.area;
+                                console.log('if area:', area);
+                                const size = bidRequest.params.size;
+                                console.log('if size:', size);
+                                const viewid = Math.floor(Math.random() * 1000000000);
+                                const random = Math.floor(Math.random() * 1000000000);
+                                const section = iprimaParam['section'][bidRequest.adUnitCode];
+                                var mixWidthAndHeight = '/dev_display_width='+window.innerWidth+
+                                                        '/dev_display_height='+window.innerHeight+
+                                                        '/devwidth='+screen.width+
+                                                        '/devheight='+screen.height;
+
+                                const url = 'https://a.iprima.cz/iprima/tserver/ball/viewid='+viewid+'/random='+random+'/site='+site+'/section='+section+'/area='+area+'/size='+size+mixWidthAndHeight+'/keyword=prebidadapter/consent='+consent+'/gdpr=1/showname='+showname;
+                                if(hbUrlParams.has('pbjs_debug')){
+                                    console.log('PRIMA_ADAPTER url', url);
+                                }
+    var sasAsync = iprimaParam['async'][bidRequest.adUnitCode];
+    if(sasAsync){
+                                if(hbUrlParams.has('pbjs_debug')){
+                                    console.log('sasAsync if await fetch');
+                                }
+                                const response = await fetch(url, {
+                                    credentials: 'include'
+                                });
+                                //const json_data = await response.json();
+                                let answer = await response.text();
+    }else{
+                                if(hbUrlParams.has('pbjs_debug')){
+                                    console.log('sasAsync else XMLHttpRequest');
+                                }
+                                var sasXhr = new XMLHttpRequest();
+                                //var sasAsync = false; //nutnost u pozic kde je pouze bidder iprima, jinak prebid uzavirá čekání na odpoved i po 5ms a nedojde k odeslání nabídky na adserver
+                                //var sasAsync = true; 
+                                var sasAsync = iprimaParam['async'][bidRequest.adUnitCode];
+                                sasXhr.open('GET', url, sasAsync);
+                                sasXhr.send();
+                                var answer = sasXhr.responseText;
+    }
+    
+                                if(hbUrlParams.has('pbjs_debug')){
+                                    console.log('response.text', answer);
+                                }
+                                if(!answer.includes('empty-ads')){
+                                    var replaceAnswer = answer.replace(/[\n|\r|\t|]/g, '').replace(/["]/g,"'").replace(/[`]/g,'"');
+                                    if(hbUrlParams.has('pbjs_debug')){
+                                        console.log('replaceAnswer: ', replaceAnswer);
+                                    }
+                                    //var checkSasValidJSON = sasTryParseJSONObject(replaceAnswer);
+                                    //console.log('checkSasValidJSON: ', checkSasValidJSON);
+
+                                    var replaceAnswer2 = replaceAnswer.replace(/\\/g, '\\\\');
+                                    if(hbUrlParams.has('pbjs_debug')){
+                                        console.log('replaceAnswer2: ', replaceAnswer2);
+                                    }
+                                    const json_data = JSON.parse(replaceAnswer2);
+
+                                    if(typeof json_data === 'object'){
+                                        if(hbUrlParams.has('pbjs_debug')){
+                                            console.log('typeof json_data is object');
+                                            console.log('JSON.parse replaceAnswer2',json_data);
+                                        }
+                                        const bid = window.pbjs.createBid(1, bidRequest);                                    
+                                        bid.requestId = bidRequest.bidId;
+                                        //bid.adUnitId = bidRequest.adUnitId;
+                                        bid.requestId = bidRequest.bidId
+                                        bid.auctionId = bidRequest.auctionId;
+                                        bid.adUnitCode = bidRequest.adUnitCode;
+                                        bid.bidderCode = bidRequest.bidder;                                    
+                                        bid.cpm = json_data[0].cpm;
+                                        //bid.cpm = 56;
+                                        bid.currency = 'CZK';
+                                        bid.width = json_data[0].width;
+                                        bid.height = json_data[0].height;
+                                        bid.ttl = 360; //deault 60
+                                        bid.netRevenue = false;
+                                        bid.creativeId = '1';
+                                        bid.ad = json_data[0].ad;
+                                        addBidResponse(bidRequest.adUnitCode, bid);
+                                    }else{
+                                        if(hbUrlParams.has('pbjs_debug')){
+                                            console.log('PRIMA_ADAPTER typeof json_data === object',false);
+                                        }
+                                        //addBidResponse(bidRequest.adUnitCode, null);
+                                    } 
+                                }else{
+                                    if(hbUrlParams.has('pbjs_debug')){
+                                        console.log('PRIMA_ADAPTER answer.includes:: empty-ads');
+                                    }
+                                    //addBidResponse(bidRequest.adUnitCode, null);
+                                } 
+                              }
+                          }catch(e){
+                              if(hbUrlParams.has('pbjs_debug')){
+                                  console.log('PRIMA_ADAPTER error', e);
+                              }
+                          }
+                      //}else{
+                      //   console.log('PRIMA_ADAPTER sasAdapter >> section: else::', iprimaParam['section'][bidRequest.adUnitCode]);   
+                      //}
+                  }else{
+                     if(hbUrlParams.has('pbjs_debug')){
+                         console.log('PRIMA_ADAPTER sasAdapter >> bidRequest.bidder: else:: ', bidRequest.bidder);   
+                     }
+                  }
+                
+                });
+                done();
+            }
+        };
+    };
+    pbjs.registerBidAdapter(iprimaAdapter, 'iprima');
+//})();
+
+//countSasImWaitForPbjs = 0;
+//function imWaitForPbjs(){
+//    if(typeof pbjs === 'object'){
+//        pbjs.registerBidAdapter(iprimaAdapter, 'iprima');
+////        pbjs.setConfig({
+////            s2sConfig: [{
+////                bidders: ['iprima'],
+////                timeout: 300
+////            }]
+////        });
+//    }else{
+//        countSasImWaitForPbjs++;
+//        if(countSasImWaitForPbjs < 180){
+//            setTimeout(imWaitForPbjs, 30);
+//            console.log('pbjs.object >> imWaitForPbjs 30ms');
+//        }else{
+//            console.log('pbjs.object >> imWaitForPbjs END');
+//        }
+//
+//    }
+//}imWaitForPbjs();
+
+
+
+
+
 var imHbWonBids = imHbWonBids || [];
 var imHbAsocPlacementMidEnable = imHbAsocPlacementMidEnable || [];
 var imHbPlacementEnable = imHbPlacementEnable || [];
 
-            function imGetCookie(name) {var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null;}; function imSetCookie(name,value,days){var d=new Date;d.setTime(d.getTime()+24*60*60*1000*days);document.cookie=name+'='+value+';domain=.;path=/;expires='+d.toGMTString();};function imTestingParam(t){var n=null,e=[];return location.search.substr(1).split('&').forEach(function(o){(e=o.split('='))[0]===t&&(n=decodeURIComponent(e[1]))}),n};var imtesting = imTestingParam('imtesting');if(imtesting=='start'){imSetCookie('imtesting','dev',1);}if(imtesting=='stop'){imSetCookie('imtesting', '', -1);}function imRemoveTestInfo(){document.getElementById('imtestingInfo').remove();}function imHbUploadConfig(){if(imGetCookie('imtesting')){document.getElementById('imtestingInfo')&&document.getElementById('imtestingInfo').remove();var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a><span onclick="imRemoveTestInfo();" style="cursor: pointer;border: 1px solid white;border-radius: 20px 2px 2px;padding: 4px 6px 1px 10px;position: absolute; bottom: 2px;right: 2px;">X</span>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:999999;position:fixed;bottom:3px;right:3px;margin-top:-30px;padding:65px 15px 50px 45px;background:#0000003d;color:white;border-radius:3px;border-top-left-radius:200px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1457'; var imConfigName = 'HBsetup_wwwtvojechvilkacz_Tvojechvilka_cz___aktivni_placementLazyLoading__od_17_1__2_22__2024_04_23_1618'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';var imHbRandomParam = Math.floor(Math.random() * 10000) + 1;imHbScript.src = 'https://cdn.jsdelivr.net/gh/impression-media/js/tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam;document.getElementsByTagName('head')[0].appendChild(imHbScript);}
+            function imGetCookie(name) {var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null;}; function imSetCookie(name,value,days){var d=new Date;d.setTime(d.getTime()+24*60*60*1000*days);document.cookie=name+'='+value+';domain=.;path=/;expires='+d.toGMTString();};function imTestingParam(t){var n=null,e=[];return location.search.substr(1).split('&').forEach(function(o){(e=o.split('='))[0]===t&&(n=decodeURIComponent(e[1]))}),n};var imtesting = imTestingParam('imtesting');if(imtesting=='start'){imSetCookie('imtesting','dev',1);}if(imtesting=='stop'){imSetCookie('imtesting', '', -1);}function imRemoveTestInfo(){document.getElementById('imtestingInfo').remove();}function imHbUploadConfig(){if(imGetCookie('imtesting')){document.getElementById('imtestingInfo')&&document.getElementById('imtestingInfo').remove();var infoImTesting=document.createElement('div');infoImTesting.id='imtestingInfo',infoImTesting.innerHTML='<a href="https://hb.impressionmedia.cz/administrace/pages/weby.php?openId=0" style="text-derocation:none; color:white;">TESTING MODE</a><span onclick="imRemoveTestInfo();" style="cursor: pointer;border: 1px solid white;border-radius: 20px 2px 2px;padding: 4px 6px 1px 10px;position: absolute; bottom: 2px;right: 2px;">X</span>',infoImTesting.style.cssText="font-size:12px;line-height:18px;z-index:999999;position:fixed;bottom:3px;right:3px;margin-top:-30px;padding:65px 15px 50px 45px;background:#0000003d;color:white;border-radius:3px;border-top-left-radius:200px;border:1px solid white;box-shadow:1px 1px 1px black;",document.body.appendChild(infoImTesting);;var imConfigId = '0'; var imConfigName = 'HBsetup_'}else{var imConfigId = '1457'; var imConfigName = 'HBsetup_wwwtvojechvilkacz_Tvojechvilka_cz___aktivni_placementLazyLoading__od_17_1__2_22__2025_11_08_0045'};var imHbScript = document.createElement('script');imHbScript.type = 'text/javascript';imHbScript.id = 'imHbConfig';var imHbRandomParam = Math.floor(Math.random() * 10000) + 1;imHbScript.src = 'https://cdn.jsdelivr.net/gh/impression-media/js/tmp/js/'+imConfigId+'/'+imConfigName+'.min.js?imHbRandomParam='+imHbRandomParam;document.getElementsByTagName('head')[0].appendChild(imHbScript);}
     //posledni cyklus nepromazavat    
     var selection = document.body.getAttribute('data-hbmasterscript') !== null;
     if (selection) {       
