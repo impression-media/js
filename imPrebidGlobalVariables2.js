@@ -1,4 +1,4 @@
-/* Version: G_02 - 08.11. 2025 - 01:40:01 */
+/* Version: G_02 - 08.11. 2025 - 02:40:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -338,8 +338,6 @@ var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
     "dumfinancicz1759AdTrackGenericInterscrollerDesktopadformsasAll": "1.96",
     "nasetemacz181adformleaderboardadformsasAll": "0.74",
     "nasetemacz181adformleaderboardadformsasBranding": "2.61",
-    "jidlocz1764adformleaderboardadformsasBranding": "2.61",
-    "jidlocz1764AdTrackGenericInterscrollerMobileadformsasAll": "1.96",
     "cbdbcz1766adformMobilniBrandingadformsasAll": "1.52",
     "cbdbcz1766adformrectangleadformsasAll": "1.09",
     "cbdbcz1766adformleaderboardadformsasAll": "0.74",
@@ -487,6 +485,8 @@ var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
     "nespechejcz1852adformrectangleadformsasAll": "1.09",
     "rondocz1873AdTrackGenericInterscrollerMobileadformsasAll": "1.96",
     "rondocz1873adformleaderboardadformsasAll": "0.74",
+    "rondocz1873adformleaderboardadformsasBranding": "2.61",
+    "rondocz1873adformMobilniBrandingadformsasAll": "1.52",
     "rondocz1873adformleaderboardadformsasBranding": "2.61",
     "rondocz1873adformMobilniBrandingadformsasAll": "1.52",
     "kinotip2cz1822adformrectangleadformsasAll": "1.09",
