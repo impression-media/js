@@ -1,4 +1,4 @@
-/* Version: G_03_aws - 17.12. 2025 - 15:10:01 */
+/* Version: G_03_aws - 17.12. 2025 - 16:10:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -118,15 +118,14 @@ var dealIdsPercent = {
 var bidderFloor = { 
     "cpex-tt": 3,
     "criteo-im": 3,
-    "ix": 3,
+    "rtbhouse": 3,
     "adform-eom-omd": 3,
     "adform-fragile": 3,
     "appnexus-im": 3,
     "pubmatic-im": 3,
-    "rtbhouse": 3,
+    "ix": 3,
     "adform-omd": 3,
     "Teads": 3,
-    "pubmatic-cpex": 3,
     "mgid": 3,
     "stroeerCore": 3,
     "appnexus-cpex": 3,
@@ -134,26 +133,28 @@ var bidderFloor = {
     "adform-im-nt": 3,
     "cpex-nt": 3,
     "adform-im-tt": 3,
-    "smilewanted-im": 3,
-    "adform-prima": 10,
-    "adform-sasAll": 3,
-    "adform-sasBranding": 3,
-    "iprima": 10,
+    "pubmatic-cpex": 3,
+    "Criteo-cpex3": 10,
+    "Criteo-cpex2": 4,
+    "criteo-cpex": 1,
     "setupad": 3,
-    "criteo-cpex": 1
+    "iprima": 10,
+    "adform-sasBranding": 3,
+    "adform-sasAll": 3,
+    "adform-prima": 10,
+    "smilewanted-im": 3
 };
 var bidderFee = { 
     "cpex-tt": 0.8,
     "criteo-im": 1,
-    "ix": 0.8,
+    "rtbhouse": 0.8,
     "adform-eom-omd": 0.8,
     "adform-fragile": 0.8,
     "appnexus-im": 0.8,
     "pubmatic-im": 0.8,
-    "rtbhouse": 0.8,
+    "ix": 0.8,
     "adform-omd": 0.65,
     "Teads": 0.8,
-    "pubmatic-cpex": 0.8,
     "mgid": 0.8,
     "stroeerCore": 0.8,
     "appnexus-cpex": 0.8,
@@ -161,13 +162,16 @@ var bidderFee = {
     "adform-im-nt": 0.8,
     "cpex-nt": 0.8,
     "adform-im-tt": 0.9,
-    "smilewanted-im": 0.8,
-    "adform-prima": 0.8,
-    "adform-sasAll": 0.8,
-    "adform-sasBranding": 0.8,
-    "iprima": 0.8,
+    "pubmatic-cpex": 0.8,
+    "Criteo-cpex3": 0.8,
+    "Criteo-cpex2": 0.97,
+    "criteo-cpex": 0.97,
     "setupad": 0.8,
-    "criteo-cpex": 0.97
+    "iprima": 0.8,
+    "adform-sasBranding": 0.8,
+    "adform-sasAll": 0.8,
+    "adform-prima": 0.8,
+    "smilewanted-im": 0.8
 };
 
 var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
