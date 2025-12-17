@@ -1,4 +1,4 @@
-/* Version: G_03 - 17.12. 2025 - 16:21:01 */
+/* Version: G_03 - 17.12. 2025 - 17:21:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -141,7 +141,7 @@ var bidderFloor = {
     "iprima": 10,
     "setupad": 3,
     "criteo-cpex": 1,
-    "criteo-cpex2": 10
+    "criteo-cpex2": 2
 };
 
 var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
