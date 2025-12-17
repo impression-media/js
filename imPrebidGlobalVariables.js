@@ -1,4 +1,4 @@
-/* Version: G_01 - 17.12. 2025 - 13:16:01 */
+/* Version: G_01 - 17.12. 2025 - 14:16:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -140,5 +140,5 @@ var bidderFloor = {
     "adform-sasBranding": 3,
     "iprima": 10,
     "setupad": 3,
-    "Criteo-cpex": 1
+    "criteo-cpex": 1
 };
