@@ -1,4 +1,4 @@
-/* Version: G_03_aws - 17.12. 2025 - 13:10:01 */
+/* Version: G_03_aws - 17.12. 2025 - 14:10:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -140,7 +140,7 @@ var bidderFloor = {
     "adform-sasBranding": 3,
     "iprima": 10,
     "setupad": 3,
-    "Criteo-cpex": 1
+    "criteo-cpex": 1
 };
 var bidderFee = { 
     "cpex-tt": 0.8,
@@ -151,7 +151,7 @@ var bidderFee = {
     "appnexus-im": 0.8,
     "pubmatic-im": 0.8,
     "rtbhouse": 0.8,
-    "adform-omd": 0.7,
+    "adform-omd": 0.65,
     "Teads": 0.8,
     "pubmatic-cpex": 0.8,
     "mgid": 0.8,
@@ -167,7 +167,7 @@ var bidderFee = {
     "adform-sasBranding": 0.8,
     "iprima": 0.8,
     "setupad": 0.8,
-    "Criteo-cpex": 0.97
+    "criteo-cpex": 0.97
 };
 
 var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
