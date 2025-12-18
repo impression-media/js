@@ -1,5 +1,5 @@
-/* Version: G_03_aws - 18.12. 2025 - 14:17:12 */
-var imHbGenSource = "G_03_aws|18.12.2025|14:17:12";
+/* Version: G_03_aws - 18.12. 2025 - 15:10:02 */
+var imHbGenSource = "G_03_aws|18.12.2025|15:10:02";
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
