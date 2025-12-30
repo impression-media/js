@@ -619,7 +619,6 @@ smartadserver.com, 3602-OB, RESELLER, 060d053dcf45cbf3
 #antiadblock
 google.com, pub-9985346289855124, DIRECT, f08c47fec0942fa0
 criteo.com, B-066086, DIRECT, 9fac4a4a87c2a44f
-criteo.com, B-066086, DIRECT, 9fac4a4a87c2a44f
 google.com, pub-9985346289855124, DIRECT, f08c47fec0942fa0
 google.com, pub-8539658618929646, DIRECT, f08c47fec0942fa0
 sovrn.com, 381112, DIRECT, fafdf38b16bf6b2b
