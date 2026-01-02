@@ -206,7 +206,7 @@ adform.com, 2724, DIRECT, 9f5210a2f0999e32
 adform.com, 2724, RESELLER, 9f5210a2f0999e32
 rubiconproject.com, 25432, RESELLER, 0bfd66d529a55807
 google.com, pub-5017981040144901, RESELLER, f08c47fec0942fa0
-rtbhouse.com, K2eZa01RsqETviwk6AyY, DIRECT 
+rtbhouse.com, K2eZa01RsqETviwk6AyY, DIRECT
 playstream.media, 2530, DIRECT
 google.com, pub-4586415728471297, RESELLER, f08c47fec0942fa0
 rwadx.com, rw209mtasduinzgsxqpriqyfejxvmubnylu63e2356c0a23b, DIRECT
@@ -237,8 +237,8 @@ caroda.io, 391717000000086077, DIRECT
 
 #Cpex
 rubiconproject.com,10900, DIRECT, 0bfd66d529a55807
-appnexus.com, 10560, DIRECT, f5ab79cb980f11d1 
-indexexchange.com, 191029, RESELLER, 50b1c356f2c5c8fc    
+appnexus.com, 10560, DIRECT, f5ab79cb980f11d1
+indexexchange.com, 191029, RESELLER, 50b1c356f2c5c8fc
 pubmatic.com, 158578, DIRECT, 5d62403b186f2ace
 pubmatic.com, 158732, DIRECT, 5d62403b186f2ace
 cpex.cz, 011, DIRECT
@@ -259,13 +259,9 @@ sovrn.com, 349312, DIRECT, fafdf38b16bf6b2b
 appnexus.com, 8413, DIRECT
 adform.com, 2303, DIRECT
 lijit.com, 349312, DIRECT, fafdf38b16bf6b2b
-rubiconproject.com, 17960, RESELLER, 0bfd66d529a55807
 etarget.cz, 15502, DIRECT
-adform.com, 811, RESELLER
-adform.com, 1099, RESELLER
 google.com, pub-6070985156043962, RESELLER, f08c47fec0942fa0
 themediagrid.com, VU352P, DIRECT, 35d5010d7789b49d
-adyoulike.com, b4bf4fdd9b0b915f746f6747ff432bde, RESELLER
 appads.in, 107606, RESELLER
 axonix.com, 57264, RESELLER
 pubmatic.com, 156177, RESELLER, 5d62403b186f2ace
@@ -601,7 +597,6 @@ lijit.com, 381112-eb, DIRECT, fafdf38b16bf6b2b
 gumgum.com, 11645, RESELLER, ffdef49475d318a9
 openx.com, 539924617, RESELLER, 6a698e2ec38604c6
 pubmatic.com, 156700, RESELLER, 5d62403b186f2ace
-rubiconproject.com, 17960, RESELLER, 0bfd66d529a55807
 adform.com, 1794, RESELLER, 9f5210a2f0999e32
 lettherebeads.io, 170, DIRECT
 loopme.com, 11498, RESELLER, 6c8d5f95897a5a3b
@@ -674,7 +669,7 @@ video.unrulymedia.com, 1767448067723954599, RESELLER
 google.com, pub-6346866704322274, RESELLER, f08c47fec0942fa0
 google.com, pub-3565385483761681, RESELLER, f08c47fec0942fa0
 google.com, pub-5717092533913515, RESELLER, f08c47fec0942fa0
-pubmatic.com, 159277, RESELLER,
+pubmatic.com, 159277, RESELLER
 pubmatic.com, 161335, RESELLER, 5d62403b186f2ace
 pubmatic.com, 160993, RESELLER, 5d62403b186f2ace
 pubmatic.com, 161058, RESELLER, 5d62403b186f2ace
