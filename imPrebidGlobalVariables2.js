@@ -1,5 +1,5 @@
-/* Version: G_02 - 11.02. 2026 - 19:59:02 */
-var imHbGenSource = "G_02|11.02.2026|19:59:02";
+/* Version: G_02 - 11.02. 2026 - 20:59:01 */
+var imHbGenSource = "G_02|11.02.2026|20:59:01";
 var imHbExchangeRateCNB = { 
 "AUD": 14.488,"BRL": 3.928,"CNY": 2.948,"DKK": 3.246,"EUR": 24.245,"PHP": 34.956,"HKD": 2.607,"INR": 22.464,"IDR": 1.214,"ISK": 16.698,"ILS": 6.625,"JPY": 13.264,"ZAR": 1.283,"CAD": 15.021,"KRW": 1.403,"HUF": 6.399,"MYR": 5.204,"MXN": 1.184,"XDR": 28.103,"NOK": 2.152,"NZD": 12.347,"PLN": 5.755,"RON": 4.762,"SGD": 16.135,"SEK": 2.295,"CHF": 26.545,"THB": 65.567,"TRY": 46.730,"USD": 20.375,"GBP": 27.876
 };
@@ -149,29 +149,29 @@ var bidderFloor = {
     "criteo-cpex2": 2
 };
 var bidderFee = { 
-    "cpex-tt": 0.8,
+    "cpex-tt": 0.81,
     "criteo-im": 1,
-    "rtbhouse": 0.8,
+    "rtbhouse": 0.93,
     "adform-eom-omd": 0.8,
     "adform-fragile": 0.8,
     "appnexus-im": 0.8,
     "pubmatic-im": 0.8,
-    "ix": 0.8,
+    "ix": 0.93,
     "adform-omd": 0.65,
     "Teads": 0.8,
-    "pubmatic-cpex": 0.8,
+    "pubmatic-cpex": 0.93,
     "mgid": 0.8,
     "stroeerCore": 0.8,
-    "appnexus-cpex": 0.8,
+    "appnexus-cpex": 0.93,
     "r2b2": 0.8,
-    "adform-im-nt": 0.8,
+    "adform-im-nt": 1,
     "cpex-nt": 0.8,
-    "adform-im-tt": 0.9,
+    "adform-im-tt": 1,
     "smilewanted-im": 0.8,
     "adform-prima": 0.8,
     "adform-sasAll": 0.8,
     "adform-sasBranding": 0.8,
-    "iprima": 0.8,
+    "iprima": 1,
     "setupad": 0.8,
     "criteo-cpex": 0.97,
     "criteo-cpex2": 0.97
