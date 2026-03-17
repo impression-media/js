@@ -3,6 +3,7 @@ impressionmedia.cz, 066, DIRECT
 
 
 #SETUPAD
+#test
 setupad.com, 2892, DIRECT 
 rubiconproject.com, 21118, RESELLER, 0bfd66d529a55807
 adform.com, 1484, RESELLER
