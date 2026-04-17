@@ -211,6 +211,22 @@ google.com, pub-3405003263881884, DIRECT, f08c47fec0942fa0
 pubmatic.com, 161593, RESELLER, 5d62403b186f2ace
 google.com, pub-1285341764115322, DIRECT, f08c47fec0942fa0
 google.com, pub-2263612067088920, DIRECT, f08c47fec0942fa0
+sharethrough.com, 3827-OB, RESELLER, 060d053dcf45cbf3
+onetag.com, 75ff55d79486d71-OB, RESELLER
+themediagrid.com, 1A2OKI, RESELLER, 9fac4a4a87c2a44f
+sharethrough.com, 4756, RESELLER, 060d053dcf45cbf3
+indexexchange.com, 187476, RESELLER
+google.com, pub-2375491021526371, DIRECT, f08c47fec0942fa0
+google.com, pub-1285341764115322, DIRECT, f08c47fec0942fa0
+wpartner.pl, 22444050393, RESELLER
+pubmatic.com, 157216, RESELLER, 5d62403b186f2ace
+google.com, pub-9963389496542741, DIRECT, f08c47fec0942fa0
+onetag.com, 75ff55d79486d71, RESELLER
+sharethrough.com, 7MMsjxFz, RESELLER, d53b998a7bd4ecd2
+appnexus.com, 3457, RESELLER, f5ab79cb980f11d1
+openx.com, 540233831, RESELLER
+rubiconproject.com, 19094, RESELLER
+google.com, pub-2263612067088920, DIRECT, f08c47fec0942fa0
 
 #Stroeer
 stroeer.com,  17438, DIRECT
