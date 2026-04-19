@@ -1,6 +1,6 @@
+
 #ImpressionMedia
 impressionmedia.cz, 066, DIRECT
-
 
 #SETUPAD
 #test
@@ -699,7 +699,5 @@ indexexchange.com, 201092, RESELLER, 50b1c356f2c5c8fc
 adform.com, 1941, RESELLER
 sharethrough.com, 1udopJ1S, RESELLER, d53b998a7bd4ecd2
 
-##lastControlDateTime: [16.01. 2026 - 23:02:02]
-
-
+##lastControlDateTime: [16.01. 2026 - 22:57:02]
 
