@@ -2,6 +2,33 @@
 #ImpressionMedia
 impressionmedia.cz, 019, DIRECT
 
+#FATCHILLI
+google.com, pub-2393320645055022, RESELLER, f08c47fec0942fa0
+google.com, pub-2610964203515025, DIRECT, f08c47fec0942fa0
+teads.tv, 27872, DIRECT, 15a9c44f6d26cbe1
+Appnexus.com, 1371, RESELLER, f5ab79cb980f11d1
+stroeer.com, 17580, DIRECT
+adform.com, 2148, RESELLER, 9f5210a2f0999e32
+rubiconproject.com, 22884, DIRECT, 0bfd66d529a55807
+themediagrid.com, J8FXQA, DIRECT, 35d5010d7789b49d
+sovrn.com, 372166, DIRECT, fafdf38b16bf6b2b
+lijit.com, 372166, DIRECT, fafdf38b16bf6b2b
+lijit.com, 372166-eb, DIRECT, fafdf38b16bf6b2b
+contextweb.com, 560606, RESELLER, 89ff185a4c4e857c
+triplelift.com, 12404, DIRECT, 6c33edb13117fd86
+triplelift.com, 12404-EB, DIRECT, 6c33edb13117fd86
+inmobi.com, 96b0c131516c4ce58d293ec158228a2f, DIRECT, 83e75a7ae333ca9d
+opera.com,pub10667113792896,DIRECT,55a0c5fd61378de3
+lijit.com,465542,RESELLER,fafdf38b16bf6b2b
+vidoomy.com, 4930225, RESELLER
+rubiconproject.com, 17608, RESELLER, 0bfd66d529a55807
+improvedigital.com, 2276, RESELLER
+outbrain.com,002d7f7ba0bd74452f2b155d0dfb5cd6c8, RESELLER
+adingo.jp, 30932, RESELLER
+contextweb.com, 558511, RESELLER, 89ff185a4c4e857c
+google.com, pub-8200308882369976, DIRECT, f08c47fec0942fa0
+google.com, pub-5874845881897380, DIRECT, f08c47fec0942fa0
+
 #SETUPAD
 setupad.com, 2892, DIRECT 
 rubiconproject.com, 21118, RESELLER, 0bfd66d529a55807
@@ -183,6 +210,22 @@ smartadserver.com, 4756, RESELLER
 google.com, pub-3405003263881884, DIRECT, f08c47fec0942fa0
 pubmatic.com, 161593, RESELLER, 5d62403b186f2ace
 google.com, pub-1285341764115322, DIRECT, f08c47fec0942fa0
+google.com, pub-2263612067088920, DIRECT, f08c47fec0942fa0
+sharethrough.com, 3827-OB, RESELLER, 060d053dcf45cbf3
+onetag.com, 75ff55d79486d71-OB, RESELLER
+themediagrid.com, 1A2OKI, RESELLER, 9fac4a4a87c2a44f
+sharethrough.com, 4756, RESELLER, 060d053dcf45cbf3
+indexexchange.com, 187476, RESELLER
+google.com, pub-2375491021526371, DIRECT, f08c47fec0942fa0
+google.com, pub-1285341764115322, DIRECT, f08c47fec0942fa0
+wpartner.pl, 22444050393, RESELLER
+pubmatic.com, 157216, RESELLER, 5d62403b186f2ace
+google.com, pub-9963389496542741, DIRECT, f08c47fec0942fa0
+onetag.com, 75ff55d79486d71, RESELLER
+sharethrough.com, 7MMsjxFz, RESELLER, d53b998a7bd4ecd2
+appnexus.com, 3457, RESELLER, f5ab79cb980f11d1
+openx.com, 540233831, RESELLER
+rubiconproject.com, 19094, RESELLER
 google.com, pub-2263612067088920, DIRECT, f08c47fec0942fa0
 
 #Stroeer
