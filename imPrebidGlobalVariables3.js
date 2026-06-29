@@ -1,4 +1,4 @@
-/* Version: G_03 - 29.06. 2026 - 17:21:02 */
+/* Version: G_03 - 29.06. 2026 - 18:21:01 */
 var dealIdsPercent = { 
     "DID-1665-101195": 0.200,
     "DID-1665-116790": 0.200,
@@ -126,7 +126,6 @@ var bidderFloor = {
     "ix": 3,
     "adform-omd": 3,
     "Teads": 3,
-    "pubmatic-cpex": 3,
     "mgid": 3,
     "stroeerCore": 3,
     "appnexus-cpex": 3,
@@ -134,14 +133,16 @@ var bidderFloor = {
     "adform-im-nt": 3,
     "cpex-nt": 3,
     "adform-im-tt": 3,
-    "smilewanted-im": 3,
-    "adform-prima": 10,
-    "adform-sasAll": 3,
-    "adform-sasBranding": 3,
-    "iprima": 10,
-    "setupad": 3,
+    "pubmatic-cpex": 3,
+    "seznam": 3,
+    "criteo-cpex2": 2,
     "criteo-cpex": 1,
-    "criteo-cpex2": 2
+    "setupad": 3,
+    "iprima": 10,
+    "adform-sasBranding": 3,
+    "adform-sasAll": 3,
+    "adform-prima": 10,
+    "smilewanted-im": 3
 };
 
 var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
