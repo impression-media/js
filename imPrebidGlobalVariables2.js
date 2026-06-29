@@ -1,5 +1,5 @@
-/* Version: G_02 - 29.06. 2026 - 16:59:01 */
-var imHbGenSource = "G_02|29.06.2026|16:59:01";
+/* Version: G_02 - 29.06. 2026 - 17:59:01 */
+var imHbGenSource = "G_02|29.06.2026|17:59:01";
 var imHbExchangeRateCNB = { 
 "AUD": 14.677,"BRL": 4.119,"CNY": 3.131,"DKK": 3.246,"EUR": 24.260,"PHP": 34.765,"HKD": 2.712,"INR": 22.496,"IDR": 1.192,"ISK": 16.847,"ILS": 7.148,"JPY": 13.141,"ZAR": 1.296,"CAD": 14.975,"KRW": 1.378,"HUF": 6.845,"MYR": 5.224,"MXN": 1.217,"XDR": 28.843,"NOK": 2.141,"NZD": 12.026,"PLN": 5.659,"RON": 4.628,"SGD": 16.443,"SEK": 2.188,"CHF": 26.308,"THB": 63.975,"TRY": 45.648,"USD": 21.269,"GBP": 28.143
 };
@@ -131,7 +131,6 @@ var bidderFloor = {
     "ix": 3,
     "adform-omd": 3,
     "Teads": 3,
-    "pubmatic-cpex": 3,
     "mgid": 3,
     "stroeerCore": 3,
     "appnexus-cpex": 3,
@@ -139,14 +138,16 @@ var bidderFloor = {
     "adform-im-nt": 3,
     "cpex-nt": 3,
     "adform-im-tt": 3,
-    "smilewanted-im": 3,
-    "adform-prima": 10,
-    "adform-sasAll": 3,
-    "adform-sasBranding": 3,
-    "iprima": 10,
-    "setupad": 3,
+    "pubmatic-cpex": 3,
+    "seznam": 3,
+    "criteo-cpex2": 2,
     "criteo-cpex": 1,
-    "criteo-cpex2": 2
+    "setupad": 3,
+    "iprima": 10,
+    "adform-sasBranding": 3,
+    "adform-sasAll": 3,
+    "adform-prima": 10,
+    "smilewanted-im": 3
 };
 var bidderFee = { 
     "cpex-tt": 0.81,
@@ -159,7 +160,6 @@ var bidderFee = {
     "ix": 0.93,
     "adform-omd": 0.65,
     "Teads": 0.8,
-    "pubmatic-cpex": 0.93,
     "mgid": 0.8,
     "stroeerCore": 0.8,
     "appnexus-cpex": 0.93,
@@ -167,14 +167,16 @@ var bidderFee = {
     "adform-im-nt": 1,
     "cpex-nt": 0.81,
     "adform-im-tt": 1,
-    "smilewanted-im": 0.8,
-    "adform-prima": 0.9,
-    "adform-sasAll": 0.8,
-    "adform-sasBranding": 0.8,
-    "iprima": 1,
-    "setupad": 0.8,
+    "pubmatic-cpex": 0.93,
+    "seznam": 0.9,
+    "criteo-cpex2": 0.97,
     "criteo-cpex": 0.97,
-    "criteo-cpex2": 0.97
+    "setupad": 0.8,
+    "iprima": 1,
+    "adform-sasBranding": 0.8,
+    "adform-sasAll": 0.8,
+    "adform-prima": 0.9,
+    "smilewanted-im": 0.8
 };
 
 var globalSasCPM = {    "meteocentrumcz1649leaderboardadformsasAll": "4",
