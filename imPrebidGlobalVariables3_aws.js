@@ -1,5 +1,5 @@
-/* Version: G_03_aws - 11.09. 2026 - 04:10:01 */
-var imHbGenSource = "G_03_aws|11.09.2026|04:10:01";
+/* Version: G_03_aws - 11.09. 2026 - 05:10:02 */
+var imHbGenSource = "G_03_aws|11.09.2026|05:10:02";
 var imHbExchangeRateCNB = { 
 "AUD": 15.002,"BRL": 4.077,"CNY": 3.113,"DKK": 3.244,"EUR": 24.250,"PHP": 33.364,"HKD": 2.662,"INR": 21.873,"IDR": 1.191,"ISK": 17.321,"ILS": 6.891,"JPY": 13.530,"ZAR": 1.294,"CAD": 15.112,"KRW": 1.553,"HUF": 6.649,"MYR": 5.135,"MXN": 1.232,"XDR": 28.682,"NOK": 2.254,"NZD": 12.163,"PLN": 5.612,"RON": 4.616,"SGD": 16.484,"SEK": 2.165,"CHF": 25.707,"THB": 63.261,"TRY": 43.084,"USD": 20.876,"GBP": 28.226};
 var dealIdsPercent = { 
