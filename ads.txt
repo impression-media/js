@@ -284,8 +284,7 @@ indexexchange.com, 191029, RESELLER, 50b1c356f2c5c8fc
 pubmatic.com, 158578, DIRECT, 5d62403b186f2ace
 pubmatic.com, 158732, DIRECT, 5d62403b186f2ace
 cpex.cz, 011, DIRECT
-
-RTBHOUSE.COM, w6O8SDnYNMT7Cb6AHGZf, DIRECT
+pubmatic.com, 168313, RESELLER, 5d62403b186f2ace
 rtbhouse.com, w6O8SDnYNMT7Cb6AHGZf, DIRECT, 4f3b94578e85950c
 
 #R2B2-ads.txt-v2.39.2
