@@ -227,6 +227,15 @@ appnexus.com, 3457, RESELLER, f5ab79cb980f11d1
 openx.com, 540233831, RESELLER
 rubiconproject.com, 19094, RESELLER
 google.com, pub-2263612067088920, DIRECT, f08c47fec0942fa0
+rtbhouse.com, XNEdtxheGMSt, RESELLER, 4f3b94578e85950c
+sharethrough.com, 3691-OB, RESELLER, 060d053dcf45cbf3
+rtbhouse.com, MOHizF7XNW5Z9uDnZ2xv, DIRECT, 4f3b94578e85950c
+triplelift.com, 12507, RESELLER
+sharethrough.com, 3691, RESELLER, 060d053dcf45cbf3
+improvedigital.com, 2942, RESELLER
+amxrtb.com, 272486324, DIRECT
+adform.com, 3080, RESELLER, 9f5210a2f0999e32
+rtbhouse.com, ENUKLjDLTQWWCHHHsXs9, DIRECT, 4f3b94578e85950c
 
 #Stroeer
 stroeer.com,  17438, DIRECT
