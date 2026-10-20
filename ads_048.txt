@@ -1,3 +1,4 @@
+
 #ImpressionMedia
 impressionmedia.cz, 048, DIRECT
 
@@ -226,6 +227,15 @@ appnexus.com, 3457, RESELLER, f5ab79cb980f11d1
 openx.com, 540233831, RESELLER
 rubiconproject.com, 19094, RESELLER
 google.com, pub-2263612067088920, DIRECT, f08c47fec0942fa0
+rtbhouse.com, XNEdtxheGMSt, RESELLER, 4f3b94578e85950c
+sharethrough.com, 3691-OB, RESELLER, 060d053dcf45cbf3
+rtbhouse.com, MOHizF7XNW5Z9uDnZ2xv, DIRECT, 4f3b94578e85950c
+triplelift.com, 12507, RESELLER
+sharethrough.com, 3691, RESELLER, 060d053dcf45cbf3
+improvedigital.com, 2942, RESELLER
+amxrtb.com, 272486324, DIRECT
+adform.com, 3080, RESELLER, 9f5210a2f0999e32
+rtbhouse.com, ENUKLjDLTQWWCHHHsXs9, DIRECT, 4f3b94578e85950c
 
 #Stroeer
 stroeer.com,  17438, DIRECT
@@ -284,8 +294,8 @@ caroda.io, 391717000000086077, DIRECT
 #Cpex
 appnexus.com, 10560, DIRECT, f5ab79cb980f11d1
 indexexchange.com, 191029, RESELLER, 50b1c356f2c5c8fc
-pubmatic.com, 158578, DIRECT, 5d62403b186f2ace
-pubmatic.com, 158732, DIRECT, 5d62403b186f2ace
+pubmatic.com, 158578, RESELLER, 5d62403b186f2ace
+pubmatic.com, 158732, RESELLER, 5d62403b186f2ace
 cpex.cz, 011, DIRECT
 pubmatic.com, 168313, RESELLER, 5d62403b186f2ace
 rtbhouse.com, w6O8SDnYNMT7Cb6AHGZf, DIRECT, 4f3b94578e85950c
@@ -788,5 +798,9 @@ spotx.tv, 202100, RESELLER, 7842df1d2fe2db34
 indexexchange.com, 201092, RESELLER, 50b1c356f2c5c8fc
 adform.com, 1941, RESELLER
 sharethrough.com, 1udopJ1S, RESELLER, d53b998a7bd4ecd2
-##lastControlDateTime: [30.09. 2026 - 11:18:02]
+
+
+
+
+##lastControlDateTime: [21.08. 2026 - 11:18:02]
 
