@@ -685,6 +685,7 @@ smaato.com, 1100049235, RESELLER, 07bcf65f187117b4
 smartadserver.com, 3602-OB, RESELLER, 060d053dcf45cbf3
 
 #antiadblock
+performax.cz, 170, DIRECT
 google.com, pub-8539658618929646, DIRECT, f08c47fec0942fa0
 sovrn.com, 381112, DIRECT, fafdf38b16bf6b2b
 lijit.com, 381112, DIRECT, fafdf38b16bf6b2b
